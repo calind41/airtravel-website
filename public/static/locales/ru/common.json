@@ -1,0 +1,40 @@
+{
+    "SearchFlightForm-h1": "Планируйте свою будущую поездку уже сейчас",
+    "SearchFlightForm-h3": "Найдите самые безопасные пункты назначения. Используйте гибкое бронирование.",
+    "Departure-fromInputPlaceholder": "Вылет",
+    "Arrival-toInputPlaceholder": "Прибытие",
+    "FlightDate-calendarPlaceholder": "КОГДА",
+    "TripButtons-roundTripBtn": "Туда-обратно",
+    "TripButtons-oneWayTripBtn": "В одну сторону",
+    "PassengerDropdown-passengerPlaceholder": "Кол. Пассажиров",
+    "PassengerDropdwon-passengerTextSingle": "пассажир,",
+    "PassengerDropdwon-passengerTextMultiple": "пассажира,",
+    "flightType-economy": "Эконом",
+    "flightType-comfort": "Комфорт",
+    "flightType-business": "Бизнес",
+    "flightType-firstClass": "Первый класс",
+    "passengerType-adult": "Взрослые",
+    "passengerType-child": "Дети",
+    "passengerType-baby": "Младенцы",
+    "ageInterval-adult": "Старше 12 лет",
+    "ageInterval-child": "От 2 до 12 лет",
+    "ageInterval-baby": "До 2 лет, без места",
+    "searchFlightButtonText": "Найти",
+    "Header-bonusPts": "Бонусы",
+    "Header-services": "Сервисы",
+    "Header-customerSupport": "Поддержка 24 / 7",
+    "Header-myBooking": "Мой заказ",
+    "Header-customerProfile": "Личный кабинет",
+    "serviceDropdown-giftCard": "Подарочные сертификаты",
+    "serviceDropdown-insurance": "Страховка",
+    "serviceDropdown-seaTravel": "Хочу на море",
+    "customerSupportDropdown-contactSupport": "Контактная Поддержка",
+    "customerSupportDropdown-onlineCall": "Онлайн-звонок",
+
+    "passengerDropdownMobile-title": "Пассажиры",
+    "passengerDropdownMobile-done": "Готово"
+
+
+
+
+}

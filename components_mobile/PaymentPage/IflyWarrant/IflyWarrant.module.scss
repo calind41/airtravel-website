@@ -1,0 +1,81 @@
+// 90% of all top measurements
+.container {
+  width: 89.33vw;
+  height: 319px;
+  border-radius: 0 0 6px 6px;
+  background-color: #e9edf5;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  .heading {
+    margin: auto;
+    margin-top: 27px;
+    width: 73.33vw;
+    height: 18px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    span:nth-child(2) {
+      position: absolute;
+      left: 29px;
+    }
+    align-items: center;
+  }
+  .text {
+    position: relative;
+    bottom: 40px;
+    width: 73.33vw;
+    height: 213px;
+    font-size: 10.8px;
+    margin: auto;
+    margin-top: 45.5px;
+    line-height: 20.6px;
+
+    & > div {
+      margin-top: 10px;
+    }
+
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 344.17px;
+    .heading {
+      width: 274.987px;
+    }
+    .text {
+      width: 274.987px;
+    }
+  }
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 83.13vw;
+    height: 270px;
+    .heading {
+      width: 66.4vw;
+    }
+    .text {
+      width: 66.4vw;
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .container {
+    width: 86vw;
+    height: 270px;
+    .heading {
+      width: 69.27vw;
+    }
+    .text {
+      width: 69.27vw;
+    }
+  }
+}

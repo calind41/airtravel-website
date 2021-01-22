@@ -1,0 +1,35 @@
+.departingC {
+  position: relative;
+  width: 84%;
+  height: 54px;
+  background-color: #f7f9fa;
+  border-radius: 6px;
+  border: 1px solid #e1e5eb;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  font-size: 13px;
+  padding-left: 9px;
+
+  & > span {
+    color: #45494d;
+    font-size: 13px;
+    margin-left: 11px;
+  }
+  .departedHasValue {
+    opacity: 1;
+    color: #212121 !important;
+  }
+
+  & > svg {
+    width: 11.5px;
+    height: 11.5px;
+    border-radius: 20px;
+    transition: 0.2s ease;
+    margin-right: 19px;
+    visibility: hidden;
+  }
+}

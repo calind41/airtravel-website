@@ -1,0 +1,41 @@
+.container {
+  width: 964px;
+  margin: auto;
+
+  header {
+    .title {
+      color: #212121;
+      font-size: 21px;
+      font-weight: 500;
+    }
+    .subtitle {
+      margin-top: 10px;
+      color: #3c3c3c;
+      font-size: 12px;
+    }
+  }
+
+  main {
+    margin-top: 32px;
+    width: 964px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .rentalServices {
+      height: 430px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 662px;
+
+    main {
+      width: 662px;
+    }
+  }
+}

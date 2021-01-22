@@ -1,0 +1,103 @@
+// 90% of originalSize
+.container {
+  width: 91.78vw;
+  min-height: 450px;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+
+  header {
+    font-size: 25.2px;
+    font-size: 19px;
+  }
+  main {
+    margin: auto;
+    margin-top: 33.3px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 91.78vw;
+
+    & > div:nth-child(1) {
+      width: 91.78vw;
+
+      min-height: 450px;
+      font-size: 11.7px;
+      color: #333333;
+      line-height: 25.2px;
+    }
+    & > div:nth-child(2) {
+      width: 91.78vw;
+      height: 230px;
+      svg {
+        position: relative;
+        right: 10px;
+        width: 91.78vw;
+        height: 212px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 344.17px;
+
+    main {
+      width: 344.17px;
+
+      & > div:nth-child(1) {
+        width: 344.17px;
+      }
+      & > div:nth-child(2) {
+        width: 344.17px;
+
+        svg {
+          width: 344.17px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .container {
+    width: 83.13vw;
+
+    main {
+      width: 83.13vw;
+
+      & > div:nth-child(1) {
+        width: 83.13vw;
+      }
+      & > div:nth-child(2) {
+        width: 83.13vw;
+
+        svg {
+          width: 83.13vw;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .container {
+    width: 86vw;
+
+    main {
+      width: 86vw;
+
+      & > div:nth-child(1) {
+        width: 86vw;
+      }
+      & > div:nth-child(2) {
+        width: 86vw;
+
+        svg {
+          width: 86vw;
+        }
+      }
+    }
+  }
+}

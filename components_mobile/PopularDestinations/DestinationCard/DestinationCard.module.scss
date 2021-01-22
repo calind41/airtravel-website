@@ -1,0 +1,208 @@
+// 90% of originalSize
+// .container {
+//   width: 100%;
+//   height: 72px;
+//   background-color: #fff;
+//   border-radius: 6px;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   cursor: pointer;
+
+//   & > div:nth-child(1) {
+//     width: 39.6px;
+//     height: 39.6px;
+//     position: relative;
+//     left: 6px;
+
+//     svg {
+//       width: 39.6px;
+//       height: 39.6px;
+//     }
+//   }
+//   & > div:nth-child(2) {
+//     width: 172.8px;
+//     margin-left: 14px;
+
+//     & > div:nth-child(1) {
+//       font-size: 11.7px;
+//     }
+//     & > div:nth-child(2) {
+//       font-size: 14.4px;
+//       font-weight: 500;
+//       color: #0080ff;
+//     }
+//   }
+//   .priceC {
+//     width: 72.9px;
+//     font-size: 11.7px;
+//     margin-top: 1.8px;
+//     position: relative;
+//     right: 5.4px;
+//     display: flex;
+//     justify-content: space-between;
+//     & > span:nth-child(1) {
+//       span {
+//         color: #0080ff;
+//       }
+//     }
+//     & > span:nth-child(2) {
+//       position: relative;
+//       bottom: 2.52px;
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 414px) {
+//   .container {
+//     width: 300.16px;
+//     margin: auto;
+//     margin-top: 0;
+
+//     & > div:nth-child(2) {
+//       margin-left: 19px;
+//     }
+//   }
+// }
+// @media screen and (min-width: 698px) {
+//   .container {
+//     width: 295.16px;
+//     margin: auto;
+//     margin-top: 0;
+
+//     & > div:nth-child(2) {
+//       margin-left: 19px;
+//     }
+//   }
+// }
+
+.container {
+  margin-top: 10px;
+  border-radius: 10px;
+  width: 91.78vw;
+  height: 50px;
+
+  background-color: #eff1f4;
+  display: flex;
+  flex-direction: column;
+  padding: 6px 14px 8px;
+  transition: height 0.3s ease;
+  &:hover {
+    background-color: #d9eaff;
+  }
+  .wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 37px;
+    width: 100%;
+    padding-bottom: 10px;
+
+    .destinationFlag {
+      position: relative;
+      top: 7px;
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .destination {
+      position: relative;
+      top: 7px;
+      margin-left: 12px;
+      .city {
+        color: #0c73fe;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .country {
+        font-size: 11px;
+        line-height: 14px;
+        color: #5a6472;
+        position: relative;
+        top: 3.2px;
+      }
+    }
+    .detailsContainer {
+      .arrowIcon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 0px;
+        top: 9px;
+        padding-top: 10px;
+        cursor: pointer;
+        transition: 0.2s ease;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 0;
+          height: 0;
+          border-color: #0c73fe transparent transparent;
+          border-left: 5px solid transparent;
+          border-bottom: 0 solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid #0c73fe;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .flightListDropdwon {
+    margin-top: 8px;
+    width: 100%;
+
+    .item {
+      user-select: none;
+      cursor: pointer;
+      line-height: 20px;
+      display: flex;
+      justify-content: space-between;
+      color: #0c73fe;
+      font-size: 12px;
+      white-space: nowrap;
+
+      .value {
+        margin-left: 3px;
+      }
+    }
+  }
+}
+
+.rotate180deg {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+}
+
+.openContainer {
+  height: 280px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 344.17px;    
+  }
+}
+@media screen and (min-width: 414px){ 
+  .container {
+    width: 83.13vw;
+  }
+}
+@media screen and (min-width: 500px){ 
+.container {
+    width: 430px;
+  }
+}
+@media screen and (min-width: 620px){ 
+.container {
+    width: 67.17vw;
+  }
+}

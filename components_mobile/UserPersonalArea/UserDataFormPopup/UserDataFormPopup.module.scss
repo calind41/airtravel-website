@@ -1,0 +1,556 @@
+$borderInputColor: #d0d4db;
+$inputBgColorBlur: #e4e6eb;
+$placeholderTopColor: #797c80;
+$warningRed: #dd5656;
+$green: #6bdd56;
+
+// 90% of originalSize
+.container {
+  width: 89.33vw;
+  height: 39.6px;
+  background-color: #e9edf5;
+  border-radius: 6px;
+  border: 1px solid #d7e0d5;
+  margin: auto;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
+
+  .title {
+    display: inline-block;
+    min-width: 100%;
+    height: 39.6px;
+    font-size: 11.7px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+
+    .text {
+      padding-left: 10px;
+      span {
+        color: #dd5656;
+      }
+    }
+    .arrowRight {
+      width: 37px;
+      height: 37px;
+
+      position: relative;
+      svg {
+        width: 37px;
+        height: 37px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
+
+.formContainer {
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 96.84%;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  z-index: 10;
+
+  .closeIcon {
+    width: 89.33vw;
+    height: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: auto;
+    margin-top: 40px;
+  }
+  .form {
+    width: 89.33vw;
+    height: 522px;
+    margin: auto;
+    margin-top: 32px;
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      width: 89.33vw;
+
+      height: 480px;
+      justify-content: space-between;
+    }
+
+    .selectWrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 89.33vw !important;
+
+      margin-bottom: 0;
+      height: 39.6px;
+    }
+
+    .saveButton {
+      width: 89.33vw;
+
+      height: 39.6px;
+      background-color: #e4e6eb;
+      border-radius: 4px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      outline: none;
+      font-size: 11.7px;
+    }
+    .saveButtonActive {
+      background-color: #2b95ff !important;
+    }
+    .firstNameC,
+    .lastNameC,
+    .dateOfBirthC,
+    .serialNrInputC,
+    .serialNrReleaseDateC,
+    .serialNrExpireDateC {
+      width: 89.33vw;
+      height: 39.6px;
+      margin-right: 18px;
+      label {
+        position: relative;
+        display: block;
+
+        input {
+          position: relative;
+          font-size: 11.7px;
+          width: 89.33vw;
+
+          height: 39.6px;
+          padding-left: 18.9px;
+          padding-top: 13.5px;
+          border-radius: 4px;
+          border: 1px solid $borderInputColor;
+          background-color: #fafbfc;
+          color: #000;
+          outline: none;
+
+          &:focus {
+            background-color: #fff;
+            border: 1px solid #0080ff;
+          }
+          &:not([value=""]):not(:focus) {
+            background-color: #fff;
+          }
+
+          &::placeholder {
+            opacity: 0;
+          }
+
+          &:focus::placeholder {
+            opacity: 1;
+            color: #919499;
+          }
+
+          &:focus ~ .firstNamePlaceholder,
+          &:not(:focus):valid ~ .firstNamePlaceholder,
+          &:focus ~ .lastNamePlaceholder,
+          &:not(:focus):valid ~ .lastNamePlaceholder,
+          &:focus ~ .dateOfBirthPlaceholder,
+          &:not(:focus):valid ~ .dateOfBirthPlaceholder,
+          &:focus ~ .serialNumberPlaceholder,
+          &:not(:focus):valid ~ .serialNumberPlaceholder,
+          &:focus ~ .serialNrReleaseDatePlaceholder,
+          &:not(:focus):valid ~ .serialNrReleaseDatePlaceholder,
+          &:focus ~ .serialNrExpireDatePlaceholder,
+          &:not(:focus):valid ~ .serialNrExpireDatePlaceholder {
+            position: absolute;
+            top: 4.5px;
+            left: 18px;
+            font-size: 9px;
+            opacity: 1;
+            color: $placeholderTopColor;
+          }
+        }
+
+        .firstNamePlaceholder,
+        .lastNamePlaceholder,
+        .dateOfBirthPlaceholder,
+        .serialNumberPlaceholder,
+        .serialNrReleaseDatePlaceholder,
+        .serialNrExpireDatePlaceholder {
+          position: absolute;
+          pointer-events: none;
+          left: 18px;
+          top: 14.4px;
+          transition: all 0.2s ease;
+          font-size: 11.7px;
+          user-select: none;
+          color: #616366;
+        }
+      }
+      .requiredField {
+        display: none;
+      }
+      .numberNotValid {
+        display: none;
+      }
+    }
+
+    .serialNrInputC {
+      width: 89.33vw !important;
+
+      label {
+        input {
+          width: 89.33vw !important;
+        }
+      }
+    }
+    .nationalityC {
+      width: 53.06vw !important;
+    }
+    .genderC {
+      width: 30.93vw !important;
+    }
+  }
+
+  // React-dropdown styles
+  .myClassName {
+    margin-bottom: 9px;
+    height: 39.6px;
+    width: 53.06vw !important;
+  }
+  .genderClassName {
+    width: 30.93vw !important;
+    height: 39.6px;
+  }
+  .myControlClassName {
+    border: 1px solid #d0d4db;
+    border-radius: 4px;
+    width: 53.06vw !important;
+
+    height: 39.6px;
+    cursor: pointer;
+
+    .myArrowClassName {
+      margin-top: 4.5px;
+    }
+  }
+  .genderControlClassName {
+    width: 30.93vw !important;
+
+    height: 39.6px;
+  }
+  .myPlaceholderClassName {
+    width: 100%;
+    overflow: hidden !important;
+    height: 16.5px;
+    margin-top: 5.5px;
+
+    font-size: 11.7px;
+    span:nth-child(2) {
+      margin-left: 4.5px;
+    }
+  }
+  .myMenuClassName {
+    border: 1px solid #d0d4db;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    width: 53.06vw !important;
+
+    font-size: 11.7px;
+    & > div:first-child {
+      display: none;
+    }
+    & > div:hover {
+      background-color: #e9edf5;
+      color: #151a1c;
+    }
+    .flagClassName {
+      display: inline-block;
+      width: 100%;
+      span {
+        margin-right: 4.5px;
+      }
+    }
+  }
+  .genderMenuClassName {
+    width: 30.93vw !important;
+  }
+}
+
+.slideUp {
+  animation: slideUpAnimation 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.slideDown {
+  animation: slideDownAnimation 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.displayFlex {
+  display: block !important;
+}
+.displayNone {
+  display: none !important;
+}
+
+@keyframes slideUpAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideDownAnimation {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 344.17px;
+  }
+
+  .formContainer {
+    .closeIcon {
+      width: 344.17px;
+    }
+    .form {
+      width: 344.17px;
+
+      .inputs {
+        width: 344.17px;
+      }
+
+      .selectWrapper {
+        width: 344.17px !important;
+      }
+
+      .saveButton {
+        width: 344.17px;
+      }
+
+      .firstNameC,
+      .lastNameC,
+      .dateOfBirthC,
+      .serialNrInputC,
+      .serialNrReleaseDateC,
+      .serialNrExpireDateC {
+        width: 344.17px;
+
+        label {
+          input {
+            width: 344.17px;
+          }
+        }
+      }
+
+      .serialNrInputC {
+        width: 344.17px !important;
+
+        label {
+          input {
+            width: 344.17px !important;
+          }
+        }
+      }
+      .nationalityC {
+        // width: 53.06vw !important;
+        width: 198.975px !important;
+      }
+      .genderC {
+        // width: 30.93vw !important;
+        width: 115.9875px !important;
+      }
+    }
+
+    // React-dropdown styles
+    .myClassName {
+      // width: 53.06vw !important;
+      width: 198.975px !important;
+    }
+    .genderClassName {
+      // width: 30.93vw !important;
+      width: 115.9875px !important;
+    }
+    .myControlClassName {
+      // width: 53.06vw !important;
+      width: 198.975px !important;
+    }
+    .genderControlClassName {
+      // width: 30.93vw !important;
+      width: 115.9875px !important;
+    }
+
+    .myMenuClassName {
+      // width: 53.06vw !important;
+      width: 198.975px !important;
+    }
+    .genderMenuClassName {
+      // width: 30.93vw !important;
+      width: 115.9875px !important;
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .container {
+    width: 83.13vw;
+  }
+
+  .formContainer {
+    .closeIcon {
+      width: 83.13vw;
+    }
+    .form {
+      width: 83.13vw;
+      .inputs {
+        width: 83.13vw;
+      }
+
+      .selectWrapper {
+        width: 83.13vw !important;
+      }
+
+      .saveButton {
+        width: 83.13vw;
+      }
+
+      .firstNameC,
+      .lastNameC,
+      .dateOfBirthC,
+      .serialNrInputC,
+      .serialNrReleaseDateC,
+      .serialNrExpireDateC {
+        width: 83.13vw;
+
+        label {
+          input {
+            width: 83.13vw;
+          }
+        }
+      }
+
+      .serialNrInputC {
+        width: 83.13vw !important;
+
+        label {
+          input {
+            width: 83.13vw !important;
+          }
+        }
+      }
+      .nationalityC {
+        width: 48vw !important;
+      }
+      .genderC {
+        width: 28vw !important;
+      }
+    }
+
+    // React-dropdown styles
+    .myClassName {
+      width: 48vw !important;
+    }
+    .genderClassName {
+      width: 28vw !important;
+    }
+    .myControlClassName {
+      width: 48vw !important;
+    }
+    .genderControlClassName {
+      width: 28vw !important;
+    }
+
+    .myMenuClassName {
+      width: 48vw !important;
+    }
+    .genderMenuClassName {
+      width: 28vw !important;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    width: 86vw;
+  }
+
+  .formContainer {
+    .closeIcon {
+      width: 86vw;
+    }
+    .form {
+      width: 86vw;
+      .inputs {
+        width: 86vw;
+      }
+
+      .selectWrapper {
+        width: 86vw !important;
+      }
+
+      .saveButton {
+        width: 86vw;
+      }
+
+      .firstNameC,
+      .lastNameC,
+      .dateOfBirthC,
+      .serialNrInputC,
+      .serialNrReleaseDateC,
+      .serialNrExpireDateC {
+        width: 86vw;
+
+        label {
+          input {
+            width: 86vw;
+          }
+        }
+      }
+
+      .serialNrInputC {
+        width: 86vw !important;
+
+        label {
+          input {
+            width: 86vw !important;
+          }
+        }
+      }
+      .nationalityC {
+        width: 50vw !important;
+      }
+      .genderC {
+        width: 31vw !important;
+      }
+    }
+
+    // React-dropdown styles
+    .myClassName {
+      width: 50vw !important;
+    }
+    .genderClassName {
+      width: 31vw !important;
+    }
+    .myControlClassName {
+      width: 50vw !important;
+    }
+    .genderControlClassName {
+      width: 31vw !important;
+    }
+
+    .myMenuClassName {
+      width: 50vw !important;
+    }
+    .genderMenuClassName {
+      width: 31vw !important;
+    }
+  }
+}

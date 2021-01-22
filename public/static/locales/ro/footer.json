@@ -1,0 +1,41 @@
+{
+    "country": "ȚĂRI",
+    "city":"ORAȘE",
+    "aircompany":"COMPANII AERIENE",
+    "airports":"AEROPORTURI",
+    "service": "SERVICII",
+    "directions":"DIRECȚII",
+    "allAirports": "Toate aeroporturile",
+    "allCountries": "Toate țările",
+    "allAircompanies": "Toate companiile",
+    "allCities": "Toate orașele",
+    
+    "serviceItem1": "Calendar cu reducerile de preț",
+    "serviceItem2": "Harta prețurilor mici",
+    "serviceItem3": "Super-ofertă",
+    "serviceItem4": "Tabelul de prețuri",
+    "serviceItem5": "Blog",
+    "serviceItem6": "Ajutor",
+
+    "vk": "VK",
+    "fb": "Facebook",
+    "insta": "Instagram",
+    "twitter": "Twitter",
+    "viber": "Viber",
+
+    "aboutCompany": "Despre companie",
+    "partnersProgram": "Program de afiliere",
+    "ads": "Publicitate",
+    "pressCenter": "Centrul de presă",
+    "vacancies": "Posturi vacante",
+    "help":"Ajutor",
+    "rules": "Reguli",
+    "copyRight": "© 2007–2020, Aviasales — bilete ieftine",
+
+    "qq1": "Zboruri Uzbekistan",
+    "qq2": "Zboruri Kazahstan",
+    "qq3": "Zboruri Belarus",
+    "qq4": "Căutare și rezervare hotel",
+    "qq5": "White Label Zboruri"
+
+}

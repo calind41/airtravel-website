@@ -1,0 +1,46 @@
+.mapContainer {
+  width: 91.78vw;
+  .header {
+    font-size: 17px;
+    line-height: 25px;
+    color: #212121;
+    margin-top: 50px;
+  }
+  .map {
+    margin-top: 20px;
+    width: 91.78vw;
+    height: 230px;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .mapContainer {
+    width: 344.17px;
+
+    .map {
+      width: 344.17px;
+      height: 230px;
+    }
+  }
+}
+@media screen and (min-width: 414px) {
+  .mapContainer {
+    width: 83.13vw;
+
+    .map {
+      width: 83.13vw;
+      height: 230px;
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .mapContainer {
+    width: 86vw;
+
+    .map {
+      width: 86vw;
+      height: 230px;
+    }
+  }
+}

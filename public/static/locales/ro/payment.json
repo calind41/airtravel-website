@@ -1,0 +1,57 @@
+{
+    "search": "Căutare",
+    "passengerInfo": "Date despre pasageri",
+    "payment": "Plată",
+
+    "UserTicket-moreAboutFlight": "Detalii Zbor",
+    "UserTicket-name": "NUME",
+    "UserTicket-nationality": "CETĂȚENIE",
+    "UserTicket-passportNr": "№ PAȘAPORT",
+    "UserTicket-validity": "VALABILITATE",
+    "UserTicket-baggage": "BAGAJ",
+    "UserTicket-personalThing": "Lucru personal",
+    "UserTicket-carryOnBaggage": "Bagaj de mana",
+    "UserTicket-registeredBaggage": "Bagaj verificat",
+
+    "IflyWarrant-title": "Garanție",
+    "IflyWarrant-text1": "Valabil în caz de anulare, întârziere a zborului sau modificări ale programului său. Vom achiziționa un bilet de avion alternativ pentru dvs. la destinație sau vă vom rambursa cheltuielile efectuate pe treapta corespunzătoare a rutei.",
+    "IflyWarrant-text2": "Mai multe detalii",
+    "IflyWarrant-text3": "Garanția",
+    "IflyWarrannt-text4": "se aplică numai rezervărilor făcute prin intermediul site-ului web",
+
+
+    "InsuranceOptions-heading-title": "Asigurarea pasagerilor",
+    "InsuranceOptions-heading-subtitle1": "Asigurator - AXA Assistance",
+    "InsuranceOptions-heading-subtitle2": "Comparații și condiții",
+    "Insurance-option1": "Fără asigurare",
+
+    "InsuranceOption-chosen": "Selectat",
+    "InsuranceOption-text1": "Îngrijire de urgență",
+    "InsuranceOption-text2": "Cheltuieli medicale",
+    "InsuranceOption-text3": "Răspunderea materială",
+    "InsuranceOption-text4": "în caz de deteriorare a sănătății;",
+    "InsuranceOption-text5": "în caz de pagube materiale",
+    "InsuranceOption-text6": "Asigurarea bagajelor",
+    "InsuranceOption-text7": "Gratuit",
+
+    "PaymentMethods-title": "Modalități de plată",
+    "PaymentMethods-m1": "La birou",
+    "PaymentMethods-m2": "La bancă",
+    "PaymentMethods-m3": "La terminal",
+    "PaymentMethods-footer": "Alegeți una dintre metodele de plată",
+
+    "op-modal-heading": "Plata la birou",
+    "op-modal-bookingNr": "Număr de rezervare",
+    "op-modal-details": "Biroul nostru",
+    "op-modal-availability": "Luni — vineri",
+
+    "mobile-summaryCard-passengerSingle": "Pasager",
+    "mobile-summaryCard-passengerMultiple": "Pasageri",
+    "mobile-summaryCard-insurance": "Asigurare",
+    "mobile-summaryCard-total": "Total"
+
+
+    
+    
+    
+}

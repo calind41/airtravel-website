@@ -1,0 +1,345 @@
+$borderInputColor: #d2d5d9;
+$inputBgColorBlur: #e4e6eb;
+$placeholderTopColor: #797c80;
+$warningRed: #dd5656;
+$green: #6bdd56;
+
+// 90% of originalSize
+.container {
+  width: 964px;
+  height: 363.6px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 23.4px;
+  margin-bottom: 198px;
+  .left {
+    width: 350.4px;
+    height: 79.2px;
+    .title {
+      font-size: 16.2px;
+      color: #333333;
+      height: 27px;
+    }
+    .subtitle {
+      font-size: 11.7px;
+      color: #797c80;
+      width: 390px;
+      height: 64.8px;
+      line-height: 21.6px;
+      margin-top: 6.3px;
+    }
+  }
+  .right {
+    width: 459px;
+    height: 270px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+
+    & > div {
+      margin-left: 29.7px;
+    }
+    .phoneNrC {
+      width: 282.6px;
+      height: 52px;
+      label {
+        position: relative;
+        display: block;
+
+        .phonePrefix {
+          position: absolute;
+
+          left: 16.281px;
+          top: 24.409px;
+          z-index: 1;
+          font-size: 11.7px;
+          cursor: text;
+          //   display: none;
+        }
+
+        input {
+          position: relative;
+          font-size: 11.7px;
+          width: 282.6px;
+          height: 52px;
+          padding-left: 48px;
+          padding-top: 10.15px;
+          border-radius: 6px;
+          border: 1px solid $borderInputColor;
+          background-color: $inputBgColorBlur;
+          outline: none;
+
+          &:focus {
+            background-color: #fff;
+          }
+          //   &:not([value=""]):not(:focus) {
+          //     background-color: #fff;
+          //   }
+
+          &:focus ~ .phoneNrPlaceholder,
+          &:not(:focus):valid ~ .phoneNrPlaceholder {
+            position: absolute;
+            top: 10.53px;
+            left: 16.2px;
+            font-size: 9px;
+            opacity: 1;
+            color: $placeholderTopColor;
+          }
+        }
+
+        .phoneNrPlaceholder {
+          position: absolute;
+          top: 10.53px;
+          left: 16.2px;
+          font-size: 9px;
+          opacity: 1;
+          color: $placeholderTopColor;
+        }
+        .changeInput {
+          position: absolute;
+          top: 16.2px;
+          right: -132.3px;
+          width: 86.4px;
+          height: 18.9px;
+          font-size: 11.7px;
+          color: #0080ff;
+          cursor: pointer;
+        }
+      }
+      .requiredField {
+        display: none;
+      }
+      .numberNotValid {
+        display: none;
+      }
+    }
+    .emailC {
+      width: 282.6px;
+      height: 52px;
+      margin-top: 4.05px;
+
+      label {
+        position: relative;
+        display: block;
+
+        input {
+          position: relative;
+          font-size: 11.7px;
+          width: 282.6px;
+          height: 52px;
+          padding-left: 17.01px;
+          padding-top: 13.77px;
+          border-radius: 6px;
+          border: 1px solid $borderInputColor;
+          background-color: $inputBgColorBlur;
+          outline: none;
+
+          &:focus {
+            background-color: #fff;
+          }
+          //   &:not([value=""]):not(:focus) {
+          //     background-color: #fff;
+          //   }
+
+          &:focus ~ .emailPlaceholder,
+          &:not([value=""]):not(:focus) ~ .emailPlaceholder {
+            position: absolute;
+            top: 10.53px;
+            left: 17.01px;
+            font-size: 9px;
+            opacity: 1;
+            color: $placeholderTopColor;
+          }
+        }
+        .emailPlaceholder {
+          position: absolute;
+          top: 10.53px;
+          left: 17.01px;
+          font-size: 9px;
+          opacity: 1;
+          color: $placeholderTopColor;
+        }
+        .changeInput {
+          position: absolute;
+          top: 16.2px;
+          right: -132.3px;
+          width: 86.4px;
+          height: 18.9px;
+          font-size: 11.7px;
+          color: #0080ff;
+          cursor: pointer;
+        }
+      }
+      .requiredFieldEmail {
+        display: none;
+      }
+      .emailNotValid {
+        display: none;
+      }
+    }
+    .passwordC {
+      width: 282.6px;
+      height: 52px;
+      margin-top: 4.05px;
+
+      label {
+        position: relative;
+        display: block;
+
+        .passwordVisibilityIcon {
+          position: absolute;
+          right: 15.39px;
+          top: 20.412px;
+          font-size: 11.7px;
+          cursor: pointer;
+          display: none;
+        }
+
+        input {
+          position: relative;
+          font-size: 11.7px;
+          width: 282.6px;
+          height: 52px;
+          padding-left: 17.01px;
+          padding-top: 13.77px;
+          border-radius: 6px;
+          border: 1px solid $borderInputColor;
+          background-color: $inputBgColorBlur;
+          outline: none;
+
+          &:focus {
+            background-color: #fff;
+          }
+          //   &:not([value=""]):not(:focus) {
+          //     background-color: #fff;
+          //   }
+
+          &:focus ~ .passwordPlaceholder,
+          &:not([value=""]):not(:focus) ~ .passwordPlaceholder {
+            position: absolute;
+            top: 10.53px;
+            left: 17.01px;
+            font-size: 9px;
+            opacity: 1;
+            color: $placeholderTopColor;
+          }
+        }
+
+        .passwordPlaceholder {
+          position: absolute;
+          top: 10.53px;
+          left: 17.01px;
+          font-size: 9px;
+          opacity: 1;
+          color: $placeholderTopColor;
+        }
+        .changeInput {
+          position: absolute;
+          top: 16.2px;
+          right: -132.3px;
+          width: 86.4px;
+          height: 18.9px;
+          font-size: 11.7px;
+          color: #0080ff;
+          cursor: pointer;
+        }
+      }
+      .passworIndicatorC {
+        height: 24.3px;
+        padding-top: 4.05px;
+        font-size: 9.72px;
+        color: $placeholderTopColor;
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+
+        span:nth-child(1) {
+          margin-left: 17.01px;
+        }
+        .passwordWeak {
+          display: none;
+          color: $warningRed;
+          margin-right: 14.58px;
+        }
+        .passwordStrong {
+          display: none;
+          color: $green;
+          margin-right: 14.58x;
+        }
+      }
+    }
+
+    .deleteUserDataButton {
+      position: absolute;
+      bottom: -93.6px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 261px;
+      height: 39.6px;
+      background-color: #f7ebeb;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 11.7px;
+      font-weight: 500;
+      color: #dd5656;
+      user-select: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.warningBorder {
+  border: 1px solid $warningRed !important;
+}
+.requiredFieldShow,
+.numberNotValidShow,
+.emailNotValidShow {
+  display: inline-block !important;
+  font-size: 9.72px;
+  color: $warningRed;
+  margin-top: 3.24px;
+  margin-left: 17.01px;
+}
+.passwordWeakShow {
+  display: inline-block !important;
+}
+.passwordStrongShow {
+  display: inline-block !important;
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 662px;
+    display: flex;
+    flex-direction: column;
+    .left {
+      width: 662px;
+      .title {
+        width: 662px;
+        height: 23px;
+      }
+      .subtitle {
+        width: 662px;
+        height: 34.8px;
+        line-height: 18.5px;
+        margin-top: 5px;
+      }
+    }
+    .right {
+      margin: auto;
+
+      .deleteUserDataButton {
+        position: absolute;
+        bottom: -84.6px;
+      }
+    }
+  }
+}

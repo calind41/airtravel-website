@@ -1,0 +1,1140 @@
+// 90% of originalSize
+.container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  margin-top: 80px;
+  min-height: 297.9px;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-size: 25.2px;
+    font-size: 19px;
+    width: 91.78vw;
+    margin: auto;
+    margin-top: 30px;
+    font-weight: 400;
+    height: 41.4px;
+    color: #212121;
+  }
+  .companyName {
+    font-size: 25.2px;
+    font-size: 19px;
+    font-weight: 500;
+    width: 91.78vw;
+    margin: auto;
+
+    color: #212121;
+    margin-top: 5px;
+    height: 41.4px;
+  }
+  .aboutText {
+    font-size: 11.7px;
+    width: 91.78vw;
+    min-height: 207px;
+    line-height: 25.2px;
+    color: #3b3b3b;
+    margin: auto;
+    margin-top: 19px;
+  }
+
+  .companyInformationC {
+    margin: auto;
+    margin-top: 41px;
+    width: 91.78vw;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 6px;
+    .wrapper {
+      width: 91.78vw;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      .logo {
+        width: 99px;
+        height: 36px;
+        margin-top: 32px;
+        margin-bottom: 0;
+        svg {
+          width: 99px;
+          height: 36px;
+        }
+      }
+
+      & > .info {
+        width: 176.4px;
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .address,
+        .phoneNr,
+        .nrPlanes,
+        .IATAcode,
+        .websiteUrl {
+          height: 36px !important;
+        }
+
+        .address .title,
+        .nrPlanes .title,
+        .websiteUrl .title {
+          font-size: 9px;
+          font-weight: 500;
+          color: #797c80;
+          height: 15.3px;
+          width: 100%;
+          margin-top: 0;
+        }
+
+        .phoneNr .title,
+        .IATAcode .title {
+          font-size: 9px;
+          font-weight: 500;
+          color: #797c80;
+          height: 15.3px;
+          width: 100%;
+          margin-top: 0;
+        }
+        .phoneNr .value,
+        .IATAcode .value {
+          font-size: 11.7px;
+          color: #151a1c;
+          height: 18.9px;
+        }
+        .phoneNr {
+          width: 108px;
+        }
+        .IATAcode {
+          width: 108px;
+          margin-top: -4.5px;
+        }
+        .address .value,
+        .nrPlanes .value,
+        .websiteUrl .value {
+          font-size: 11.7px;
+          color: #151a1c;
+        }
+        .address {
+          width: 151.2px;
+          height: 53.1px !important;
+
+          .value {
+            height: 42.3px;
+            margin-top: 2.7px;
+          }
+        }
+        .nrPlanes {
+          width: 133.2px;
+          margin-top: -4.5px;
+          .value {
+            height: 18.9px;
+            margin-top: 2.7px;
+          }
+        }
+        .websiteUrl {
+          width: 178.2px;
+          .value {
+            height: 18.9px;
+            color: #297acc;
+            margin-top: 1.8px;
+          }
+        }
+      }
+    }
+  }
+
+  .ratingsHeader {
+    margin: auto;
+    margin-top: 50px;
+    width: 91.78vw;
+
+    height: 41.4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 25.2px;
+      font-size: 19px;
+      font-weight: 500;
+      color: #212121;
+      height: 41.4px;
+      height: 32px;
+    }
+    .allReviews {
+      font-size: 10.4px;
+      color: #616366;
+      height: 18.9px;
+    }
+  }
+  .ratings {
+    width: 91.78vw;
+    height: 388px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-top: 30.1px;
+
+    .meanRating {
+      .ratingContainer {
+        width: 91.78vw;
+        height: 230px;
+        background-color: #fff;
+        border-radius: 6px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        .rating {
+          position: relative;
+          width: 192.6px;
+          height: 70px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          // margin: auto;
+          margin-top: 41px;
+          .note {
+            position: absolute;
+            right: 0;
+            bottom: 15px;
+            font-size: 10px;
+            height: 15.3px;
+          }
+          .title {
+            width: 100%;
+            height: 15px;
+            font-size: 11.7px;
+            margin-top: 0;
+          }
+          .valueC {
+            width: 100%;
+            display: flex;
+            position: relative;
+            bottom: 10px;
+            flex-direction: column;
+            justify-content: space-around;
+            .value {
+              font-size: 33.3px;
+            }
+            .slider {
+              display: inline-block;
+              width: 126px;
+              width: 100%;
+              height: 2.7px;
+              background-color: #c2c7cc;
+              border-radius: 3px;
+              position: relative;
+              top: 5px;
+              span {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 90%;
+                height: 2.7px;
+                background-color: #0080ff;
+                border-radius: 3px;
+              }
+            }
+          }
+        }
+
+        .rateCta {
+          width: 192.6px;
+          height: 78.3px;
+          display: flex;
+          flex-direction: column;
+          margin: auto;
+          margin-top: 41px;
+          .title {
+            font-size: 9px;
+            height: 15.3px;
+          }
+          .cta {
+            width: 192.6px;
+            height: 39.6px;
+            border-radius: 6px;
+            border: 1px solid #c4c9cf;
+            font-size: 11.7px;
+            color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .ratingSlideWrapper {
+      width: 91.78vw;
+      overflow: scroll;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .ratingSlider {
+        display: flex;
+        justify-content: space-between;
+        width: 1967px;
+        .ratingContainer {
+          width: 261px;
+          height: 126px;
+          min-height: 126px;
+          background-color: #fff;
+          border-radius: 6px;
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 9px;
+          .rating {
+            width: 192.6px;
+            height: 66.6px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin: auto;
+            margin-top: 0;
+            .title {
+              font-size: 11.7px;
+            }
+            .valueC {
+              width: 192.6px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .value {
+                font-size: 33.3px;
+              }
+              .slider {
+                display: inline-block;
+                width: 126px;
+                height: 2.7px;
+                background-color: #c2c7cc;
+                border-radius: 3px;
+                position: relative;
+                span {
+                  display: inline-block;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 108px;
+                  height: 2.7px;
+                  background-color: #0080ff;
+                  border-radius: 3px;
+                }
+              }
+            }
+          }
+
+          .rateCta {
+            width: 192.6px;
+            height: 78.3px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            margin-top: 49.5px;
+            .title {
+              font-size: 9px;
+              height: 15.3px;
+            }
+            .cta {
+              width: 192.6px;
+              height: 39.6px;
+              border-radius: 6px;
+              border: 1px solid #c4c9cf;
+              font-size: 11.7px;
+              color: #000;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              outline: none;
+              margin-top: 12.6px;
+            }
+          }
+        }
+      }
+    }
+    .dots {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -19px;
+      margin: auto;
+      height: 8px;
+      width: 86px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      span {
+        background-color: rgba(0, 0, 0, 0.2);
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        cursor: pointer;
+      }
+      .selectedDot {
+        background-color: #000 !important;
+      }
+    }
+  }
+
+  .directFlightsHeader {
+    width: 91.78vw;
+    height: 41.4px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #212121;
+    margin: auto;
+    margin-top: 66px;
+  }
+  .directFlightsC {
+    width: 91.78vw;
+    height: 490.8px;
+    border-radius: 6px;
+    margin: auto;
+    margin-top: 12px;
+    .wrapper {
+      height: 490.8px;
+
+      & > div:nth-child(1) {
+        margin-top: 0px !important;
+      }
+    }
+
+    .directFlightC {
+      width: 91.78vw;
+      height: 39.6px;
+      background-color: #fff;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10.8px;
+      margin: auto;
+      border-radius: 6px;
+      margin-top: 20px;
+      cursor: pointer;
+      .route {
+        width: 140px;
+        position: relative;
+        left: 18.9px;
+      }
+
+      .bookBtn {
+        width: 41px;
+        height: 39.6px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        cursor: pointer;
+        color: #797c80;
+        background-color: #fff;
+        position: relative;
+        right: 18.9px;
+      }
+    }
+    .selectedFlight {
+      background-color: #f2f5fa;
+      .bookBtn {
+        background-color: #2b95ff;
+        color: #fff;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  .whereIsFlyingHeader {
+    width: 91.78vw;
+    width: 257px !important;
+    margin: auto;
+    margin-top: 44px;
+    height: 41.4px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #212121;
+  }
+  .whereIsFlying {
+    width: 91.78vw;
+    min-height: 243px;
+    margin: auto;
+    margin-top: 31px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+
+    .cityCard {
+      width: 91.78vw;
+      width: 257px !important;
+      height: 108px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .image {
+        width: 73.8px;
+        height: 72px;
+        border-radius: 4px;
+        img {
+          width: 73.8px;
+          height: 72px;
+          border-radius: 4px;
+        }
+      }
+      & > div:nth-child(2) {
+        width: 140.7px;
+        height: 72px;
+
+        & > div:nth-child(1) {
+          color: #797c80;
+          font-size: 10.8px;
+          margin-top: 8.1px;
+        }
+        & > div:nth-child(2) {
+          font-size: 12.6px;
+          margin-top: 4.5px;
+        }
+      }
+    }
+  }
+  .travelRulesWrapper {
+    // height: 3200px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+
+    .travelRulesHeader {
+      margin: auto;
+      // margin-top: 304px;
+      width: 91.78vw;
+      height: 41.4px;
+      font-size: 19px;
+      font-weight: 500;
+      color: #212121;
+    }
+    .travelRulesContainer {
+      margin: auto;
+      margin-top: 10px;
+      width: 91.78vw;
+      max-height: 3120px;
+      font-size: 11.7px;
+      line-height: 27px;
+      color: #3b3b3b;
+      overflow: hidden;
+      ul {
+        li {
+          margin-left: 13.5px;
+        }
+      }
+    }
+    .showFullText {
+      width: 91.78vw;
+      margin: auto;
+      span {
+        color: #0080ff;
+        font-size: 13px;
+        width: 102px;
+        border-bottom: 1px solid #0080ff;
+      }
+    }
+    .hideFullText {
+      height: 400px !important;
+    }
+  }
+  .similarAirCwrapper {
+    .similarAirCheader {
+      margin: auto;
+      margin-top: 50px;
+      width: 91.78vw;
+      height: 41.4px;
+      font-size: 25.2px;
+      font-size: 19px;
+      font-weight: 500;
+      color: #212121;
+    }
+    .similarAirCompaniesC {
+      margin: auto;
+      margin-top: 31px;
+      width: 91.78vw;
+      height: 45px;
+      display: flex;
+      div {
+        margin-right: 9px;
+      }
+    }
+  }
+  .clientFeedbackHeader {
+    margin: auto;
+    margin-top: 80px;
+    width: 91.78vw;
+    height: 41.4px;
+
+    font-size: 19px;
+    font-weight: 500;
+    color: #212121;
+  }
+  .clientFeedbackC {
+    width: 91.78vw;
+    margin: auto;
+    margin-top: 20px;
+
+    min-height: 230.4px;
+    .clientFeedbackCardC {
+      width: 91.78vw;
+      min-height: 510px;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      border-radius: 6px;
+      margin-bottom: 18px;
+
+      aside {
+        width: 100%;
+        height: 154px;
+        background-color: #e9edf5;
+        border-radius: 6px 6px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .wrapper {
+          display: flex;
+          justify-content: space-between;
+          width: 90%;
+          position: relative;
+          top: 20px;
+          .name {
+            width: 162px;
+            height: 76.5px;
+
+            & > div:nth-child(1) {
+              font-size: 13px;
+              font-weight: 500;
+            }
+            .date {
+              font-size: 10.8px;
+              color: #797b80;
+              margin-top: 7.2px;
+            }
+          }
+          .rating {
+            width: 162px;
+            height: 76.5px;
+            .value {
+              font-size: 13px;
+              font-weight: bold;
+              display: flex;
+              justify-content: flex-end;
+            }
+            & > div:nth-child(2) {
+              font-size: 10.8px;
+              margin-top: 7.2px;
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+        }
+        .toggleContentButton {
+          display: flex;
+          width: 90%;
+          height: 39.6px;
+          border: 1px solid #c6c8cc;
+          border-radius: 4px;
+          align-items: center;
+          font-size: 11.7px;
+          position: relative;
+          bottom: 20px;
+          cursor: pointer;
+          & > span:nth-child(1) {
+            margin-left: 17.1px;
+          }
+          & > span:nth-child(2) {
+            position: absolute;
+            right: 20.7px;
+            margin-left: 31.5px;
+            margin-bottom: 3.6px;
+            transition: 0.2s ease all;
+          }
+        }
+      }
+      main {
+        width: 91.78vw;
+        min-height: 370px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        header {
+          width: 91.78vw;
+          height: 58.5px;
+
+          display: flex;
+          // justify-content: space-between;
+          & > div:nth-child(1) {
+            width: 90%;
+            margin: auto;
+            height: 58.5px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            padding-top: 14.4px;
+          }
+        }
+        .text {
+          width: 90%;
+          min-height: 282px;
+          font-size: 11.7px;
+          color: #3b3b3b;
+          line-height: 25.2px;
+          margin: auto;
+          // margin-bottom: 33.3px;
+        }
+        .ratings {
+          width: 90%;
+          height: 210px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          // margin: auto;
+          margin-top: 16.2px;
+
+          & > div {
+            width: 99px;
+            height: 35.1px;
+
+            & > div:nth-child(1) {
+              font-size: 13px;
+              font-weight: bold;
+            }
+            & > div:nth-child(2) {
+              font-size: 10.8px;
+              padding-top: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .popularDestinationsWrapper {
+    min-height: 180px;
+    position: relative;
+    margin-top: -140px;
+  }
+  .subscribeDiscountWrapper {
+    position: absolute;
+    width: 261px;
+    width: 290px;
+    height: 284.4px;
+    right: 0;
+    top: -75px;
+    top: 0;
+  }
+  .navigationMenuC {
+    // do not resize !!
+    position: absolute;
+    top: 187px;
+    right: 0px;
+    width: 290px;
+    height: 571x;
+    background-color: #e9edf5;
+    border-radius: 6px;
+    margin-top: 162px;
+    .heading {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      padding-top: 32px;
+      span {
+        margin-bottom: 1px;
+        margin-left: 17px;
+        font-size: 17px;
+        font-weight: 500;
+      }
+    }
+    & > div:nth-child(2) {
+      margin-top: 29px;
+    }
+    & > div:not(:first-child) {
+      font-size: 12px;
+      width: 250px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      border-radius: 6px;
+      border: 1px solid #c2c6cc;
+      margin-left: 20px;
+      margin-bottom: 15px;
+      padding-left: 16px;
+      cursor: pointer;
+      position: relative;
+      a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-decoration: none;
+        color: #000;
+        width: 100%;
+        height: 100%;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+      }
+    }
+    .selected {
+      border: none !important;
+      background-color: #fff;
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    .title {
+      width: 344.17px;
+    }
+    .companyName {
+      width: 344.17px;
+    }
+    .aboutText {
+      width: 344.17px;
+    }
+
+    .companyInformationC {
+      width: 344.17px;
+
+      .wrapper {
+        width: 344.17px;
+      }
+    }
+
+    .ratingsHeader {
+      width: 344.17px;
+    }
+    .ratings {
+      width: 344.17px;
+      .meanRating {
+        .ratingContainer {
+          width: 344.17px;
+        }
+      }
+
+      .ratingSlideWrapper {
+        width: 91vw;
+      }
+    }
+
+    .directFlightsHeader {
+      width: 344.17px;
+    }
+    .directFlightsC {
+      width: 344.17px;
+      .directFlightC {
+        width: 344.17px;
+      }
+    }
+
+    .whereIsFlyingHeader {
+      width: 344.17px;
+    }
+    .whereIsFlying {
+      width: 344.17px;
+
+      .cityCard {
+        width: 344.17px;
+      }
+    }
+    .travelRulesWrapper {
+      margin-top: 0;
+
+      .travelRulesHeader {
+        width: 344.17px;
+      }
+      .travelRulesContainer {
+        width: 344.17px;
+      }
+      .showFullText {
+        width: 344.17px;
+      }
+    }
+    .similarAirCwrapper {
+      .similarAirCheader {
+        width: 344.17px;
+      }
+      .similarAirCompaniesC {
+        width: 344.17px;
+      }
+    }
+    .clientFeedbackHeader {
+      width: 344.17px;
+    }
+    .clientFeedbackC {
+      width: 344.17px;
+
+      .clientFeedbackCardC {
+        width: 344.17px;
+        min-height: 450px;
+
+        main {
+          width: 344.17px;
+          min-height: 200px !important;
+
+          .text {
+            min-height: 202px;
+            height: 200px;
+          }
+          .ratings {
+            padding-bottom: 40px;
+          }
+          header {
+            width: 344.17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .container {
+    .title {
+      width: 83.13vw;
+    }
+    .companyName {
+      width: 83.13vw;
+    }
+    .aboutText {
+      width: 83.13vw;
+    }
+
+    .companyInformationC {
+      width: 344.16px;
+
+      .wrapper {
+        width: 344.16px;
+      }
+    }
+
+    .ratingsHeader {
+      width: 83.13vw;
+    }
+    .ratings {
+      width: 83.13vw;
+
+      .meanRating {
+        .ratingContainer {
+          width: 344.16px;
+        }
+      }
+
+      .ratingSlideWrapper {
+        width: 83.13vw;
+      }
+    }
+
+    .directFlightsHeader {
+      width: 83.13vw;
+    }
+    .directFlightsC {
+      width: 83.13vw;
+
+      .directFlightC {
+        width: 83.13vw;
+      }
+    }
+
+    .whereIsFlyingHeader {
+      width: 83.13vw;
+    }
+    .whereIsFlying {
+      width: 83.13vw;
+
+      .cityCard {
+        width: 83.13vw;
+      }
+    }
+    .travelRulesWrapper {
+      margin-top: 0;
+
+      .travelRulesHeader {
+        width: 83.13vw;
+      }
+      .travelRulesContainer {
+        width: 83.13vw;
+      }
+      .showFullText {
+        width: 83.13vw;
+      }
+    }
+    .similarAirCwrapper {
+      .similarAirCheader {
+        width: 83.13vw;
+      }
+      .similarAirCompaniesC {
+        width: 83.13vw;
+      }
+    }
+    .clientFeedbackHeader {
+      width: 83.13vw;
+    }
+    .clientFeedbackC {
+      width: 83.13vw;
+
+      .clientFeedbackCardC {
+        width: 83.13vw;
+
+        main {
+          width: 83.13vw;
+
+          header {
+            width: 83.13vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    .title {
+      width: 86vw;
+    }
+    .companyName {
+      width: 86vw;
+    }
+    .aboutText {
+      width: 86vw;
+    }
+
+    .ratingsHeader {
+      width: 86vw;
+      width: 344.16px;
+    }
+    .ratings {
+      width: 86vw;
+      .meanRating {
+        .ratingContainer {
+          width: 344.16px;
+          margin: auto;
+          // width: 430px;
+        }
+      }
+
+      .ratingSlideWrapper {
+        width: 86vw;
+      }
+    }
+
+    .directFlightsHeader {
+      width: 86vw;
+    }
+    .directFlightsC {
+      width: 86vw;
+
+      .directFlightC {
+        width: 86vw;
+      }
+    }
+
+    .whereIsFlyingHeader {
+      width: 86vw;
+    }
+    .whereIsFlying {
+      width: 86vw;
+
+      .cityCard {
+        width: 86vw;
+      }
+    }
+    .travelRulesWrapper {
+      margin-top: 0;
+
+      .travelRulesHeader {
+        width: 86vw;
+      }
+      .travelRulesContainer {
+        width: 86vw;
+      }
+      .showFullText {
+        width: 86vw;
+      }
+    }
+    .similarAirCwrapper {
+      .similarAirCheader {
+        width: 86vw;
+      }
+      .similarAirCompaniesC {
+        width: 86vw;
+      }
+    }
+    .clientFeedbackHeader {
+      width: 86vw;
+    }
+    .clientFeedbackC {
+      width: 86vw;
+
+      .clientFeedbackCardC {
+        width: 86vw;
+        min-height: 410px;
+
+        main {
+          width: 86vw;
+          min-height: 180px !important;
+
+          .text {
+            min-height: 180px;
+            height: 180px;
+          }
+          .ratings {
+            width: 370px !important;
+            margin-left: 5%;
+          }
+
+          header {
+            width: 86vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 598px) {
+  .container {
+    .whereIsFlyingHeader {
+      width: 86vw !important;
+    }
+    .whereIsFlying {
+      justify-content: space-between;
+
+      .cityCard {
+        width: 41vw !important;
+      }
+    }
+
+    .travelRulesWrapper {
+      margin-top: 0;
+    }
+  }
+}

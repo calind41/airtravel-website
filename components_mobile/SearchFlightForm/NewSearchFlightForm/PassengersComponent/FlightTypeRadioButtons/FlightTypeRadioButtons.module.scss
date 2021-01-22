@@ -1,0 +1,53 @@
+.container {
+  width: 90%;
+  height: 115px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .radioButtonContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .rb {
+      width: 18px;
+      height: 18px;
+      border: 1px solid #a0b0b9;
+      border-radius: 50%;
+      background-color: #fff;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+    .type {
+      pointer-events: none;
+      font-size: 14px;
+      font-weight: 600;
+      margin-left: 10px;
+      transition: all 0.3s ease;
+    }
+  }
+  .selectedRB {
+    .rb {
+      position: relative;
+      border: 1px solid #0c73fe;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:after {
+        content: "";
+        position: absolute;
+
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #0c73fe;
+      }
+    }
+    .type {
+      color: #0c73fe;
+    }
+  }
+}

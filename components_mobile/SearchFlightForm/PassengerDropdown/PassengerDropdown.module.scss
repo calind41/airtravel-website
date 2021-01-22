@@ -1,0 +1,36 @@
+.passengerC {
+  position: relative;
+  width: 84%;
+  height: 54px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f7f9fa;
+  border-radius: 6px;
+  border: 1px solid #e1e5eb;
+  transition: 0.2s ease-in-out;
+  color: #000;
+  font-size: 13px;
+
+  outline: none;
+  & > div {
+    width: 100%;
+
+    & > span:nth-child(2) {
+      position: relative;
+      right: 6px;
+      width: 80px;
+      display: inline-block;
+      left: 5px;
+    }
+  }
+
+  .nrP {
+    margin-left: 12px;
+  }
+}
+
+.positionLeft {
+  right: 8.5px;
+}

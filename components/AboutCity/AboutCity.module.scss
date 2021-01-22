@@ -1,0 +1,111 @@
+.wrapper {
+  width: 964px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  .subscribeDiscountWrapper {
+    position: relative;
+    right: 293px;
+    top: -260px;
+  }
+  .aboutCityContainer {
+    width: 964px;
+    min-height: 1400px;
+    margin: auto;
+    margin-top: -200px;
+    .ticketPrice {
+      width: 705px;
+      height: 87px;
+      color: #212121;
+      .title {
+        font-size: 21px;
+        font-weight: 400;
+        font-weight: 500;
+      }
+      .value {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+
+    .chartWrapper {
+      margin-top: 41px;
+      width: 705px;
+      header {
+        font-size: 21px;
+        font-weight: 500;
+
+        color: #212121;
+        margin-bottom: 30px;
+      }
+    }
+
+    .faqContainer {
+      width: 705px;
+      display: flex;
+      flex-direction: column;
+
+      & > div {
+        margin-top: 20px;
+        .title {
+          font-size: 18px;
+          color: #212121;
+        }
+        .text {
+          margin-top: 10px;
+          font-size: 11px;
+          color: #3c3c3c;
+          line-height: 23px;
+        }
+      }
+    }
+
+    .popularDestinationsWrapper {
+      margin-top: 104px;
+      min-height: 200px;
+      h1 {
+        font-size: 21px;
+        font-weight: 400;
+        font-weight: 500;
+
+        color: #212121;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .wrapper {
+    width: 662px;
+    .subscribeDiscountWrapper {
+      display: none;
+    }
+    .aboutCityContainer {
+      width: 662px;
+
+      .ticketPrice {
+        width: 662px;
+      }
+
+      .chartWrapper {
+        width: 662px;
+      }
+
+      .faqContainer {
+        width: 662px;
+      }
+
+      .popularDestinationsWrapper {
+        
+        h1 {
+          font-size: 21px;
+          font-weight: 400;
+          font-weight: 500;
+
+          color: #212121;
+        }
+      }
+    }
+  }
+}

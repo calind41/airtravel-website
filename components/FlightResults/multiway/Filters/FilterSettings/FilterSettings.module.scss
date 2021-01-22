@@ -1,0 +1,254 @@
+.container {
+  // position: absolute;
+  // bottom: -100vh;
+  position: relative;
+
+  width: 100%;
+  height: 100vh !important;
+  background-color: rgba(255, 255, 255, 0.7);
+  will-change: opacity, transform;
+  opacity: 1;
+  transform: translateY(0);
+  overflow: hidden;
+  transform-origin: top;
+  z-index: 99999999999 !important;
+
+  .outerWrapper {
+    width: 100%;
+    min-height: 325px;
+    background-color: #3e4757;
+
+    .wrapper {
+      width: 1106px;
+      display: block;
+      margin: auto;
+      padding-top: 28px;
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .flightInfo {
+          .top {
+            display: flex;
+            align-items: center;
+            .planeIcon {
+              position: relative;
+              top: 3px;
+              svg {
+                width: 23px;
+                height: 23px;
+                path {
+                  fill: #fff;
+                }
+              }
+            }
+            .planeIcon2 {
+              svg {
+                transform: rotate(180deg);
+              }
+            }
+            .fromTo {
+              margin-left: 14px;
+              margin-bottom: 2px;
+              font-size: 17px;
+              line-height: 24px;
+              font-weight: 500;
+              letter-spacing: 0;
+              color: #fff;
+            }
+          }
+          .bottom {
+            margin-left: 37px;
+            margin-top: -1px;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #959ba4;
+            letter-spacing: 0;
+          }
+        }
+        .buttonWrapperRight {
+          display: flex;
+          .cancelAllFiltersButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 4px;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: transparent;
+            transition: background-color 0.3s ease;
+            color: #fff;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 400;
+            letter-spacing: 0;
+            cursor: pointer;
+            &:hover {
+              background-color: rgba(228, 236, 244, 0.2);
+            }
+          }
+          .showAllOptions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 226px;
+            height: 37px;
+
+            width: 152px;
+            margin-left: 8px;
+            position: relative;
+            transition-property: background-color, border, box-shadow;
+            transition-duration: 0.25s;
+            transition-timing-function: ease;
+            color: #333;
+            border: 1px solid #ffdd2d;
+            background-color: #ffdd2d;
+            cursor: pointer;
+            padding: 8px 11px 6px;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 400;
+            letter-spacing: 0;
+            border-radius: 4px;
+
+            &:hover {
+              border-color: #fcc521;
+              background-color: #fcc521;
+            }
+          }
+        }
+      }
+
+      .mainSettings {
+        width: 1069px;
+        margin: auto;
+        // display: grid;
+        // grid-template-columns: auto auto auto auto;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        margin-left: 36px;
+        padding-bottom: 22px;
+        border-bottom: 1px solid hsla(0, 0%, 100%, 0.1);
+      }
+      .bottomSettings {
+        width: 1069px;
+        margin: auto;
+        margin-top: 19px;
+        margin-left: 36px;
+        padding-bottom: 28px;
+        display: flex;
+        justify-content: space-between;
+        .baggage {
+          width: 484px;
+        }
+        .seller {
+          width: 484px;
+        }
+      }
+    }
+  }
+}
+
+.selected {
+  border-color: #ffdd2d !important;
+}
+.animateSlideUp {
+  animation: slideUp 0.3s cubic-bezier(0.55, 0.25, 0, 0.99) forwards;
+}
+.animateSlideDown {
+  animation: slideDown 0.3s cubic-bezier(0.55, 0.25, 0, 0.99) forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0.2;
+  }
+}
+
+@media screen and (max-width: 1372px) {
+  .container {
+    .outerWrapper {
+      .wrapper {
+        width: 826px;
+
+        .mainSettings {
+          width: 790px;
+        }
+        .bottomSettings {
+          width: 790px;
+
+          .baggage {
+            width: 484px;
+          }
+          .seller {
+            width: 484px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1036px) {
+  .container {
+    .outerWrapper {
+      .wrapper {
+        width: 95.11vw;
+
+        .mainSettings {
+          width: calc(95.11vw - 36px);
+        }
+        .bottomSettings {
+          width: calc(95.11vw - 36px);
+
+          .baggage {
+            width: calc(46.718vw - 18px);
+          }
+          .seller {
+            width: calc(46.718vw - 18px);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 857px) {
+  .container {
+    .outerWrapper {
+      .wrapper {
+        width: 795px;
+
+        .mainSettings {
+          width: 759px;
+        }
+        .bottomSettings {
+          width: 759px;
+
+          .baggage {
+            width: 379.5px;
+          }
+          .seller {
+            width: 379.5px;
+          }
+        }
+      }
+    }
+  }
+}

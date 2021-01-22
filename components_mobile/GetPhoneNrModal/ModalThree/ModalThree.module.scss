@@ -1,0 +1,325 @@
+.container {
+  position: absolute;
+  width: 100%;
+  height: 70vh;
+  height: 505px !important;
+  max-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 25px 25px 0 0;
+  background-color: #fff;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.15);
+  .closeIcon {
+    width: 89.77%;
+    margin: auto;
+    margin-top: 30px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: flex-end;
+    span {
+      width: 32px;
+      height: 32px;
+      border-radius: 100%;
+      background-color: #ececec;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        fill: #000;
+        width: 10px !important;
+        height: 10px !important;
+      }
+    }
+
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+
+  .phoneLC {
+    width: 89.77%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    svg {
+      width: 108px;
+      height: 108px;
+    }
+  }
+  .text {
+    width: 89.77%;
+    margin: auto;
+    margin-top: 30px;
+    .title {
+      // width: 320px;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 32px;
+      letter-spacing: 0.04em;
+      color: #000;
+    }
+    .subtitle {
+      margin-top: 14px;
+      // width: 230px;
+      color: #898989;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+  .phoneInputContainer {
+    width: 89.77%;
+    margin: auto;
+    margin-top: 27px;
+    // background-color: #fff;
+    min-height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .phoneInput {
+      // margin-top: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+      .inputContainerClass {
+        width: 100% !important;
+        height: 48px;
+        display: flex;
+        justify-content: space-between;
+        outline: none !important;
+        // border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        // border-collapse: collapse !important;
+
+        .inputClass {
+          height: 46px;
+          background-color: #f8f8f8;
+          width: 80%;
+          border: 1px solid #dbdbdb !important;
+          border-collapse: collapse !important;
+          //   border: none !important;
+          //   bottom: 0.5px;
+          margin-left: 20%;
+          border-radius: 0 5px 5px 0;
+          outline: none !important;
+          padding-left: 10px !important;
+          color: #000;
+          font-size: 13px;
+
+          &:focus {
+            // border: none !important;
+            border: 1px solid #0275d8 !important;
+            // border: 1px solid red !important;
+            box-shadow: none !important;
+          }
+        }
+        .inputClassSuccess {
+          height: 46px;
+          background-color: #f8f8f8;
+          width: 80%;
+          border: 1px solid #5cb85c !important;
+          margin-left: 20%;
+          border-radius: 0 5px 5px 0;
+          outline: none !important;
+          padding-left: 10px !important;
+          color: #000;
+          font-size: 13px;
+
+          &:focus {
+            // border: none !important;
+            border: 1px solid #5cb85c !important;
+            // border: 1px solid red !important;
+            box-shadow: none !important;
+          }
+        }
+        .inputClassDanger {
+          height: 46px;
+          background-color: #f8f8f8;
+          width: 80%;
+          border: 1px solid #d9534f !important;
+          margin-left: 20%;
+          border-radius: 0 5px 5px 0;
+          outline: none !important;
+          padding-left: 10px !important;
+          color: #000;
+          font-size: 13px;
+
+          &:focus {
+            // border: none !important;
+            border: 1px solid #d9534f !important;
+            // border: 1px solid red !important;
+            box-shadow: none !important;
+          }
+        }
+        .inputClassDark {
+          height: 46px;
+          background-color: #020b20;
+          width: 80%;
+          border: 1px solid #313b52 !important;
+          border-collapse: collapse !important;
+          //   border: none !important;
+          //   bottom: 0.5px;
+          margin-left: 20%;
+          border-radius: 0 5px 5px 0;
+          outline: none !important;
+          padding-left: 10px !important;
+          color: #fff;
+          font-size: 13px;
+
+          &:focus {
+            // border: none !important;
+            border: 1px solid #0275d8 !important;
+            // border: 1px solid red !important;
+            box-shadow: none !important;
+          }
+        }
+        .inputClassSuccessDark {
+          height: 46px;
+          background-color: #020b20;
+          width: 80%;
+          border: 1px solid #5cb85c !important;
+          margin-left: 20%;
+          border-radius: 0 5px 5px 0;
+          outline: none !important;
+          padding-left: 10px !important;
+          color: #fff;
+          font-size: 13px;
+
+          &:focus {
+            // border: none !important;
+            border: 1px solid #5cb85c !important;
+            // border: 1px solid red !important;
+            box-shadow: none !important;
+          }
+        }
+        .inputClassDangerDark {
+          height: 46px;
+          background-color: #020b20;
+          width: 80%;
+          border: 1px solid #d9534f !important;
+          margin-left: 20%;
+          border-radius: 0 5px 5px 0;
+          outline: none !important;
+          padding-left: 10px !important;
+          color: #fff;
+          font-size: 13px;
+
+          &:focus {
+            // border: none !important;
+            border: 1px solid #d9534f !important;
+            // border: 1px solid red !important;
+            box-shadow: none !important;
+          }
+        }
+        .buttonClass {
+          display: flex;
+          justify-content: center;
+          background-color: #efefef;
+          border: none;
+          height: 46px;
+          width: 20%;
+          border-radius: 5px 0 0 5px;
+          border: 1px solid #dbdbdb;
+
+          &:hover {
+            background-color: #efefef;
+          }
+
+          &:hover * {
+            background-color: #efefef !important;
+          }
+          & *:hover {
+            background-color: #efefef !important;
+          }
+          & * {
+            background-color: #efefef !important;
+          }
+        }
+        .buttonClassDark {
+          display: flex;
+          justify-content: center;
+          background-color: transparent;
+          border: none;
+          height: 46px;
+          width: 20%;
+          border-radius: 5px 0 0 5px;
+          border: 1px solid #313b52;
+
+          &:hover {
+            background-color: #020b20;
+          }
+
+          &:hover * {
+            background-color: #020b20 !important;
+          }
+          & *:hover {
+            background-color: #020b20 !important;
+          }
+          & * {
+            background-color: #020b20 !important;
+          }
+        }
+        .dropdownClass {
+          background-color: #efefef;
+          position: absolute;
+          left: 0;
+          top: 40px;
+          height: 117px;
+          color: #000 !important;
+
+          & > *:hover {
+            background-color: #1d1e1f;
+          }
+          .PhoneInputCountrySelectArrow {
+            color: #fff !important;
+          }
+        }
+        .dropdownClassDark {
+          background-color: #efefef;
+          position: absolute;
+          left: 0;
+          top: 40px;
+          height: 117px;
+          color: #fff !important;
+
+          & > *:hover {
+            background-color: gray;
+          }
+          .PhoneInputCountrySelectArrow {
+            color: #fff !important;
+          }
+        }
+      }
+    }
+
+    .button {
+      width: 100%;
+      height: 46px !important;
+      background-color: #53bc77;
+      color: #fff;
+      font-size: 11.5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    width: 469.3px;
+  }
+}

@@ -1,0 +1,58 @@
+// 90% of originalSize
+.container {
+  width: 100%;
+  min-height: 686.7px;
+  margin-top: 50px;
+  .title {
+    font-size: 27px;
+    color: #333333;
+    margin: auto;
+    margin-bottom: 25.2px;
+    width: 964px;
+  }
+
+  .tabsWrapper {
+    width: 964px;
+    margin: auto;
+
+    .tabs {
+      width: 514.8px;
+      height: 32.4px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 0;
+      margin-top: 36px;
+      & > div {
+        font-size: 16.2px;
+        color: #797c80;
+        height: 27px;
+        cursor: pointer;
+        transition: 0.1s ease all;
+      }
+      .selectedTab {
+        font-weight: 500;
+        color: #333333;
+        border-bottom: 2px solid #0080ff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    .title {
+      width: 662px;
+    }
+
+    .tabsWrapper {
+      width: 662px;
+      margin: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    margin-top: 90px;
+  }
+}

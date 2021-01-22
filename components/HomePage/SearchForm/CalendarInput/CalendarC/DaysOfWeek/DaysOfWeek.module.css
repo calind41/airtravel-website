@@ -1,0 +1,33 @@
+.daysOfWeek {
+  position: absolute;
+  color: #fff;
+  width: 371px;
+  top: 75px;
+  right: 1px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.daysOfWeekSmall {
+  right: 25px;
+  top: 63px;
+}
+.daysOfWeek > div {
+  width: 24px;
+  color: #888888;
+  font-size: 12px;
+}
+.weekendDays {
+  font-weight: bold;
+}
+.positionTop {
+  top: 15px;
+}
+
+@media screen and (max-width: 795px) {
+  .daysOfWeekSmall {
+    top: 5px;
+  }
+  .daysOfWeekSmallSearchForm {
+    top: 63px;
+  }
+}

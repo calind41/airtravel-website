@@ -1,0 +1,28 @@
+.container {
+  width: 465px;
+  margin: auto;
+  margin-top: 74px;
+  display: flex;
+  justify-content: space-between;
+  .medium {
+    width: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover .text {
+      color: #ff9d1b;
+    }
+    &:hover .icon svg path {
+      fill: #ff9d1b;
+    }
+
+    .text {
+      font-size: 13px;
+      line-height: 32px;
+      color: #0c73fe;
+      margin-left: 7px;
+      margin-bottom: 1px;
+    }
+  }
+}

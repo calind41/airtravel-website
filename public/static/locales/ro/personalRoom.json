@@ -1,0 +1,54 @@
+{
+    "title": "Cabinet personal",
+    "myTickets": "Biletele mele",
+    "personalInfo": "Date personale",
+    "settings": "Setări",
+
+    "UserDataFormPopup-title": "Completați datele dvs. pentru o rezervare rapidă",
+    "UserDataFormPopup-placeholder1": "Prenume",
+    "UserDataFormPopup-placeholder2": "Nume",
+    "UserDataFormPopup-placeholder3": "Data de naștere",
+    "UserDataFormPopup-placeholder4": "Cetățenie",
+    "UserDataFormPopup-placeholder5": "Sex",
+    "UserDataFormPopup-placeholder6": "Seria Nr. Pașaport",
+    "UserDataFormPopup-placeholder7": "Data emiterii",
+    "UserDataFormPopup-placeholder8": "Valabil până la",
+    "UserDataFormPopup-placeholder9": "Salvează modificările",
+    "UserDataFormPopup-placeholder10": "Salvează",
+    "UserDataFormPopup-title-mobile": "Completarea datelor dvs.",
+
+
+    "UserTickets-title": "Biletele mele",
+    "BookingNr-title": "Număr de rezervare",
+    "AboutTicket-t1": "Pasageri",
+    "AboutTicket-t2": "Pasager",
+    "AboutTicket-t3": "Asigurare",
+    "AboutTicket-t4": "Fără asigurare",
+    "AboutTicket-t5": "Asigurare de cumpărare",
+    
+    "NoTickets-title": "Nu aveți nicio călătorie viitoare",
+    "NoTickets-subtitle": "Călătoriile dvs. vor fi afișate aici după rezervare.",
+    "NoTickets-button": "Găsiți bilete",
+
+    "UserPersonalData-t1": "Pasager",
+    "UserPersonalData-title": "Informații pasageri memorizați",
+    "UserPersonalData-subtitle": "Salvați informațiile despre pasageri pentru a evita reintrarea acestora. Rezervare rapidă fără probleme.",
+    "UserPersonalData-button": "Adăugați pasager",
+
+    "UserSettings-t1": "Confirmă",
+    "UserSettings-t2": "Editați",
+    "UserSettings-title": "Setările contului",
+    "UserSettings-subtitle": "Personalizați-vă setările contului, astfel încât să vă putem servi așa cum doriți.",
+    "UserSettings-phoneNrPlaceholder": "Număr de telefon",
+    "UserSettings-requiredField": "Câmp necesar",
+    "UserSettings-numberNotValid": "Număr greșit",
+    "UserSettings-emailPlaceholder": "E-mail",
+    "UserSettings-requiredFieldEmail": "Câmp necesar",
+    "UserSettings-emailNotValid": "Adresă invalidă",
+    "UserSettings-passwordPlaceholder": "Parola",
+    "UserSettings-forgotPassword": "Uitat?",
+    "UserSettings-passwordIndicator1": "Parolă slabă",
+    "UserSettings-passwordIndicator2": "Parolă puternică",
+    "UserSettings-deleteUserData": "Ștergerea contului"
+
+}

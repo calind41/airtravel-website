@@ -1,0 +1,178 @@
+.container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 96.84%;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  z-index: 100;
+  display: block;
+  overflow: hidden;
+
+  & > div:nth-child(1) {
+    font-size: 16px;
+    font-weight: 600;
+    height: 44px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    .closeIcon {
+      position: relative;
+      bottom: 3px;
+      right: 0;
+      height: 44px;
+      width: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .goBackIcon {
+      position: relative;
+      left: 0;
+    }
+  }
+
+  .wrapper {
+    width: 100% !important;
+    height: 80%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 50px;
+    margin: auto;
+
+    .chosenDates {
+      width: 155px;
+      margin: auto;
+      position: relative;
+      text-align: center;
+      font-size: 14px;
+      color: #000;
+      font-weight: 500;
+      & > span:nth-child(2) {
+        display: block;
+        color: #787b82;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+    }
+
+    .hLine {
+      border-top: 0.8px solid rgba(158, 158, 158, 0.4);
+      display: block;
+      width: 370.5px;
+      width: 399px;
+      left: 0px;
+      top: 93px;
+      height: 1px;
+      position: absolute;
+    }
+
+    .calendarC {
+      position: absolute !important;
+      top: 116px;
+      height: 100%;
+      width: 90%;
+      overflow: scroll;
+      left: 1px;
+      right: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      & > div:last-child {
+        margin-bottom: 100px;
+      }
+    }
+    .selectBtnContainer .nextBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13x;
+      font-weight: 500;
+      color: #fff;
+      background-color: #0080ff;
+      border: none;
+      height: 54px;
+      width: 100%;
+      cursor: pointer;
+      outline: none;
+      position: fixed;
+      z-index: 2000;
+      bottom: 0px;
+      span:nth-child(2) {
+        position: absolute;
+        right: 17.5px;
+        top: 15px;
+      }
+
+      &:after {
+        content: " ";
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.5;
+        z-index: 3;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    }
+
+    .activeNextBtn {
+      &:after {
+        background-color: transparent !important;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.slideLeft {
+  animation: slideLeftAnimation 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slideLeftAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    .wrapper {
+      width: 375px !important;
+
+      .hLine {
+        width: 375px;
+      }
+
+      .calendarC {
+        width: 336px;
+        left: 0px;
+      }
+      .selectBtnContainer .nextBtn {
+        position: fixed;
+        left: 0;
+      }
+    }
+  }
+}

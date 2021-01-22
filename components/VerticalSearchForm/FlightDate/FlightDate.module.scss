@@ -1,0 +1,62 @@
+.departingC {
+  position: relative;
+  height: 48px;
+  width: 286px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(33, 33, 33, 0);
+  transition: 0.2s ease-in-out;
+  font-size: 13px;
+  padding-left: 0px;
+  border-bottom: 1px solid #dfe3e6;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: 35px;
+    width: 1px;
+  }
+
+  & > span {
+    color: #151a1c;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 0px;
+  }
+  .departedHasValue {
+    opacity: 1;
+    color: #212121 !important;
+  }
+
+  & > svg {
+    width: 11.5px;
+    height: 11.5px;
+    border-radius: 20px;
+    transition: 0.2s ease;
+    margin-right: 19px;
+    visibility: hidden;
+  }
+
+  // -------------
+  .calendarPlaceholder {
+    position: absolute;
+    top: 3px;
+    left: 0px;
+    font-size: 9px;
+    opacity: 1;
+    color: #abadaf;
+    display: none;
+  }
+
+  // ------------
+}
+
+.widthClass {
+  width: 355px !important;
+}

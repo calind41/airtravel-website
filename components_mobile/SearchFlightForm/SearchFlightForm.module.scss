@@ -1,0 +1,188 @@
+.container {
+  width: 100%;
+
+  height: 100vh;
+  display: inline-block;
+  background-image: url("/images/lp_bg2_mob.png");
+  background-size: cover;
+  position: relative;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    background-color: #470084;
+    opacity: 0.05;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  header {
+    position: relative;
+    top: 180px;
+    width: 91.78vw;
+    height: 134px;
+    margin: auto;
+    color: #fff;
+    h1 {
+      font-size: 30px;
+      font-weight: 400;
+      span {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .formPortal {
+    display: flex;
+    width: 91.78vw;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #45494d;
+    font-size: 13px;
+    position: relative;
+    top: 265px;
+    margin: auto;
+    outline: none;
+    user-select: none;
+    border: none;
+    z-index: 2;
+  }
+}
+.containerAboutUs {
+  background: none;
+  background-image: none !important;
+  border-bottom: 1px solid #dadce0;
+  background-color: #fff;
+  height: 68px;
+  &:after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+  }
+  header {
+    color: #000;
+  }
+  display: flex;
+  align-items: center;
+}
+.formPortalInAboutUs {
+  height: 46px !important;
+  top: 0px !important;
+  background-color: #f2f5fa !important;
+  border: 1px solid #dadce0 !important;
+  justify-content: flex-start !important;
+  padding-left: 20px;
+}
+
+.searchFormC {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  height: 96.84%;
+  bottom: 0;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  align-items: center;
+  .wrapper {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .closeIcon {
+    position: absolute;
+    top: 23.5px;
+    right: 23.5px;
+    right: 4.4%;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+  }
+}
+
+//  ??
+.searchFormCinRes {
+  width: 1123px;
+  width: 1131px;
+  right: 10.5px;
+  top: 149px;
+  top: 58px;
+  border: 1px solid red;
+}
+
+.slideUp {
+  animation: slideUpAnimation 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.slideDown {
+  animation: slideDownAnimation 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slideUpAnimation {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideDownAnimation {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    background-image: url("/images/lp_bg2_mob.png");
+    background-size: cover;
+    background-position: center;
+    .formPortal {
+      width: 344.17px;
+    }
+    header {
+      width: 344.17px;
+    }
+  }
+}
+@media screen and (min-width: 414px) {
+  .container {
+    .formPortal {
+      width: 83.13vw;
+    }
+    header {
+      width: 83.13vw;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    .formPortal {
+      width: 86vw;
+    }
+    header {
+      width: 86vw;
+    }
+  }
+}
+@media screen and (min-width: 642px) {
+  .container {
+    background-image: url("/images/lp_bg2.png");
+    background-size: cover;
+    background-position: 35%;
+  }
+}

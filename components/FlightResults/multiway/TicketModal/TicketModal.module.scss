@@ -1,0 +1,450 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(51, 51, 51, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // z-index: 1000000001;
+  z-index: 100000000000000000 !important;
+
+  animation: opacityAnim 0.3s ease-out forwards;
+  .wrapper {
+    position: relative;
+    right: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    width: 640px;
+    height: 610px;
+    animation: slideUp 0.3s ease-out forwards;
+    padding-top: 41px;
+    padding-bottom: 41px;
+
+    .closeIcon {
+      cursor: pointer;
+      position: absolute;
+      transition-duration: 0.2s;
+      transition-timing-function: ease;
+      transition-property: background-color, color;
+      width: 24px;
+      height: 24px;
+      transform: none;
+      background: rgb(236, 241, 247);
+      border-radius: 50%;
+      right: 17px;
+      top: 17px;
+      svg {
+        pointer-events: none;
+        width: 24px;
+        height: 24px;
+        transform: rotate(45deg);
+        path {
+          pointer-events: none;
+          fill: rgb(23, 113, 230);
+        }
+      }
+    }
+    .main {
+      height: 396px;
+      height: 444px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      .flightDetails {
+        margin-top: 22px;
+        padding-left: 41px;
+        padding-right: 41px;
+        margin-bottom: 14px;
+        .top {
+          display: flex;
+          align-items: center;
+          .planeIcon {
+            position: relative;
+            top: 3px;
+            svg {
+              width: 23px;
+              height: 23px;
+              path {
+                fill: #000;
+              }
+            }
+          }
+          .planeIcon2 {
+            svg {
+              transform: rotate(180deg);
+            }
+          }
+          .fromTo {
+            margin-left: 14px;
+            margin-bottom: 2px;
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: 500;
+            letter-spacing: 0;
+          }
+        }
+        .bottom {
+          margin-left: 37px;
+          margin-top: -1px;
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 400;
+          color: #959ba4;
+          letter-spacing: 0;
+        }
+      }
+
+      .booking {
+        margin-top: 33px;
+        display: flex;
+        justify-content: space-between;
+        padding-right: 41px;
+        padding-left: 41px;
+        .bookingLeft {
+          .title {
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: 500;
+            letter-spacing: 0;
+            margin-bottom: 4px;
+          }
+          .subtitle {
+            color: #959ba4;
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 400;
+            letter-spacing: 0;
+          }
+        }
+        .bookingRight {
+          display: flex;
+          height: 44px;
+          .withoutBaggageBtn {
+            border-radius: 4px 0 0 4px;
+          }
+          .withBaggageBtn {
+            border-radius: 0 4px 4px 0;
+          }
+          .withoutBaggageBtn,
+          .withBaggageBtn {
+            border: 1px solid rgba(221, 223, 224, 0.5);
+            height: 44px;
+            display: flex;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            padding-bottom: 14px;
+            width: 160px;
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 400;
+            letter-spacing: 0;
+            background-color: transparent;
+            .baggageIcons {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              width: 44px;
+              margin-right: 0px;
+              padding-top: 7px;
+              position: relative;
+              .b1 {
+                position: relative;
+                color: rgb(57, 181, 74);
+                vertical-align: top;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                & > div:nth-child(1) {
+                  width: 24px;
+                  height: 24px;
+                  transform: none;
+                  position: relative;
+                  display: inline-block;
+                  max-width: 100%;
+                  max-height: 100%;
+                  transition-duration: 0.2s;
+                  transition-timing-function: ease;
+                  transition-property: background-color, color;
+                  color: inherit;
+                  svg {
+                    width: 24px;
+                    height: 24px;
+                    fill: rgb(57, 181, 74);
+                  }
+                }
+                .weight {
+                  color: #39b54a;
+                  position: absolute;
+                  display: flex;
+                  justify-content: center;
+                  top: 8px;
+                  width: 24px;
+                  font-size: 9px;
+                  line-height: 12px;
+                  font-weight: 600;
+                }
+              }
+              .b2 {
+                margin-left: -4px;
+                position: relative;
+                vertical-align: top;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                & > div:nth-child(1) {
+                  width: 24px;
+                  height: 24px;
+                  transform: none;
+                  position: relative;
+                  display: inline-block;
+                  max-width: 100%;
+                  max-height: 100%;
+                  transition-duration: 0.2s;
+                  transition-timing-function: ease;
+                  transition-property: background-color, color;
+                  color: inherit;
+                  svg {
+                    width: 24px;
+                    height: 24px;
+                  }
+                }
+                .count {
+                  position: absolute;
+                  display: flex;
+                  justify-content: center;
+                  top: 8px;
+                  width: 24px;
+                  font-size: 9px;
+                  line-height: 12px;
+                  font-weight: 600;
+                  color: #333;
+                }
+              }
+            }
+            .text {
+              margin-left: 2px;
+              color: #333;
+              // margin-top: 4px;
+              position: relative;
+              top: 5px;
+              width: 77px;
+            }
+          }
+          .withoutBaggageBtn {
+            .baggageIcons {
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+              width: 44px;
+              margin-right: 0px;
+              padding-top: 7px;
+              position: relative;
+              .b1 {
+                color: rgb(149, 155, 164);
+
+                & > div:nth-child(1) {
+                  svg {
+                    fill: rgb(149, 155, 164) !important;
+                  }
+                }
+                .weight {
+                  color: rgb(149, 155, 164);
+                  font-size: 11px;
+                  top: 7.7px;
+                }
+              }
+            }
+          }
+          .selectedBtn {
+            border: 2px solid #ffdd2d;
+          }
+        }
+      }
+      .subFooter {
+        position: relative;
+        // top: 50px;
+        margin-top: 50px;
+        background-color: #fff;
+        width: 100%;
+        height: 104px;
+
+        padding-left: 41px;
+        padding-right: 41px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left {
+          .title {
+            margin-bottom: 4px;
+            font-size: 17px;
+            line-height: 24px;
+            font-weight: 400;
+            letter-spacing: 0;
+            color: #333;
+          }
+          .subtitle1 {
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 400;
+            letter-spacing: 0;
+          }
+          .subtitle2 {
+            font-size: 12px;
+            line-height: 16px;
+            font-weight: 400;
+            letter-spacing: 0;
+            color: #959ba4;
+          }
+        }
+        .right {
+          width: 160px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .price {
+            color: #333;
+            font-size: 17px;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 24px;
+          }
+          .btn {
+            padding: 12px 20px 12px;
+            min-height: 42px;
+            width: 108px;
+            color: #1771e6;
+            border-radius: 6px;
+            border: 1px solid transparent;
+            background-color: #ecf1f7;
+            outline: 0;
+            transition: background-color 0.3s ease, border 0.3s ease,
+              color 0.3s ease;
+            will-change: background-color, border, color;
+            font-size: 14px;
+            line-height: 1.4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+              border-color: #e4ebf3;
+              background-color: #e4ebf3;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .modalFooter {
+      background-color: #fff;
+      z-index: 100000;
+      width: 100%;
+      height: 125px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding-left: 41px;
+      padding-right: 41px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(221, 223, 224, 0.5);
+      .left {
+        .title {
+          margin-bottom: 4px;
+          font-size: 17px;
+          line-height: 24px;
+          font-weight: 400;
+          letter-spacing: 0;
+          color: #333;
+        }
+        .subtitle1 {
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 400;
+          letter-spacing: 0;
+        }
+        .subtitle2 {
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 400;
+          letter-spacing: 0;
+          color: #959ba4;
+        }
+      }
+      .right {
+        width: 160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .price {
+          color: #333;
+          font-size: 17px;
+          font-weight: 400;
+          letter-spacing: 0;
+          line-height: 24px;
+        }
+        .btn {
+          padding: 12px 20px 12px;
+          min-height: 42px;
+          width: 108px;
+          color: #333;
+          border-radius: 6px;
+          border: 1px solid transparent;
+          background-color: #ffdd2d;
+          outline: 0;
+          transition: background-color 0.3s ease, border 0.3s ease,
+            color 0.3s ease;
+          will-change: background-color, border, color;
+          font-size: 14px;
+          line-height: 1.4;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            background-color: #ffcd33;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes opacityAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(120px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.fadeOut {
+  animation: fadeOutAnim 230ms ease-out forwards;
+}
+@keyframes fadeOutAnim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

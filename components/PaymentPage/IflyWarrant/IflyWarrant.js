@@ -1,0 +1,26 @@
+import React from "react";
+import styles from "./IflyWarrant.module.scss";
+import { greenCheckmarkSvg } from "./svg";
+
+// import { i18n } from "../../../i18n";
+
+export default function IflyWarrant({ t }) {
+  const getLanguageSpecificContent = (key) => {
+    return t(`payment:${key}`);
+  };
+
+  return (
+    <section className={styles.container}>
+      <div className={styles.heading}>
+        <span>{greenCheckmarkSvg}</span>
+        <span>{getLanguageSpecificContent("IflyWarrant-title")} iFly.md</span>
+      </div>
+      <div className={styles.text}>
+        {getLanguageSpecificContent("IflyWarrant-text1")}{" "}
+        <a>{getLanguageSpecificContent("IflyWarrant-text2")}</a>{" "}
+        {getLanguageSpecificContent("IflyWarrant-text3")} iFly
+      </div>
+      <div></div>
+    </section>
+  );
+}

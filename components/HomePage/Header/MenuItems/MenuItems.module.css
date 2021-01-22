@@ -1,0 +1,41 @@
+.menuItems {
+  position: absolute;
+  width: 100% !important;
+  height: 210px;
+  background-color: #fff;
+  top: 72px;
+  left: 0px !important;
+  border-radius: 4px !important;
+  flex-direction: column;
+  overflow: hidden;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  box-sizing: border-box;
+}
+#menuItemsId {
+  z-index: 100000000;
+}
+.opacityZero {
+  display: none !important;
+  opacity: 0;
+}
+.opacityOne {
+  display: flex !important;
+  z-index: 900000 !important;
+
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+.menuItems div {
+  color: #00a0eb;
+  width: 100% !important;
+  height: 40px !important;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  cursor: pointer;
+  padding-left: 23px;
+}
+.menuItems div:hover {
+  background-color: #f5f5f5;
+}

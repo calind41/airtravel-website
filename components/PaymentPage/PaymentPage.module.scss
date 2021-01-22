@@ -1,0 +1,60 @@
+.container {
+  nav {
+    position: absolute;
+    top: -55px;
+    width: 334px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > span {
+      font-size: 13px;
+      color: #333333;
+      font-weight: 500;
+      cursor: pointer;
+      user-select: none;
+
+      & > span {
+        margin-left: 20px;
+        position: relative;
+        bottom: 1px;
+        svg {
+          transform: rotate(-90deg);
+          width: 8px;
+          height: 4px;
+
+          path {
+            stroke: #333333;
+          }
+        }
+      }
+    }
+  }
+  width: 964px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 98px;
+
+  & > main {
+    width: 735px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 662px;
+    & > aside {
+      display: none;
+    }
+    & > main {
+      width: 662px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    margin-top: 80px;
+  }
+}

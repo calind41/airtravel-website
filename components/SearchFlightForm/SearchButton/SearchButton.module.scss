@@ -1,0 +1,62 @@
+.container {
+  position: relative;
+  left: 76px;
+  width: 70px;
+  height: 70px;
+  .searchButton {
+    height: 50px;
+    width: 92px;
+    border-radius: 6px;
+    background-color: #0080ff;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease all;
+    user-select: none;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #01abfb;
+    }
+  }
+
+  svg {
+    position: relative;
+    right: 41px;
+    top: -7px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    transition: 0.2s ease all;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    height: 48px;
+    margin-top: 12px;
+
+    .searchButton {
+      width: 190px !important;
+      position: relative;
+      right: 68px;
+    }
+  }
+  .positionClass {
+    position: relative;
+    right: 0;
+    left: 670px;
+    bottom: 92px;
+    width: 20px;
+    & > svg {
+      position: absolute;
+      right: 0;
+    }
+  }
+}

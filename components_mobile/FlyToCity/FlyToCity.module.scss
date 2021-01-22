@@ -1,0 +1,511 @@
+.wrapper {
+  width: 91.78vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 80px;
+  .subscribeDiscountWrapper {
+    position: relative;
+    left: 0;
+    margin-bottom: 40px;
+    bottom: 20px;
+  }
+  .container {
+    width: 91.78vw;
+    min-height: 1400px;
+    margin: auto;
+
+    .howToSaveOnFlightContainer {
+      margin-top: 32px;
+      width: 91.78vw;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+
+      .ticketPrice {
+        width: 91.78vw;
+        height: 87px;
+        color: #212121;
+        .title {
+          font-size: 17px;
+          line-height: 25px;
+          font-weight: 400;
+        }
+        .value {
+          margin-top: 10px;
+          font-size: 15px;
+          font-weight: 600;
+        }
+      }
+      .priceByMonthChartContainer {
+        width: 91.78vw;
+        height: 379px;
+        margin-top: 19px;
+        .heading {
+          color: #212121;
+          width: 100%;
+          font-size: 17px;
+          line-height: 25px;
+          font-weight: 400;
+        }
+        .chart {
+          position: relative;
+          margin-top: 23px;
+          width: 91.78vw;
+        }
+      }
+      .text1 {
+        margin-top: 20px;
+        width: 91.78vw;
+        max-height: 187px;
+        .title {
+          font-size: 17px;
+          color: #212121;
+        }
+        .value {
+          margin-top: 10px;
+          font-size: 10.4px;
+          color: #3b3b3b;
+          line-height: 20px;
+        }
+      }
+      .text2 {
+        margin-top: 10px;
+        width: 91.78vw;
+        max-height: 302px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .fastestFlightC,
+        .cheapestFlightC {
+          width: 91.78vw;
+          height: 125px;
+
+          .title {
+            font-size: 18px;
+            color: #212121;
+          }
+          .value {
+            margin-top: 10px;
+            font-size: 10.4px;
+            color: #3b3b3b;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+
+    .textContainer {
+      width: 91.78vw;
+      margin-top: 0px;
+
+      & > header {
+        font-size: 17px;
+        line-height: 25px;
+        color: #212121;
+      }
+      & > main {
+        color: #3b3b3b;
+        font-size: 11px;
+        line-height: 20px;
+      }
+    }
+
+    .weatherInfoContainer {
+      width: 91.78vw;
+      margin-top: 30px;
+
+      & > header {
+        color: #212121;
+        font-size: 17px;
+      }
+      .todayWeatherContainer {
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        width: 91.78vw;
+
+        .todayWeather {
+          width: 91.78vw;
+          height: 77px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .city {
+            color: #212121;
+            font-size: 13px;
+            text-align: center;
+          }
+          .date {
+            color: #7a7d80;
+            font-size: 10px;
+            position: relative;
+            top: -8px;
+            text-align: center;
+          }
+          .temperatureValues {
+            color: #212121;
+            font-size: 17px;
+            text-align: center;
+            position: relative;
+            bottom: 14px;
+          }
+        }
+        .borderRight {
+          border-right: 1px solid #d2d5d9;
+        }
+        .textAlignEnd {
+          // text-align: end !important;
+        }
+      }
+
+      .weatherFullYearContainer {
+        margin-top: 50px;
+        width: 91.78vw;
+        min-height: 320px;
+        background-color: #fff;
+        border-radius: 6px;
+
+        display: flex;
+        flex-direction: column;
+
+        .heading {
+          margin: auto;
+          margin-top: 20px;
+
+          width: 80%;
+          height: 60px;
+          display: flex;
+          justify-content: space-between;
+
+          .left {
+            height: 60px;
+
+            & > div:nth-child(1) {
+              color: #212121;
+              font-size: 14px;
+            }
+            & > div:nth-child(2) {
+              margin-top: 5px;
+              color: #212121;
+              font-size: 10px;
+            }
+          }
+          .right {
+            height: 50px;
+            text-align: end;
+            width: 140px;
+            & > div .cityName {
+              font-size: 10px;
+              color: #212121;
+              margin-right: 5px;
+            }
+            & > div .colorCode {
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              border-radius: 3px;
+              position: relative;
+              top: 2px;
+            }
+            .first .colorCode {
+              background-color: #362eff;
+            }
+            .second .colorCode {
+              background-color: #2ec7ff;
+            }
+          }
+        }
+
+        .wrapper {
+          display: flex;
+          flex-direction: row;
+          width: 660px;
+          width: 91.78vw;
+          width: 80%;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          margin: auto;
+          margin-top: 32px;
+          .monthTempContainer {
+            width: 50px;
+            height: 180px;
+            margin-bottom: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            .bars {
+              height: 95px;
+              width: 37px;
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              cursor: pointer;
+              .first {
+                width: 16px;
+                height: 100%;
+                background-color: #362eff;
+                border-radius: 6px;
+              }
+              .second {
+                width: 16px;
+                height: 77%;
+                background-color: #2ec7ff;
+                border-radius: 6px;
+              }
+
+              & > div:hover {
+                opacity: 0.9;
+              }
+            }
+            .monthName {
+              color: #797c80;
+              font-size: 10px;
+              font-weight: 500;
+            }
+            .weatherIcon {
+              width: 16px;
+              height: 16px;
+              svg {
+                width: 16px;
+                height: 16px;
+              }
+            }
+            .temperatureValue {
+              color: #303233;
+              font-size: 10px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+    .popularDestinationsWrapper {
+      position: relative;
+      margin-top: -120px;
+      margin-bottom: 50px;
+      min-height: 900px;
+      h1 {
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 400;
+        color: #212121;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 340px) {
+  .wrapper {
+    .container {
+      .weatherInfoContainer {
+        .weatherFullYearContainer {
+          width: 310px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .wrapper {
+    width: 344.17px;
+
+    .subscribeDiscountWrapper {
+      position: relative;
+      left: 0;
+      margin-bottom: 40px;
+      bottom: 20px;
+    }
+    .container {
+      width: 344.17px;
+
+      .howToSaveOnFlightContainer {
+        width: 344.17px;
+        height: 650px;
+
+        .ticketPrice {
+          width: 344.17px;
+        }
+        .priceByMonthChartContainer {
+          width: 344.17px;
+
+          .chart {
+            width: 344.17px;
+          }
+        }
+        .text1 {
+          width: 344.17px;
+        }
+        .text2 {
+          width: 344.17px;
+
+          .fastestFlightC,
+          .cheapestFlightC {
+            width: 344.17px;
+          }
+        }
+      }
+
+      .textContainer {
+        width: 344.17px;
+      }
+
+      .weatherInfoContainer {
+        width: 344.17px;
+
+        .todayWeatherContainer {
+          width: 344.17px;
+
+          .todayWeather {
+            width: 344.17px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .wrapper {
+    width: 83.13vw;
+
+    .subscribeDiscountWrapper {
+      position: relative;
+      left: 0;
+      margin-bottom: 40px;
+      bottom: 20px;
+    }
+    .container {
+      width: 83.13vw;
+
+      .howToSaveOnFlightContainer {
+        width: 83.13vw;
+
+        .ticketPrice {
+          width: 83.13vw;
+        }
+        .priceByMonthChartContainer {
+          width: 83.13vw;
+
+          .chart {
+            width: 83.13vw;
+          }
+        }
+        .text1 {
+          width: 83.13vw;
+        }
+        .text2 {
+          width: 83.13vw;
+
+          .fastestFlightC,
+          .cheapestFlightC {
+            width: 83.13vw;
+          }
+        }
+      }
+
+      .textContainer {
+        width: 83.13vw;
+      }
+
+      .weatherInfoContainer {
+        width: 83.13vw;
+
+        .todayWeatherContainer {
+          width: 83.13vw;
+
+          .todayWeather {
+            width: 83.13vw;
+          }
+        }
+        .weatherFullYearContainer {
+          width: 83.13vw;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .wrapper {
+    width: 86vw;
+
+    .subscribeDiscountWrapper {
+      position: relative;
+      left: 0;
+      margin-bottom: 40px;
+      bottom: 20px;
+    }
+    .container {
+      width: 86vw;
+
+      .howToSaveOnFlightContainer {
+        width: 86vw;
+
+        .ticketPrice {
+          width: 86vw;
+        }
+        .priceByMonthChartContainer {
+          width: 86vw;
+
+          .chart {
+            width: 430px;
+          }
+        }
+        .text1 {
+          width: 86vw;
+        }
+        .text2 {
+          width: 86vw;
+
+          .fastestFlightC,
+          .cheapestFlightC {
+            width: 86vw;
+          }
+        }
+      }
+
+      .textContainer {
+        width: 86vw;
+      }
+
+      .weatherInfoContainer {
+        width: 86vw;
+
+        .todayWeatherContainer {
+          width: 86vw;
+          width: 430px;
+          margin-left: auto;
+          margin-right: auto;
+          .todayWeather {
+            width: 86vw;
+          }
+        }
+        .weatherFullYearContainer {
+          width: 430px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 698px) {
+  .wrapper {
+    .container {
+      .popularDestinationsWrapper {
+        min-height: 500px;
+        margin-top: -120px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}

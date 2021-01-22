@@ -1,0 +1,44 @@
+// 90% of all top measurements
+.container {
+  width: 735px;
+
+  height: 153px;
+  border-radius: 0 0 6px 6px;
+  background-color: #e9edf5;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  .heading {
+    margin-top: 27px;
+    margin-left: 25.2px;
+    width: 130px;
+    height: 18px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+  }
+  .text {
+    width: 700px;
+    height: 72.9px;
+    font-size: 10.8px;
+    margin-left: 25.2px;
+    margin-top: 13.5px;
+    line-height: 21.6px;
+
+    a {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 662px;
+    .text {
+      width: 622px;
+    }
+  }
+}

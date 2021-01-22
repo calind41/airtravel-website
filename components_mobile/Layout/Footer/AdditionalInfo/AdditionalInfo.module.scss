@@ -1,0 +1,45 @@
+.container {
+  width: 649px;
+  width: 91.78vw;
+  min-height: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  // align-items: center;
+  margin-top: 38px;
+  margin-bottom: 20px;
+  // z-index: 1000000;
+  & > div {
+    margin-left: 8px;
+    font-size: 12.2px;
+    line-height: 32px;
+    color: #0c131d;
+    height: 23px;
+
+    &:hover {
+      color: #f57c00;
+      cursor: pointer;
+    }
+  }
+  & > div:not(:last-child) {
+    position: relative;
+    &:after {
+      content: "\2022";
+      display: inline-block;
+      position: relative;
+      top: 0px;
+      left: 4px;
+    }
+  }
+  .copyright {
+    position: relative;
+    top: 5px;
+    width: 91.78vw;
+    text-align: center;
+    cursor: text !important;
+    line-height: 20px;
+    &:hover {
+      color: #0c131d;
+    }
+  }
+}

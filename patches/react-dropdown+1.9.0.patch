@@ -1,0 +1,15 @@
+diff --git a/node_modules/react-dropdown/style.css b/node_modules/react-dropdown/style.css
+index cb848b9..f60d2ea 100644
+--- a/node_modules/react-dropdown/style.css
++++ b/node_modules/react-dropdown/style.css
+@@ -80,8 +80,8 @@
+ }
+ 
+ .Dropdown-option.is-selected {
+-  background-color: #f2f9fc;
+-  color: #333;
++  background-color: #e9edf5;
++  color: #151a1c;
+ }
+ 
+ .Dropdown-noresults {

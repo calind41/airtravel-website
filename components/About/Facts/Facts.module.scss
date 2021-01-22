@@ -1,0 +1,283 @@
+// 80% of originalSize
+.factsHeader {
+  font-size: 22.4px;
+  color: #212121;
+  width: 964px;
+  margin: auto;
+  position: relative;
+  top: -95px;
+}
+.container {
+  width: 964px;
+  height: 480px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 32.8px;
+  position: relative;
+  top: -95px;
+
+  .airCompanies {
+    width: 550px;
+    height: 224px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > div:nth-child(1) {
+      font-size: 22.4px;
+      font-weight: 700;
+      height: 80px;
+      line-height: 40px;
+      margin-left: 32.8px;
+    }
+    & > div:nth-child(2) {
+      width: 201.6px;
+      height: 160px;
+      margin-right: 16px;
+      svg {
+        width: 201.6px;
+        height: 160px;
+      }
+    }
+  }
+  .directionsCard {
+    width: 380px;
+    height: 224px;
+    background-color: #d9edff;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    & > div:nth-child(1) {
+      position: absolute;
+      left: 32px;
+      font-size: 22.4px;
+      font-weight: 700;
+      color: #0080ff;
+      width: 268px;
+      height: 80px;
+      line-height: 40px;
+    }
+    & > div:nth-child(2) {
+      width: 361.6px;
+      height: 205.6px;
+      svg {
+        width: 361.6px;
+        height: 205.6px;
+      }
+    }
+  }
+  .clientCard {
+    width: 380px;
+
+    height: 224px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dfffd9;
+    border-radius: 6px;
+
+    & > div:nth-child(1) {
+      font-size: 22.4px;
+      font-weight: 700;
+      width: 221.6px;
+      height: 80px;
+      line-height: 40px;
+      margin-left: 32.8px;
+    }
+    & > div:nth-child(2) {
+      width: 165.6px;
+      height: 165.6px;
+      margin-right: 16px;
+
+      svg {
+        width: 165.6px;
+        height: 165.6px;
+      }
+    }
+  }
+  .wrapper {
+    width: 550px;
+
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .distanceTraveled {
+      width: 550px;
+      height: 112px;
+      background-color: #fff;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & > div:nth-child(1) {
+        width: 270.4px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 32px;
+        & > div:nth-child(1) {
+          font-size: 22.4px;
+          font-weight: 700;
+          span {
+            position: relative;
+            bottom: 8px;
+            font-size: 12.8px;
+          }
+        }
+        & > div:nth-child(2) {
+          font-size: 13.6px;
+          margin-bottom: 10.4px;
+        }
+      }
+      & > div:nth-child(2) {
+        margin-right: 25.6px;
+        width: 56px;
+        height: 56px;
+        svg {
+          width: 56px;
+          height: 56px;
+        }
+      }
+    }
+    .smartRoute {
+      width: 550px;
+      height: 80px;
+      background-color: #ffe9d4;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & > div:nth-child(1) {
+        font-size: 17.6px;
+        font-weight: 700;
+        margin-left: 32px;
+        width: 291.2px;
+      }
+      & > div:nth-child(2) {
+        width: 155.2px;
+        height: 32px;
+        background-color: #ff9e3b;
+        color: #fff;
+        font-size: 10.4px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        cursor: pointer;
+        margin-right: 32px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .factsHeader {
+    width: 662px;
+    top: -70px;
+  }
+  .container {
+    width: 662px;
+    top: -70px;
+
+    .airCompanies {
+      width: 400px;
+      & > div:nth-child(1) {
+        font-size: 17px;
+        line-height: 30px;
+      }
+
+      & > div:nth-child(2) {
+        width: 171.6px;
+        height: 130px;
+        margin-right: 16px;
+        svg {
+          width: 171.6px;
+          height: 130px;
+        }
+      }
+    }
+    .directionsCard {
+      width: 240px;
+
+      & > div:nth-child(1) {
+        position: absolute;
+        left: 19px;
+        font-size: 17px;
+        font-weight: 700;
+        width: 170px;
+        height: 80px;
+        line-height: 30px;
+      }
+      & > div:nth-child(2) {
+        width: 201.6px;
+        height: 205.6px;
+        position: relative;
+        bottom: 10px;
+        svg {
+          width: 201.6px;
+          height: 205.6px;
+        }
+      }
+    }
+    .clientCard {
+      width: 240px;
+
+      & > div:nth-child(1) {
+        font-size: 17px;
+        font-weight: 700;
+        width: 190.6px;
+        height: 80px;
+        line-height: 30px;
+        margin-left: 19.8px;
+      }
+      & > div:nth-child(2) {
+        width: 100px;
+        height: 100px;
+
+        svg {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+    .wrapper {
+      width: 400px;
+
+      .distanceTraveled {
+        width: 400px;
+
+        & > div:nth-child(1) {
+          & > div:nth-child(1) {
+            font-size: 17px;
+            font-weight: 700;
+          }
+          & > div:nth-child(2) {
+            font-size: 12.6px;
+          }
+        }
+        & > div:nth-child(2) {
+          width: 56px;
+          height: 56px;
+          svg {
+            width: 56px;
+            height: 56px;
+          }
+        }
+      }
+      .smartRoute {
+        width: 400px;
+        & > div:nth-child(1) {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

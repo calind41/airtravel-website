@@ -1,0 +1,38 @@
+.container {
+  width: 649px;
+  height: 55px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 38px;
+  & > div {
+    margin-left: 8px;
+    font-size: 12.2px;
+    line-height: 32px;
+    color: #0c131d;
+    height: 23px;
+
+    &:hover {
+      color: #f57c00;
+      cursor: pointer;
+    }
+  }
+  & > div:not(:last-child) {
+    position: relative;
+    &:after {
+      content: "\2022";
+      display: inline-block;
+      position: relative;
+      top: 0px;
+      left: 4px;
+    }
+  }
+  .copyright {
+    position: relative;
+    bottom: 6px;
+    cursor: text !important;
+    &:hover {
+      color: #0c131d;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.container {
+  background-color: #fff;
+  height: 41px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 16px;
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100000;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+  .wrapper {
+    width: 80vw;
+    height: 41px;
+    padding-top: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .spinner {
+      svg {
+        width: 19px;
+        height: 19px;
+
+        circle {
+          stroke: rgb(255, 221, 45);
+          stroke-dashoffset: 100%;
+          stroke-dasharray: 306;
+          stroke-miterlimit: 10;
+        }
+        animation: rotateAnimation 3s linear infinite;
+      }
+    }
+    .text {
+      width: 230px;
+      position: relative;
+      top: -1px;
+      transition: opacity 0.3s ease;
+      color: #333;
+      font-size: 14px;
+      line-height: 24px;
+      margin-left: 12px;
+      overflow: hidden;
+      font-weight: 400;
+      letter-spacing: 0;
+      opacity: 1;
+    }
+    .opacityClass {
+      opacity: 0 !important;
+    }
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(1turn);
+  }
+  100% {
+    transform: rotate(3turn);
+  }
+}
+
+@media screen and (max-width: 1372px) {
+  .container {
+    .wrapper {
+      width: 826px;
+    }
+  }
+}
+@media screen and (max-width: 1036px) {
+  .container {
+    .wrapper {
+      width: 95.11vw;
+    }
+  }
+}
+@media screen and (max-width: 857px) {
+  .container {
+    .wrapper {
+      width: 795px;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+.tripSetupOptions {
+  margin-top: 77px;
+  width: 91.78vw;
+
+  & > div:nth-child(1) {
+    font-size: 17px;
+    line-height: 25px;
+    color: #212121;
+    width: 91.78vw;
+  }
+
+  .rentalCardWrapper {
+    margin-top: 25px;
+    width: 91.78vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .rentalCardContainer {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 400px;
+
+      .icon {
+        width: 100%;
+
+        svg {
+          width: 90%;
+        }
+      }
+      .title {
+        color: #212121;
+        font-size: 16px;
+        line-height: 23px;
+        width: 91.78vw;
+      }
+      .subtitle {
+        color: #3c3c3c;
+        font-size: 11px;
+        line-height: 20px;
+        width: 91.78vw;
+        margin-top: 10px;
+      }
+
+      .ctaBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        font-size: 11px;
+        border: 1px solid #c1c3c7;
+        background-color: #fff;
+        border-radius: 4px;
+        width: 91.78vw;
+
+        height: 37px;
+        cursor: pointer;
+        user-select: none;
+        transition: 0.2s ease-in;
+        &:hover {
+          background-color: rgba(204, 204, 204, 0.1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .tripSetupOptions {
+    width: 344.17px;
+
+    & > div:nth-child(1) {
+      width: 344.17px;
+    }
+
+    .rentalCardWrapper {
+      width: 344.17px;
+
+      .rentalCardContainer {
+        .title {
+          width: 344.17px;
+        }
+        .subtitle {
+          width: 344.17px;
+        }
+
+        .ctaBtn {
+          width: 344.17px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .tripSetupOptions {
+    width: 83.13vw;
+
+    & > div:nth-child(1) {
+      width: 83.13vw;
+    }
+
+    .rentalCardWrapper {
+      width: 83.13vw;
+
+      .rentalCardContainer {
+        .title {
+          width: 83.13vw;
+        }
+        .subtitle {
+          width: 83.13vw;
+        }
+
+        .ctaBtn {
+          width: 344.17px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .tripSetupOptions {
+    width: 86vw;
+
+    & > div:nth-child(1) {
+      width: 86vw;
+    }
+
+    .rentalCardWrapper {
+      width: 430px;
+      margin-left: auto;
+      margin-right: auto;
+      .rentalCardContainer {
+        .title {
+          width: 430px;
+        }
+        .subtitle {
+          width: 430px;
+        }
+
+        .ctaBtn {
+          width: 344.17px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

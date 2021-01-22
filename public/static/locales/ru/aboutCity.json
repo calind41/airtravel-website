@@ -1,0 +1,33 @@
+{
+    "AboutCity-ticketPrice-title": "Самые дешевые рейсы в аэропорты в",
+    "AboutCity-chartWrapper-header": "Сезонная разница стоимости билетов",
+    "SimilarAircompanies-headerTextValue": "Какие авиакомпании летают в",
+
+    "FAQ-q1": "Когда лучше всего лететь в",
+    "FAQ-q2": "Какой самый дешевый рейс из зоны",
+    "FAQ-q2-1": "в",
+    "FAQ-q3": "В какой день дешевле всего лететь в",
+    "FAQ-q4": "В какое время суток лучше всего летать в г.",
+    "FAQ-q5": "Есть другие варианты аэропорта рядом с",
+    "FAQ-q6": "Есть более дешевая альтернатива полетам в",
+
+    "NearCityAirports-title": "Аэропорты рядом с:",
+    "NearCityAirports-subtitle-1": "Ниже вы можете увидеть аэропорты",
+    "NearCityAirports-subtitle-2": "и расстояние от центра города.",
+    "NearCityAirports-question": "Как добраться из аэропорта до центра города?",
+
+    "TripSetupOptions-title": "Начните планировать свою поездку в",
+    "TripSetupOptions-rc-title1": "Выберите подходящий автомобиль для своего времени в",
+    "TripSetupOptions-rc-subtitle1-1": "Познакомьтесь с",
+    "TripSetupOptions-rc-subtitle1-2": "за рулем автомобиля! Узнайте больше о лучших предложениях по аренде автомобилей",
+    "TripSetupOptions-rc-buttonText": "Найти машины в",
+
+    "TripSetupOptions-rc-title2": "Начните планировать свою поездку сегодня в",
+    "TripSetupOptions-rc-subtitle2-1": "Взгляните на лучшие отели в самых популярных районах города.",
+    "TripSetupOptions-rc-buttonText2": "Найти отели в",
+
+    "CityTouristAttractions-title": "Туристические достопримечательности в"
+
+
+    
+}

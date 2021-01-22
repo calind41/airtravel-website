@@ -1,0 +1,35 @@
+.rentalOptionsContainer {
+  width: 91.78vw;
+  margin: auto;
+  margin-top: 100px;
+  .popularDestinationsWrapper {
+    display: block;
+    min-height: 1090px;
+    position: relative;
+    margin-top: -120px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .rentalOptionsContainer {
+    width: 344.17px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .rentalOptionsContainer {
+    width: 83.13vw;
+  }
+}
+@media screen and (min-width: 500px) {
+  .rentalOptionsContainer {
+    width: 86vw;
+  }
+}
+@media screen and (min-width: 698px) {
+  .rentalOptionsContainer {
+    .popularDestinationsWrapper {
+      display: block;
+      min-height: 660px;
+    }
+  }
+}

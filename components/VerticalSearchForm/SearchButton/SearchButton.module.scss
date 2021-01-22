@@ -1,0 +1,39 @@
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 296px;
+  height: 48px;
+  .searchButton {
+    width: 296px;
+    height: 48px;
+    border-radius: 6px;
+    background-color: #0080ff;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease all;
+    user-select: none;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #01abfb;
+    }
+  }
+
+  svg {
+    position: relative;
+    right: 41px;
+    top: -7px;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    transition: 0.2s ease all;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}

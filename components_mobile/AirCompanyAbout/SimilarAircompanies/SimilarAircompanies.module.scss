@@ -1,0 +1,66 @@
+.similarAirCompaniesC {
+  margin-top: 31px;
+  width: 91.78vw;
+  height: 45px;
+  display: flex;
+  div {
+    margin-right: 41px;
+  }
+}
+
+.similarAirCheader {
+  margin-top: 50px;
+  width: 91.78vw;
+  height: 21.4px;
+  font-size: 17px;
+  line-height: 25px;
+  color: #212121;
+}
+
+.footerMessage {
+  margin-top: 23px;
+  width: 91.78vw;
+  font-size: 11px;
+  color: #3c3c3c;
+  line-height: 20px;
+}
+
+@media screen and (min-width: 375px) {
+  .similarAirCompaniesC {
+    width: 344.17px;
+  }
+
+  .similarAirCheader {
+    width: 344.17px;
+  }
+
+  .footerMessage {
+    width: 344.17px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .similarAirCompaniesC {
+    width: 83.13vw;
+  }
+
+  .similarAirCheader {
+    width: 83.13vw;
+  }
+
+  .footerMessage {
+    width: 83.13vw;
+  }
+}
+@media screen and (min-width: 500px) {
+  .similarAirCompaniesC {
+    width: 86vw;
+  }
+
+  .similarAirCheader {
+    width: 86vw;
+  }
+
+  .footerMessage {
+    width: 86vw;
+  }
+}

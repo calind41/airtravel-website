@@ -1,0 +1,292 @@
+$borderInputColor: #d2d5d9;
+$inputBgColorBlur: #e4e6eb;
+$placeholderTopColor: #797c80;
+$warningRed: #dd5656;
+$green: #6bdd56;
+
+// 90% of originalSize
+
+.container {
+  width: 100%;
+  height: 330px;
+  margin: auto;
+  margin-top: -22px;
+
+  .heading {
+    display: inline-block;
+    margin-top: 25.2px;
+    margin-left: 20.7px;
+    height: 55.8px;
+    .title {
+      font-size: 15.3px;
+      font-weight: 500;
+    }
+    .subtitle {
+      margin-top: 16.2px;
+      font-size: 11.7px;
+      color: #616366;
+      line-height: 17.46px;
+    }
+  }
+
+  .inputWrapper {
+    margin-top: 40px;
+    width: 89.33vw;
+    height: 45px;
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .phoneNrC {
+      width: 89.33vw;
+      height: 39.6px;
+      label {
+        position: relative;
+        display: block;
+
+        .phonePrefix {
+          position: absolute;
+
+          left: 18.09px;
+          top: 18.693px;
+          z-index: 1;
+          font-size: 11.7px;
+          cursor: text;
+          display: none;
+        }
+
+        input {
+          position: relative;
+          font-size: 11.7px;
+          width: 89.33vw;
+          height: 39.6px;
+          padding-left: 49.5px;
+          padding-top: 11.7px;
+          border-radius: 4px;
+          border: 1px solid #d0d4db;
+          background-color: #fafbfc;
+          outline: none;
+
+          &:focus {
+            background-color: #fff;
+          }
+          &:not([value=""]):not(:focus) {
+            background-color: #fff;
+          }
+
+          &:focus ~ .phoneNrPlaceholder,
+          &:not(:focus):valid ~ .phoneNrPlaceholder {
+            position: absolute;
+            top: 5.4px;
+            left: 18px;
+            font-size: 9px;
+            opacity: 1;
+            color: #616366;
+          }
+        }
+
+        .phoneNrPlaceholder {
+          position: absolute;
+          pointer-events: none;
+          left: 18px;
+          top: 14.4px;
+          transition: all 0.2s ease;
+          font-size: 11.7px;
+          user-select: none;
+          color: #616366;
+        }
+      }
+      .requiredField {
+        display: none;
+      }
+      .numberNotValid {
+        display: none;
+      }
+    }
+    .emailC {
+      width: 89.33vw;
+
+      height: 39.6px;
+
+      label {
+        position: relative;
+        display: block;
+
+        input {
+          position: relative;
+          font-size: 11.7px;
+          width: 89.33vw;
+
+          height: 39.6px;
+          padding-left: 18.9px;
+          padding-top: 11.7px;
+          border-radius: 4px;
+          border: 1px solid #d0d4db;
+          background-color: #fafbfc;
+          outline: none;
+
+          &:focus {
+            background-color: #fff;
+          }
+          &:not([value=""]):not(:focus) {
+            background-color: #fff;
+          }
+
+          &:focus ~ .emailPlaceholder,
+          &:not([value=""]):not(:focus) ~ .emailPlaceholder {
+            position: absolute;
+            top: 5.4px;
+            left: 18.9px;
+            font-size: 9px;
+            opacity: 1;
+            color: #616366;
+          }
+        }
+        .emailPlaceholder {
+          position: absolute;
+          pointer-events: none;
+          left: 18.9px;
+          top: 14.4px;
+          transition: all 0.2s ease;
+          font-size: 11.7px;
+          user-select: none;
+          color: #616366;
+        }
+      }
+      .requiredFieldEmail {
+        display: none;
+      }
+      .emailNotValid {
+        display: none;
+      }
+    }
+  }
+  .message {
+    font-size: 11.7px;
+    width: 89.33vw;
+    height: 41.4px;
+    margin-top: 22.2px;
+  }
+}
+
+.warningBorder {
+  border: 1px solid $warningRed !important;
+}
+.requiredFieldShow,
+.numberNotValidShow,
+.emailNotValidShow {
+  display: inline-block !important;
+  font-size: 10.8px;
+  color: $warningRed;
+  margin-top: 3.6px;
+  margin-left: 18.9px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    .heading {
+      margin-left: 1.7px;
+      width: 344.17px;
+    }
+
+    .inputWrapper {
+      width: 344.17px;
+      .phoneNrC {
+        width: 344.17px;
+        label {
+          input {
+            width: 344.17px;
+          }
+        }
+      }
+      .emailC {
+        width: 344.17px;
+
+        label {
+          input {
+            width: 344.17px;
+          }
+        }
+      }
+    }
+    .message {
+      width: 344.17px;
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    .heading {
+      margin-left: 1.7px;
+      width: 83.13vw;
+    }
+
+    .inputWrapper {
+      width: 83.13vw;
+      .phoneNrC {
+        width: 83.13vw;
+        label {
+          input {
+            width: 83.13vw;
+          }
+        }
+      }
+      .emailC {
+        width: 83.13vw;
+
+        label {
+          input {
+            width: 83.13vw;
+          }
+        }
+      }
+    }
+    .message {
+      width: 83.13vw;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    .heading {
+      margin-left: 1.7px;
+      width: 86vw;
+    }
+
+    .inputWrapper {
+      width: 86vw;
+
+      .phoneNrC {
+        width: 86vw;
+
+        label {
+          input {
+            width: 86vw;
+          }
+        }
+      }
+      .emailC {
+        width: 86vw;
+
+        label {
+          input {
+            width: 86vw;
+          }
+        }
+      }
+    }
+    .message {
+      width: 86vw;
+    }
+  }
+}

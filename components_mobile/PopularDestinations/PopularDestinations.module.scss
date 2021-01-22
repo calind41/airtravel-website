@@ -1,0 +1,156 @@
+// 90% of originalSize
+
+// .wrapper {
+//   margin: auto;
+//   margin-top: 170px;
+//   width: 91.78vw !important;
+//   .title {
+//     font-size: 19px;
+//     font-weight: 500;
+//     margin: auto;
+//     width: 100%;
+//     margin-top: 0;
+//     margin-bottom: 0;
+//     position: relative;
+//     text-align: center;
+//   }
+//   .container {
+//     width: 100%;
+//     min-height: 880px;
+//     display: flex;
+//     justify-content: space-between;
+//     flex-direction: column;
+//     margin: auto;
+//     margin-top: 32px;
+//     margin-bottom: 100px;
+//     position: relative;
+//   }
+// }
+
+// @media screen and (min-width: 375px) {
+//   .wrapper {
+//     width: 344.17px !important;
+//   }
+// }
+// @media screen and (min-width: 414px) {
+//   .wrapper {
+//     width: 83.13vw !important;
+//     .container {
+//       display: flex;
+//       justify-content: space-between;
+//       flex-direction: row;
+//       flex-wrap: wrap;
+//     }
+//   }
+// }
+// @media screen and (min-width: 500px) {
+//   .wrapper {
+//     width: 86vw !important;
+//   }
+// }
+// @media screen and (min-width: 698px) {
+//   .wrapper {
+//     .container {
+//       min-height: 500px;
+//       & > div {
+//         margin-left: 5px;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (min-width: 710px) {
+//   .wrapper {
+//     .container {
+//       min-height: 500px;
+//       & > div {
+//         margin-left: 0px;
+//         margin: auto;
+//         margin-top: 0;
+//       }
+//     }
+//   }
+// }
+
+.container {
+  width: 91.78vw;
+  min-height: 400px;
+  padding-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 200px;
+  .wrapper {
+    min-height: 450px;
+    // width: 601px;
+    width: 91.78vw;
+
+    .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h1 {
+        font-size: 21px;
+        line-height: 30px;
+        font-weight: 800;
+        margin-top: 5px;
+        margin-left: 14px;
+        width: 141px;
+      }
+    }
+    .cards {
+      margin-top: 20px;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 344.17px;
+
+    .wrapper {
+      width: 344.17px;
+
+      .heading {
+        h1 {
+          width: 280px;
+          // border: 1px solid red;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) { 
+  .container {
+    width: 83.13vw;
+
+    .wrapper {
+      width: 83.13vw;
+    }
+  }
+
+}
+@media screen and (min-width: 500px) {
+.container {
+    width: 430px;
+
+    .wrapper {
+      width: 430px;
+    }
+  }
+}
+@media screen and (min-width: 620px){ 
+.container {
+     width: 67.17vw;
+
+    .wrapper {
+       width: 67.17vw;
+    }
+  }
+}
+ 

@@ -1,0 +1,16 @@
+.container {
+  position: relative;
+  width: 84%;
+  height: 54px;
+  background-color: #dcddde;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.activeContainer {
+  background-color: #0080ff !important;
+}

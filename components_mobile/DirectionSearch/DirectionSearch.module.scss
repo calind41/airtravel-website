@@ -1,0 +1,190 @@
+.wrapper {
+  max-height: 1000px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  .directionSearchHeader {
+    margin: auto;
+    margin-top: 32px;
+    width: 91.78vw;
+    height: 41.4px;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 500;
+    color: #212121;
+  }
+  .subscribeDiscount {
+    position: relative;
+    top: 77px;
+    & > div {
+      height: 230px !important;
+    }
+  }
+  .container {
+    margin: auto;
+    width: 91.78vw;
+    max-height: 700.2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    main {
+      .inputWrapper {
+        width: 91.78vw;
+        height: 48.6px;
+        display: flex;
+        margin-top: 24.3px;
+        input {
+          width: 88vw;
+          height: 48.6px;
+          border-radius: 6px 0 0 6px;
+          border: 1px solid #dadce0;
+          border-right: none;
+          padding-left: 19.8px;
+          font-size: 11.7px;
+          color: #797c80;
+          outline: none;
+        }
+        button {
+          width: 14.5vw;
+          height: 48.6px;
+          background-color: #fff;
+          border-radius: 0 6px 6px 0;
+          font-size: 11.7px;
+          cursor: pointer;
+          outline: none;
+          border: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #dadce0;
+          border-left: none;
+          span {
+            margin-top: 3.6px;
+            position: relative;
+            svg {
+              width: 15px;
+              height: 15px;
+              path {
+                fill: #c1c3c7;
+              }
+            }
+          }
+        }
+      }
+
+      ul {
+        width: 91.78vw;
+        max-height: 486px;
+        list-style-position: inside;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 35.1px;
+
+        li {
+          width: 261px;
+          margin-bottom: 16.2px;
+          color: #212121;
+          font-size: 8px;
+          span {
+            position: relative;
+            top: 1.8px;
+            left: -0.9px;
+            font-size: 11.7px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .wrapper {
+    .directionSearchHeader {
+      width: 344.17px;
+    }
+
+    .container {
+      width: 344.17px;
+
+      main {
+        .inputWrapper {
+          width: 344.17px;
+
+          input {
+            width: 329.9px;
+          }
+          button {
+            width: 54.34px;
+          }
+        }
+
+        ul {
+          width: 344.17px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .wrapper {
+    .directionSearchHeader {
+      width: 83.13vw;
+    }
+
+    .container {
+      width: 83.13vw;
+
+      main {
+        .inputWrapper {
+          width: 83.13vw;
+
+          input {
+            width: 79.7vw;
+          }
+          button {
+            width: 13.12vw;
+          }
+        }
+
+        ul {
+          width: 83.13vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .wrapper {
+    .directionSearchHeader {
+      width: 86vw;
+    }
+
+    .container {
+      width: 86vw;
+
+      main {
+        .inputWrapper {
+          width: 86vw;
+
+          input {
+            width: 82.45vw;
+          }
+          button {
+            width: 13.579vw;
+          }
+        }
+
+        ul {
+          width: 86vw;
+        }
+      }
+    }
+  }
+}

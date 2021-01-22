@@ -1,0 +1,78 @@
+$lightBlue: #e9edf5;
+.container {
+  width: 89.33vw;
+  min-height: 680px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  main {
+    margin: auto;
+    margin-top: 89px;
+    width: 89.33vw;
+
+    .title {
+      font-size: 23px;
+      font-weight: 500;
+      padding-bottom: 29px;
+    }
+    h1 {
+      font-size: 25px;
+      font-weight: 500;
+      padding-bottom: 18px;
+    }
+    h2 {
+      font-size: 19px;
+      font-weight: 500;
+      padding-bottom: 18px;
+    }
+    h3 {
+      font-size: 13px;
+      font-weight: 500;
+    }
+    .rules {
+      width: 89.33vw;
+
+      p:first-child {
+        margin-top: 21px;
+      }
+      p {
+        font-size: 13px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 344.17px;
+    main {
+      width: 344.17px;
+      .rules {
+        width: 344.17px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 83.13vw;
+    main {
+      width: 83.13vw;
+      .rules {
+        width: 83.13vw;
+      }
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .container {
+    width: 86vw;
+    main {
+      width: 86vw;
+      .rules {
+        width: 86vw;
+      }
+    }
+  }
+}

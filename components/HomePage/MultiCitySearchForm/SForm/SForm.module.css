@@ -1,0 +1,202 @@
+.container {
+  /* border: 1px solid red; */
+  width: 1065px;
+  height: 48px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 100px;
+  background-color: #fff;
+  margin-bottom: 11px;
+  border-radius: 4px;
+}
+
+.wrapper {
+  position: relative;
+  right: 50px;
+  width: 964px;
+  height: 48px;
+  margin: auto;
+  position: relative;
+  top: 100.5px;
+  border-radius: 4px;
+  display: flex;
+}
+.addFlightBtnC > button {
+  width: 348px;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  color: #fff;
+  cursor: pointer;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 16px;
+  border-radius: 4px;
+  display: flex;
+  outline: none;
+}
+.addFlightBtnC > button span {
+  display: inline-block;
+  width: 100px;
+  position: relative;
+  right: 49px;
+}
+.addFlightBtnC > button span:nth-child(1) {
+  width: 20px;
+  font-size: 25px;
+  position: relative;
+  right: 61px;
+}
+.addFlightBtnC > button:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  border: 1px solid #fff;
+}
+.removeFlightC {
+  position: absolute;
+  top: -11px;
+  right: -10.8px;
+  border-radius: 100%;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.removeFlightC:hover {
+  transform: scale(1.1);
+  background-color: #ededed;
+}
+.oneWayRoundTripLinkClass {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  top: 125px;
+  left: 460px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  font-size: 13px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.oneWayRoundTripLinkClass:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 1155px) {
+  .container {
+    width: 706px;
+  }
+  .wrapper {
+    position: relative;
+    width: 706px;
+  }
+  .addFlightBtnC > button {
+    width: 224px;
+    position: relative;
+    left: 50px;
+  }
+  .addFlightBtnC > button span {
+    position: relative;
+    right: 27px;
+  }
+  .addFlightBtnC > button span:nth-child(1) {
+    position: relative;
+    right: 20px;
+  }
+  .removeFlightC {
+    position: absolute;
+    right: -10.5px;
+  }
+  .oneWayRoundTripLinkClass {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 165px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .oneWayRoundTripLinkClass:hover {
+    opacity: 0.5;
+  }
+}
+@media screen and (max-width: 795px) {
+  .container {
+    width: 89.4vw;
+    flex-wrap: wrap;
+    height: 150px;
+    top: 34px;
+  }
+  .wrapper {
+    position: relative;
+    width: 720px;
+    width: 89.4vw;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% !important;
+    left: 0;
+  }
+  .addFlightBtnC {
+    position: relative;
+    width: 100% !important;
+  }
+  .addFlightBtnC > button {
+    width: 89.4vw;
+    position: relative;
+    left: 5.2vw;
+    top: -67px;
+    border: 1px solid rgba(255, 255, 255, 0.46);
+    display: flex;
+  }
+  .addFlightBtnC > .leftPosClass {
+    left: 3.5vw;
+  }
+  .addFlightBtnC > button span:nth-child(2) {
+    position: absolute;
+    right: 35vw;
+  }
+  .addFlightBtnC > button span:nth-child(1) {
+    position: absolute;
+    left: 18px;
+  }
+  .removeFlightC {
+    position: absolute;
+    right: -10.5px;
+  }
+  .oneWayRoundTripLinkClass {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 165px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+    font-size: 13px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .oneWayRoundTripLinkClass:hover {
+    opacity: 0.5;
+  }
+}

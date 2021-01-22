@@ -1,0 +1,74 @@
+.popup {
+  z-index: 1000031;
+  min-width: 77px;
+  min-height: 50px;
+  bottom: 50px;
+  left: -30px;
+
+  position: absolute;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 12px;
+  font-weight: 400px;
+  color: #333;
+  text-align: center;
+  box-shadow: 0px 8px 15px -5px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-top: none;
+    border-left: none;
+    background: #fff;
+    transform: rotate(45deg);
+    transition: 0.3s ease all;
+    z-index: 100;
+  }
+}
+
+.popupForTicketTransfers {
+  left: 0 !important;
+  right: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: 230px !important;
+}
+
+.slideUp {
+  animation: slideUpAnimation 0.3s ease forwards;
+}
+.slideDown {
+  animation: slideDownAnimation 0.3s ease forwards;
+}
+@keyframes slideUpAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDownAnimation {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}

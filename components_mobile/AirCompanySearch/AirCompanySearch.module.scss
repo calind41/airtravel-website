@@ -1,0 +1,239 @@
+// 90% of originalSize
+
+.container {
+  width: 100%;
+  margin: auto;
+  margin-top: 80px;
+  height: 700.2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  & > div {
+    width: 100%;
+  }
+
+  h1 {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 18px;
+    width: 91.78vw;
+
+    height: 28.4px;
+    font-size: 19px;
+    font-weight: 500;
+    color: #212121;
+  }
+  main {
+    .inputWrapper {
+      width: 91.78vw;
+      height: 48.6px;
+      display: flex;
+      margin: auto;
+      margin-top: 24.3px;
+      input {
+        width: 88vw;
+        height: 48.6px;
+        border-radius: 6px 0 0 6px;
+        border: 1px solid #dadce0;
+        border-right: none;
+        padding-left: 19.8px;
+        font-size: 11.7px;
+        color: #797c80;
+        outline: none;
+      }
+      button {
+        width: 14.5vw;
+        height: 48.6px;
+        background-color: #fff;
+        border-radius: 0 6px 6px 0;
+        font-size: 11.7px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #dadce0;
+        border-left: none;
+        span {
+          margin-top: 3.6px;
+          position: relative;
+          svg {
+            width: 15px;
+            height: 15px;
+            path {
+              fill: #c1c3c7;
+            }
+          }
+        }
+      }
+    }
+    .alphabetIndexWrapper {
+      position: relative;
+      overflow: scroll;
+      overflow-y: hidden;
+      width: 91.78vw;
+      margin: auto;
+      transition: 0.2s ease all;
+      scroll-behavior: smooth;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .alphabetIndex {
+        width: 855px;
+        position: relative;
+        margin: auto;
+        height: 40.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 34.2px;
+        span {
+          position: relative;
+          width: 34px;
+          height: 41.4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 11.7px;
+          border-top: 1.5px solid #e4e6eb;
+          border-bottom: 1.5px solid #e4e6eb;
+          cursor: pointer;
+          transition: 0.1s ease background-color;
+          margin-bottom: 10px;
+          .arrowDown {
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            bottom: -5px;
+            width: 9px;
+            height: 5px;
+            display: none;
+          }
+        }
+        .selectedLetter {
+          background-color: #e6f3ff;
+          border: 1px solid #59acff;
+          border-radius: 6px;
+          span {
+            display: inline-flex;
+          }
+        }
+      }
+    }
+
+    ul {
+      width: 91.78vw;
+      min-height: 366px;
+
+      list-style-position: inside;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      margin-top: 28px;
+
+      li {
+        margin-bottom: 16.2px;
+        color: #212121;
+        font-size: 8px;
+        span {
+          position: relative;
+          top: 1.8px;
+          left: -0.9px;
+          font-size: 11.7px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    h1 {
+      width: 344.17px;
+    }
+    main {
+      .inputWrapper {
+        width: 344.17px;
+
+        input {
+          width: 329.9px;
+        }
+        button {
+          width: 54.34px;
+        }
+      }
+      .alphabetIndexWrapper {
+        width: 344.17px;
+
+        .alphabetIndex {
+          width: 855px;
+        }
+      }
+
+      ul {
+        width: 344.17px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .container {
+    h1 {
+      width: 83.13vw;
+    }
+    main {
+      .inputWrapper {
+        width: 83.13vw;
+        input {
+          width: 79.7vw;
+        }
+        button {
+          width: 13.12vw;
+        }
+      }
+      .alphabetIndexWrapper {
+        width: 83.13vw;
+        .alphabetIndex {
+          width: 855px;
+        }
+      }
+      ul {
+        width: 83.13vw;
+      }
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .container {
+    h1 {
+      width: 86vw;
+    }
+    main {
+      .inputWrapper {
+        width: 86vw;
+        input {
+          width: 82.45vw;
+        }
+        button {
+          width: 13.579vw;
+        }
+      }
+      .alphabetIndexWrapper {
+        width: 86vw;
+        .alphabetIndex {
+          width: 855px;
+        }
+      }
+      ul {
+        width: 86vw;
+      }
+    }
+  }
+}

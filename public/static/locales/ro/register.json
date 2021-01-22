@@ -1,0 +1,22 @@
+{
+    "title": "Înregistrare",
+    "subtitle": "Pentru a utiliza serviciul la maxim, rezervați rapid bilete, vizualizați rezervarea și primiți reduceri - înregistrați-vă un cont",
+    "emailPlaceholder": "E-mail", 
+    "requiredFieldEmail": "Câmp necesar",
+    "emailNotValid": "Adresă invalidă",
+    "passwordPlaceholder": "Parolă",
+    "passwordIndicator-1": "Peste 6 caractere",
+    "passwordIndicator-2": "Parolă slabă",
+    "passwordIndicator-3": "Parolă puternică",
+    "continue": "Continuă",
+    "linkToAuth": "Ai deja un cont?",
+    "phoneNr": "Număr de telefon",
+    "requiredFieldPhoneNr": "Câmp necesar",
+    "numberNotValid": "Număr greșit",
+    "next": "Mai departe"
+
+
+
+
+
+}

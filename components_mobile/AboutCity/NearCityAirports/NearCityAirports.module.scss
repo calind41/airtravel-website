@@ -1,0 +1,99 @@
+.nearCityAirports {
+  margin-top: 70px;
+  width: 91.78vw;
+
+  header {
+    .title {
+      font-size: 17px;
+      line-height: 25px;
+      color: #212121;
+    }
+    .subtitle {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #3c3c3c;
+      line-height: 20px;
+    }
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .airportCardContainer {
+      margin-top: 25px;
+      width: 91.78vw;
+      height: 82px;
+      background-color: #fff;
+      border-radius: 6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      & > div {
+        margin-left: 20px;
+      }
+      .title {
+        font-size: 15px;
+        color: #212121;
+      }
+      .subtitle {
+        position: relative;
+        top: 3px;
+        color: #797c80;
+        font-size: 11px;
+      }
+    }
+  }
+  footer {
+    margin-top: 50px;
+    .question {
+      font-size: 17px;
+      line-height: 25px;
+      color: #212121;
+    }
+    .answer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #3c3c3c;
+      line-height: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .nearCityAirports {
+    width: 344.17px;
+
+    header {
+    }
+    main {
+      .airportCardContainer {
+        width: 344.17px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .nearCityAirports {
+    width: 83.13vw;
+
+    main {
+      .airportCardContainer {
+        width: 83.13vw;
+      }
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .nearCityAirports {
+    width: 86vw;
+
+    main {
+      .airportCardContainer {
+        width: 430px;
+      }
+    }
+  }
+}

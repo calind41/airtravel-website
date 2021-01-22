@@ -1,0 +1,153 @@
+$borderInputColor: #d2d5d9;
+$inputBgColorBlur: #e4e6eb;
+$placeholderTopColor: #797c80;
+$warningRed: #dd5656;
+
+// 90% of originalSize
+.container {
+  width: 666px;
+  height: 612px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 91px;
+
+  .infoCardContainer {
+    display: none;
+  }
+  .infoCardContainerShow {
+    position: absolute;
+    left: 350.1px;
+    top: 139.5px;
+    width: 261px;
+    height: 243px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #727272;
+    font-size: 9.9px;
+    transition: all 0.2s ease;
+    display: block !important;
+    .title {
+      text-align: center;
+      padding-top: 26.1px;
+    }
+    .info {
+      width: 225px;
+      height: 138.6px;
+      margin: auto;
+      margin-top: 21.6px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .p1,
+      .p2 {
+        line-height: 18px;
+      }
+      .p2 {
+        margin-top: 18px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .heading {
+    width: inherit;
+    height: 87.3px;
+    text-align: center;
+    margin-top: 72px;
+    margin-bottom: 27px;
+
+    .title {
+      font-size: 27.9px;
+      color: #333333;
+      margin-bottom: 22.5px;
+      line-height: 23.4px;
+    }
+    .subtitle {
+      font-size: 11.7px;
+      color: #797c80;
+      line-height: 22.5px;
+    }
+  }
+
+  main {
+    margin: auto;
+    width: 526.5px;
+    height: 531px;
+    margin-top: -7.2px;
+    label {
+      position: relative;
+      display: block;
+      width: 360px;
+      height: 54px;
+      margin: auto;
+
+      input {
+        position: relative;
+        font-size: 11.7px;
+        width: 360px;
+        height: 54px;
+        padding-left: 18.9px;
+        padding-top: 13.5px;
+        border-radius: 6px;
+        border: 1px solid $borderInputColor;
+        background-color: $inputBgColorBlur;
+        outline: none;
+
+        &:focus {
+          background-color: #fff;
+        }
+        &:not([value=""]):not(:focus) {
+          background-color: #fff;
+        }
+
+        &:focus ~ .vCodePlaceholder,
+        &:not(:focus):valid ~ .vCodePlaceholder {
+          position: absolute;
+          top: 11.7px;
+          left: 18px;
+          font-size: 9px;
+          opacity: 1;
+          color: $placeholderTopColor;
+        }
+      }
+
+      .vCodePlaceholder {
+        position: absolute;
+        pointer-events: none;
+        left: 18px;
+        top: 21.6px;
+        transition: all 0.2s ease;
+        font-size: 11.7px;
+        user-select: none;
+      }
+    }
+
+    .actionsGroup {
+      width: 360px;
+      height: 82.8px;
+      margin: auto;
+      margin-top: 35.1px;
+      a {
+        display: block;
+        color: #0080ff;
+        font-size: 11.7px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        text-align: center;
+        margin-bottom: 13.5px;
+        text-align: center;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+    }
+    .bottomMessage {
+      font-size: 9px;
+      color: #919599;
+      text-align: center;
+      margin-top: 49.5px;
+    }
+  }
+}

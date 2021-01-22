@@ -1,0 +1,319 @@
+$borderInputColor: #d0d4db;
+$inputBgColorBlur: #e4e6eb;
+$placeholderTopColor: #797c80;
+$warningRed: #dd5656;
+$green: #6bdd56;
+
+// 90% of originalSize
+.container {
+  width: 735px;
+  min-height: 423px;
+  background-color: #fff;
+  border-radius: 6px;
+  margin: auto;
+  margin-bottom: 36px;
+  padding-bottom: 36px;
+  .heading {
+    display: inline-block;
+    margin-top: 25.2px;
+    margin-left: 20.7px;
+    width: 204.3px;
+    height: 27px;
+    font-size: 15.3px;
+    font-weight: 500;
+  }
+  .warning {
+    margin-top: 16.2px;
+    margin-left: 21.6px;
+    width: 657px;
+    height: 40.5px;
+    display: inline-flex;
+    span:nth-child(2) {
+      font-size: 11.7px;
+      margin-left: 18px;
+      display: inline-block;
+      margin-top: -3.6px;
+      line-height: 17.46px;
+    }
+  }
+  .form {
+    width: 706.5px;
+    height: 194.4px;
+    margin-left: 20.7px;
+    margin-top: 33.3px;
+
+    .inputs {
+      display: flex;
+      flex-wrap: wrap;
+      height: 180px;
+      width: 708.3px;
+    }
+
+    .selectWrapper {
+      display: flex;
+      margin-top: 14.4px;
+      justify-content: space-between;
+      width: 334.8px;
+    }
+
+    .firstNameC,
+    .lastNameC,
+    .dateOfBirthC,
+    .serialNrInputC,
+    .serialNrReleaseDateC,
+    .serialNrExpireDateC {
+      width: 334.8px;
+      height: 39.6px;
+      margin-right: 18px;
+      label {
+        position: relative;
+        display: block;
+
+        input {
+          position: relative;
+          font-size: 11.7px;
+          width: 334.8px;
+          height: 39.6px;
+          padding-left: 18.9px;
+          padding-top: 13.5px;
+          border-radius: 4px;
+          border: 1px solid $borderInputColor;
+          background-color: #fafbfc;
+          color: #000;
+          outline: none;
+
+          &:focus {
+            background-color: #fff;
+            border: 1px solid #0080ff;
+          }
+          &:not([value=""]):not(:focus) {
+            background-color: #fff;
+          }
+
+          &::placeholder {
+            opacity: 0;
+          }
+
+          &:focus::placeholder {
+            opacity: 1;
+            color: #919499;
+          }
+
+          &:focus ~ .firstNamePlaceholder,
+          &:not(:focus):valid ~ .firstNamePlaceholder,
+          &:focus ~ .lastNamePlaceholder,
+          &:not(:focus):valid ~ .lastNamePlaceholder,
+          &:focus ~ .dateOfBirthPlaceholder,
+          &:not(:focus):valid ~ .dateOfBirthPlaceholder,
+          &:focus ~ .serialNumberPlaceholder,
+          &:not(:focus):valid ~ .serialNumberPlaceholder,
+          &:focus ~ .serialNrReleaseDatePlaceholder,
+          &:not(:focus):valid ~ .serialNrReleaseDatePlaceholder,
+          &:focus ~ .serialNrExpireDatePlaceholder,
+          &:not(:focus):valid ~ .serialNrExpireDatePlaceholder {
+            position: absolute;
+            top: 4.5px;
+            left: 18px;
+            font-size: 9px;
+            opacity: 1;
+            color: $placeholderTopColor;
+          }
+        }
+
+        .firstNamePlaceholder,
+        .lastNamePlaceholder,
+        .dateOfBirthPlaceholder,
+        .serialNumberPlaceholder,
+        .serialNrReleaseDatePlaceholder,
+        .serialNrExpireDatePlaceholder {
+          position: absolute;
+          pointer-events: none;
+          left: 18px;
+          top: 14.4px;
+          transition: all 0.2s ease;
+          font-size: 11.7px;
+          user-select: none;
+          color: #616366;
+        }
+      }
+      .requiredField {
+        display: none;
+      }
+      .numberNotValid {
+        display: none;
+      }
+    }
+    .serialNrReleaseDateC,
+    .serialNrExpireDateC {
+      margin-top: 4.5px;
+      width: 158.4px;
+      height: 39.6px;
+      label {
+        input {
+          width: 158.4px;
+          height: 39.6px;
+        }
+      }
+    }
+    .serialNrInputC {
+      margin-top: 4.5px;
+    }
+    .dateOfBirthC {
+      margin-top: 14.4px;
+    }
+  }
+
+  .addPassengerBtn {
+    width: 185.4px;
+    height: 39.6px;
+    border-radius: 6px;
+    background-color: #2b95ff;
+    color: #fff;
+    font-size: 11.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 9.9px;
+    margin-left: 20.7px;
+  }
+
+  // React-dropdown styles
+  .myClassName {
+    margin-bottom: 9px;
+    width: 219.6px;
+    height: 39.6px;
+  }
+  .genderClassName {
+    width: 97.2px;
+    height: 39.6px;
+  }
+  .myControlClassName {
+    border: 1px solid #d0d4db;
+    border-radius: 4px;
+    width: 219.6px;
+    height: 39.6px;
+    cursor: pointer;
+
+    .myArrowClassName {
+      margin-top: 4.5px;
+    }
+  }
+  .genderControlClassName {
+    width: 97.2px;
+    height: 39.6px;
+  }
+  .myPlaceholderClassName {
+    margin-top: 4.5px;
+    font-size: 11.7px;
+    span:nth-child(2) {
+      margin-left: 4.5px;
+    }
+  }
+  .myMenuClassName {
+    border: 1px solid #d0d4db;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    width: 219.6px;
+    font-size: 11.7px;
+    & > div:first-child {
+      display: none;
+    }
+    & > div:hover {
+      background-color: #e9edf5;
+      color: #151a1c;
+    }
+    .flagClassName {
+      display: inline-block;
+      width: 100%;
+      span {
+        margin-right: 4.5px;
+      }
+    }
+  }
+  .genderMenuClassName {
+    width: 97.2px;
+  }
+}
+
+.aditionalPassengerAdded {
+  margin-left: 23px;
+  margin-top: 3px;
+  font-size: 13px;
+  border-top: 1px solid #dfe3eb;
+  padding-top: 35px;
+  width: 685px;
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 662px;
+
+    .form {
+      width: 620px;
+
+      .inputs {
+        display: flex;
+        flex-wrap: wrap;
+        height: 180px;
+        width: 620px;
+      }
+
+      .selectWrapper {
+        width: 274px;
+      }
+
+      .firstNameC,
+      .lastNameC,
+      .dateOfBirthC,
+      .serialNrInputC,
+      .serialNrReleaseDateC,
+      .serialNrExpireDateC {
+        width: 284.8px;
+
+        label {
+          input {
+            width: 284.8px;
+          }
+        }
+      }
+      .serialNrReleaseDateC,
+      .serialNrExpireDateC {
+        width: 133.4px;
+        label {
+          input {
+            width: 133.4px;
+          }
+        }
+      }
+    }
+  }
+  .aditionalPassengerAdded {
+    margin-left: 23px;
+    margin-top: 3px;
+    font-size: 13px;
+    border-top: 1px solid #dfe3eb;
+    padding-top: 35px;
+    width: 585px;
+  }
+  .myClassName {
+    width: 170.6px !important;
+  }
+  .genderClassName {
+    width: 87.2px !important;
+  }
+  .myControlClassName {
+    width: 170.6px !important;
+  }
+  .genderControlClassName {
+    width: 97.2px !important;
+  }
+
+  .myMenuClassName {
+    width: 170.6px !important;
+  }
+  .genderMenuClassName {
+    width: 97.2px !important;
+  }
+}

@@ -1,0 +1,139 @@
+.container {
+  width: 1106px;
+  height: 109px;
+  margin: auto;
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .flightDetails {
+    margin-top: 22px;
+    .top {
+      display: flex;
+      align-items: center;
+      .planeIcon {
+        position: relative;
+        top: 3px;
+        svg {
+          width: 23px;
+          height: 23px;
+          path {
+            fill: #000;
+          }
+        }
+      }
+      .fromTo {
+        margin-left: 14px;
+        margin-bottom: 2px;
+        font-size: 17px;
+        line-height: 24px;
+        font-weight: 500;
+        letter-spacing: 0;
+      }
+    }
+    .bottom {
+      margin-left: 37px;
+      margin-top: -1px;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #959ba4;
+      letter-spacing: 0;
+    }
+  }
+  .ticketHeader {
+    position: relative;
+    top: 2px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 37px;
+    width: 1112px;
+    .btn {
+      display: flex;
+      align-items: center;
+      position: relative;
+      border: none;
+      padding: 0;
+      color: #959ba4;
+      background-color: transparent;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+      letter-spacing: 0;
+      outline: none;
+      cursor: pointer;
+      &:hover {
+        font-weight: 500;
+      }
+      span:nth-child(1) {
+        pointer-events: none;
+      }
+      .sortIcon {
+        position: relative;
+        top: 2px;
+        left: 7px;
+        visibility: hidden;
+        pointer-events: none;
+        svg {
+          width: 16px;
+          height: 16px;
+          pointer-events: none;
+
+          path {
+            fill: #333;
+            pointer-events: none;
+          }
+        }
+      }
+      .isVisible {
+        visibility: visible !important;
+      }
+    }
+    button:last-child {
+      right: 21px;
+    }
+
+    .activeButton {
+      color: #333;
+      &:hover {
+        font-weight: 400 !important;
+      }
+    }
+
+    .descendantSorting {
+      .sortIcon {
+        svg {
+          transform: rotateX(-180deg);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1372px) {
+  .container {
+    width: 826px;
+
+    .ticketHeader {
+      width: 832px;
+    }
+  }
+}
+@media screen and (max-width: 1036px) {
+  .container {
+    width: 95.11vw;
+
+    .ticketHeader {
+      width: 96vw;
+    }
+  }
+}
+@media screen and (max-width: 857px) {
+  .container {
+    width: 795px;
+
+    .ticketHeader {
+      width: 801px;
+    }
+  }
+}

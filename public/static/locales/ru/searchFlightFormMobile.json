@@ -1,0 +1,27 @@
+{
+    "departingValue": "Когда летите?",
+    "when": "КОГДА",
+    "flightTypeDefault": "Эконом",
+    "header": "Поиск дешевых авиабилетов",
+    "selectableButton": "Авиабилеты",
+    "selectableButton2": "Отели",
+    "forward": "Туда",
+    "back": "Обратно",
+    "defaultPassenger": "пассажир",
+    "defaultPassengerMultiple": "пассажира",
+    "defaultFlightType": "эконом",
+    "findTickets": "Найти билеты",
+
+    "Departure-inputPlaceholder": "Откуда",
+    "Departure-locationType": "Откуда",
+    "Arrival-inputPlaceholder": "Куда",
+    "Arrival-locationType": "Куда",
+    "LocationsSmallScreen-inputPlaceholder-departure": "Откуда вылет?",
+    "LocationsSmallScreen-inputPlaceholder-arrival": "Куда летим?",
+
+    "CalendarInputSmallScreen-departureDate": "Дата вылета",
+    "CalendarInputSmallScreen-arrivalDate": "Дата возвращения",
+    "CalendarInputSmallScreen-forward": "Туда",
+    "CalendarInputSmallScreen-back": "Обратно",
+    "CalendarInputSmallScreen-buttonText": "Обратный билет не нужен"
+}

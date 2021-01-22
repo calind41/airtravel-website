@@ -1,0 +1,43 @@
+.monthListC {
+  width: 139px;
+  height: 477px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-right: 0.8px solid rgba(158, 158, 158, 0.4);
+  position: relative;
+}
+.monthListC > div {
+  width: 120px;
+  height: 34px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #888888;
+  margin-left: 9px;
+  display: flex;
+  align-items: center;
+  padding-left: 9px;
+}
+.monthListC > div:nth-child(1) {
+  margin-top: 9px;
+}
+.monthListC > div:hover {
+  background-color: #e8e8e8;
+  z-index: 100;
+}
+.monthListC .selectedMonth {
+  transition: 0.2s ease-in-out;
+  color: #000;
+  z-index: 100;
+}
+
+.hoverElement {
+  background-color: #e8e8e8;
+  position: absolute;
+  top: 9px;
+  opacity: 0.6;
+  transition: 0.2s ease-in-out;
+}

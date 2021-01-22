@@ -1,0 +1,164 @@
+.container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: 98px;
+
+  aside {
+    position: relative;
+    top: -90px;
+    height: 290px;
+  }
+  .paymentMethod {
+    position: fixed;
+    bottom: 0;
+    height: 86px;
+    width: 100%;
+    background-color: #0080ff;
+    display: flex;
+    display: none;
+    justify-content: space-between;
+
+    .wrapper {
+      width: 89.33vw;
+      margin: auto;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      & > div:nth-child(1) {
+        margin-top: 8px;
+        font-size: 13px;
+        color: #fff;
+        font-weight: 500;
+      }
+      & > div:nth-child(2) {
+        width: 28vw;
+        height: 38px;
+        border-radius: 6px;
+        background-color: #fff;
+        color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .summary {
+    height: 200px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #0080ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    display: none;
+
+    .wrapper {
+      width: 89.33vw;
+      height: 190px;
+
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      // justify-content: space-between;
+      .ticketCost {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        color: #fff;
+      }
+      .insuranceCost {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        color: #fff;
+      }
+
+      .total {
+        display: flex;
+        justify-content: space-between;
+        & > div:nth-child(1) {
+          margin-top: 20px;
+
+          font-size: 13px;
+          color: #fff;
+          font-weight: 500;
+        }
+        & > div:nth-child(2) {
+          margin-top: 10px;
+          width: 28vw;
+          height: 38px;
+          border-radius: 6px;
+          background-color: #fff;
+          color: #000;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 13px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .paymentMethodShow {
+    display: flex !important;
+  }
+  .summaryShow {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    .paymentMethod {
+      .wrapper {
+        width: 344.17px;
+      }
+    }
+
+    .summary {
+      .wrapper {
+        width: 344.17px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 414px) {
+  .container {
+    .paymentMethod {
+      .wrapper {
+        width: 83.13vw;
+      }
+    }
+
+    .summary {
+      .wrapper {
+        width: 83.13vw;
+      }
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .container {
+    .paymentMethod {
+      .wrapper {
+        width: 86vw;
+      }
+    }
+
+    .summary {
+      .wrapper {
+        width: 86vw;
+      }
+    }
+  }
+}

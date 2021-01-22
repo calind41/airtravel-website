@@ -1,0 +1,66 @@
+// 90% of originalSize
+.container {
+  width: 933.3px;
+  width: 964px;
+  height: 342px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  .title {
+    width: 288px;
+    height: 27px;
+    color: #333333;
+    font-size: 16.2px;
+    margin-top: 26.1px;
+  }
+  .subtitle {
+    font-size: 11.7px;
+    color: #797c80;
+    margin-top: 22.5px;
+  }
+  .main {
+    width: 933.3px;
+    height: 265.5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17.6px;
+    .searchTicketButton {
+      width: 261px;
+      height: 54px;
+      background-color: #2b95ff;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 11.7px;
+      font-weight: 500;
+      margin-top: 36.9px;
+    }
+    .icon {
+      position: relative;
+      bottom: 100px;
+      width: 346.5px;
+      height: 265.5px;
+      svg {
+        width: 346.5px;
+        height: 265.5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 662px;
+
+    .main {
+      width: 662px;
+      .icon {
+        position: relative;
+        left: 10px;
+      }
+    }
+  }
+}

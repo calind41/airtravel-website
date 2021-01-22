@@ -1,0 +1,105 @@
+.fromInput {
+  position: relative;
+  height: 48px;
+  width: 358px;
+}
+.fromInput label input {
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  height: 48px;
+  outline: none;
+  color: #212121;
+  padding-left: 15.5px;
+  padding-top: 1.5px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  cursor: pointer;
+  background-color: rgba(33, 33, 33, 0);
+  transition: 0.2s ease-in-out;
+  width: 311.2px;
+  overflow: hidden;
+}
+.fromInput label input::placeholder {
+  color: #9e9e9e;
+  opacity: 0.5;
+}
+.fromInput label:hover input {
+  background-color: rgba(33, 33, 33, 0.07);
+}
+.fromInput label input:focus {
+  background-color: rgba(33, 33, 33, 0);
+}
+.fromInput label {
+  height: 48px;
+  border-radius: 4px 0 0 4px;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.fromInput label span {
+  position: absolute;
+  top: 0;
+  left: 311px;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  width: 46.8px;
+  height: 48px;
+  color: rgba(158, 158, 158, 0.5);
+  font-size: 11px;
+  letter-spacing: 0.2px;
+  padding-left: 8px;
+  padding-top: 2px;
+  transition: 0.2s ease-in-out !important;
+  cursor: pointer;
+}
+.fromInput label:hover input:not(:focus) + span {
+  background-color: rgba(33, 33, 33, 0.07);
+  transition: 0.2s ease-in-out !important;
+}
+
+@media screen and (max-width: 1155px) {
+  .fromInput {
+    position: relative;
+    width: 230px;
+    height: 47px;
+    top: 0px;
+  }
+  .fromInput label input {
+    width: 230px;
+    height: 47px;
+  }
+  .fromInput label span {
+    position: absolute;
+    top: 0px;
+    left: 189px;
+    height: 48px;
+  }
+  .fromInput label:hover input:not(:focus) + span {
+    background-color: #ededed;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .fromInput {
+    position: relative;
+    width: 89.4vw;
+    height: 47px;
+  }
+  .fromInput label input {
+    width: 89.4vw;
+    height: 47px;
+  }
+  .fromInput label {
+    position: relative;
+    overflow: hidden;
+  }
+  .fromInput label span {
+    position: absolute;
+    top: -0.5px;
+    left: 91.4%;
+  }
+  .fromInput label:hover input:not(:focus) + span {
+    background-color: #ededed;
+  }
+}

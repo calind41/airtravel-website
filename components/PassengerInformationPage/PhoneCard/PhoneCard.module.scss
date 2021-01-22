@@ -1,0 +1,31 @@
+// 90% of originalSize
+.container {
+  width: 261px;
+  width: 211px;
+
+  height: 122.4px;
+  background-color: #edf0f5;
+  border: 1px solid #dfe3eb;
+  border-radius: 6px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .title {
+    font-size: 9.9px;
+    color: #a0a3a8;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+  }
+  .contactNr {
+    font-size: 18.9px;
+    font-weight: 500;
+    color: #6f7275;
+    display: flex;
+    justify-content: center;
+    margin-top: 10.8px;
+  }
+}

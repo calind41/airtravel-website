@@ -1,0 +1,39 @@
+{
+    "SearchFlightForm-h1": "Planifică viitoarea călătorie acum",
+    "SearchFlightForm-h3": "Găsește cele mai sigure destinații. Utilizează rezervarea flexibilă.",
+    "Departure-fromInputPlaceholder": "Zbor din",
+    "Arrival-toInputPlaceholder": "Aterizare în",
+    "FlightDate-calendarPlaceholder": "DATA",
+    "TripButtons-roundTripBtn": "Тur-retur",
+    "TripButtons-oneWayTripBtn": "Tur",
+    "PassengerDropdown-passengerPlaceholder": "Nr. Pasageri",
+    "PassengerDropdwon-passengerTextSingle": "persoană,",
+    "PassengerDropdwon-passengerTextMultiple": "persoane,",
+    "flightType-economy": "Econom",
+    "flightType-comfort": "Comfort",
+    "flightType-business": "Business",
+    "flightType-firstClass": "Clasa Întîi",
+    "passengerType-adult": "Adulți",
+    "passengerType-child": "Copil",
+    "passengerType-baby": "Infant",
+    "ageInterval-adult": "Mai mult de 12 ani",
+    "ageInterval-child": "2-12 ani",
+    "ageInterval-baby": "Pînă la 2 ani, fără loc",
+    "searchFlightButtonText": "Caută",
+    "Header-bonusPts": "Puncte Bonus",
+    "Header-services": "Servicii",
+    "Header-customerSupport": "Suport Clienti 24/7",
+    "Header-myBooking": "Rezervarea mea",
+    "Header-customerProfile": "Cabinet Personal",
+    "serviceDropdown-giftCard": "Certificate cadou",
+    "serviceDropdown-insurance": "Asigurare",
+    "serviceDropdown-seaTravel": "Calătorii la mare",
+    "customerSupportDropdown-contactSupport": "Contactați Suport",
+    "customerSupportDropdown-onlineCall": "Apel Online",
+
+    "passengerDropdownMobile-title": "Pasageri",
+    "passengerDropdownMobile-done": "Terminat"
+
+    
+
+}

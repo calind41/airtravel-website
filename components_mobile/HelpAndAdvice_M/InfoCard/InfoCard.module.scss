@@ -1,0 +1,127 @@
+.container {
+  width: 91.78vw;
+  max-height: 52px;
+  padding: 8px 20px 8px 0;
+  border-bottom: 1px solid #cdd4de;
+  transition: max-height 0.5s linear;
+  overflow: hidden;
+  margin-top: 20px;
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+    width: 100%;
+
+    .topic {
+      font-weight: 400;
+      padding: 5px 0;
+      margin: 0;
+      font-size: 13px;
+      color: #0c73fe;
+      cursor: pointer;
+      position: relative;
+      top: -7px;
+    }
+    .arrowIcon {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      right: -19px;
+      top: 2px;
+      padding-top: 10px;
+      cursor: pointer;
+      transition: 0.2s ease;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-color: #90a4ae transparent transparent;
+        border-left: 5px solid transparent;
+        border-bottom: 0 solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #90a4ae;
+        margin: auto;
+      }
+      &:hover:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-color: #0c73fe transparent transparent;
+        border-left: 5px solid transparent;
+        border-bottom: 0 solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #0c73fe;
+        margin: auto;
+      }
+    }
+  }
+
+  .dropdownContent {
+    margin-top: 0px;
+    width: 100%;
+    max-height: 300px;
+
+    .item {
+      font-size: 11px;
+      color: #0c131d;
+      margin: 0px 0 0;
+      line-height: 1.75;
+
+      .cta {
+        font-size: 12px;
+        color: #0c73fe;
+        margin: 7px 0 0;
+        letter-spacing: 0.42px;
+        cursor: pointer;
+
+        &:after {
+          content: "\2192";
+          display: inline-block;
+          position: relative;
+          left: 5px;
+          top: -1px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.rotate180deg {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+}
+
+.openContainer {
+  max-height: 400px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 344.17px;
+   
+  }
+}
+@media screen and (min-width: 414px){ 
+ .container {
+     width: 83.13vw;
+   
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container{
+    width: 430px;
+  }
+}
+@media screen and (min-width: 620px) {
+  .container{
+     width: 67.17vw;
+  }
+}

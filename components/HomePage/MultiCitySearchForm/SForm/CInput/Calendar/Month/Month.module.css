@@ -1,0 +1,62 @@
+.monthC {
+  width: 335px;
+  min-height: 239px;
+}
+.monthC h4 {
+  color: #212121;
+  font-weight: 400;
+  font-size: 14px;
+}
+.centerH4 {
+  text-align: center !important;
+}
+.gridContainer {
+  width: 335px;
+  min-height: 218px;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  background-color: #fff;
+}
+.gridItem {
+  height: 35px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #212121;
+  cursor: pointer;
+  margin: 5px;
+}
+.gridItem:hover {
+  background-color: #fff2bb;
+  border-radius: 4px;
+}
+.gridItemEmpty:hover {
+  background-color: #fff;
+  cursor: default;
+}
+.colorGray {
+  color: #cccccc;
+  cursor: default;
+}
+.colorGray:hover {
+  background-color: #fff !important;
+  border-radius: 4px;
+}
+
+.selectedDate {
+  background-color: #ffd41e !important;
+  border-radius: 4px;
+}
+.hoveredDate {
+  background-color: #fff2bb;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 780px) {
+  .monthC {
+    width: 335px;
+    min-height: 290px;
+  }
+}

@@ -1,0 +1,283 @@
+.container {
+  width: 100%;
+
+  height: 100vh;
+  height: 640px;
+  display: inline-block;
+  background-image: url("/images/lp_bg2_mob.png");
+  background-size: cover;
+  position: relative;
+
+  &:after {
+    content: " ";
+    position: absolute;
+    background-color: #470084;
+    opacity: 0.05;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  header {
+    font-family: Stapel, -apple-system, BlinkMacSystemFont, Inter, Roboto,
+      Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    width: 88vw;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    margin-top: 70px;
+    z-index: 5;
+    position: relative;
+  }
+
+  .formType {
+    display: flex;
+    width: 230px;
+    height: 28px;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 14px;
+    position: relative;
+    z-index: 5;
+    .selectedButton {
+      color: #0c73fe;
+      background-color: #fff;
+    }
+    & > button {
+      width: 115px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      outline: none;
+      color: #fff;
+      border: 1px solid #fff;
+      background-color: transparent;
+      cursor: pointer;
+      transition: 0.4s ease-in-out;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+
+      &:hover {
+        color: #0c73fe;
+        background-color: #fff;
+      }
+    }
+    & > button:nth-child(1) {
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+    }
+    & > button:nth-child(2) {
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+    }
+  }
+
+  // .form {
+  //   width: 88vw;
+  //   margin: auto;
+  //   margin-top: 12px;
+  //   .departure {
+  //     position: relative;
+
+  //     .switchLocIcon {
+  //       position: absolute;
+  //       bottom: -13px;
+  //       z-index: 5;
+  //       right: 12px;
+  //       width: 26px;
+  //       height: 26px;
+  //       display: flex;
+  //       flex-direction: column;
+  //       justify-content: center;
+  //       align-items: center;
+  //       border-radius: 100%;
+  //       box-shadow: 0px 5px 5px -3px #00000049;
+  //       background-color: #fff;
+  //       cursor: pointer;
+  //       .top,
+  //       .down {
+  //         position: absolute;
+  //         width: 13px;
+  //         height: 6px;
+  //         display: flex;
+  //         flex-direction: column;
+  //         justify-content: center;
+  //         & > svg {
+  //           width: 13px;
+  //           height: 6px;
+  //           fill: #0c73fe;
+  //           &:not(:root) {
+  //             overflow: hidden;
+  //           }
+  //           transform: rotate(90deg);
+  //         }
+  //       }
+  //       .top {
+  //         right: 10px;
+  //       }
+  //       .down {
+  //         transform: rotate(180deg);
+  //         // margin-left: 10px;
+  //         left: 10px;
+  //       }
+  //     }
+  //   }
+  //   .arrival {
+  //     margin-top: 1px;
+  //   }
+  //   .dateContainer {
+  //     margin-top: 2px;
+  //     width: 88vw;
+  //     height: 60px;
+  //     display: flex;
+  //     justify-content: space-between;
+  //     z-index: 3;
+
+  //     .departureDate,
+  //     .returnBackDate {
+  //       width: 49.5%;
+  //       height: 60px;
+  //       display: flex;
+  //       align-items: center;
+  //       color: #90a4ae;
+  //       font-weight: 400;
+  //       font-size: 13.5px;
+  //       background-color: #fff;
+  //       cursor: pointer;
+  //       z-index: 3;
+  //     }
+  //     .departureDate {
+  //       display: flex;
+  //       justify-content: space-between;
+  //       & > span:nth-child(1) {
+  //         margin-left: 16px;
+  //       }
+  //       & > span:nth-child(2) {
+  //         color: #0c73fe;
+  //         margin-right: 8px;
+  //       }
+  //     }
+  //     .returnBackDate {
+  //       width: 50%;
+  //       height: 60px;
+  //       & > span {
+  //         margin-left: 16px;
+  //       }
+  //     }
+  //   }
+  //   .passengerDropdown {
+  //     margin-top: 1.5px;
+  //     width: 88vw;
+  //     height: 60px;
+  //     background-color: #fff;
+  //     border-bottom-left-radius: 5px;
+  //     border-bottom-right-radius: 5px;
+  //     cursor: pointer;
+  //     font-weight: 400;
+  //     font-size: 13.5px;
+  //     display: flex;
+  //     justify-content: space-between;
+  //     align-items: center;
+  //     position: relative;
+  //     z-index: 3;
+  //     .details {
+  //       margin-left: 16px;
+  //       .nrPassengers {
+  //         font-size: 14px;
+  //         color: #0c131d;
+  //         font-weight: 400;
+  //       }
+  //       .ticketType {
+  //         color: #90a4ae;
+  //         position: relative;
+  //         top: 3px;
+  //       }
+  //     }
+  //     .arrow {
+  //       width: 24px;
+  //       height: 24px;
+  //       position: absolute;
+  //       top: 19px;
+  //       right: 7px;
+
+  //       padding-top: 10px;
+  //       cursor: pointer;
+  //       transition: 0.2s ease;
+
+  //       &:after {
+  //         content: "";
+  //         display: block;
+  //         width: 0;
+  //         height: 0;
+  //         border-color: #90a4ae transparent transparent;
+  //         border-left: 5px solid transparent;
+  //         border-bottom: 0 solid transparent;
+  //         border-right: 5px solid transparent;
+  //         border-top: 5px solid #90a4ae;
+  //         margin: auto;
+  //       }
+  //     }
+  //   }
+  // }
+  // footer {
+  //   margin: auto;
+  //   margin-top: 10px;
+  //   width: 88vw;
+  //   z-index: 5 !important;
+  //   .submitSearchBtn {
+  //     position: relative;
+  //     z-index: 5 !important;
+  //     width: 88vw;
+  //     height: 60px;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     border: none;
+  //     outline: none;
+  //     cursor: pointer;
+  //     font-size: 18px;
+  //     font-weight: 600;
+  //     background-color: #f57c00;
+  //     color: #fff;
+  //     border-radius: 5px;
+
+  //     .icon {
+  //       width: 32px;
+  //       height: 32px;
+  //       margin-top: 0.9px;
+  //       margin-left: 5px;
+  //       svg {
+  //         width: 32px;
+  //         height: 32px;
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+@media screen and (min-width: 474px) {
+  .container {
+    header {
+      width: 88vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+@media screen and (min-width: 539px) {
+  .container {
+    header {
+      width: 88vw;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 120px;
+    }
+  }
+}

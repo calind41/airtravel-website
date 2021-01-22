@@ -1,0 +1,387 @@
+// 90% of originalSize
+.ticketDetailsContainer {
+  width: 100%;
+  height: 96.84%;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  border-radius: 10px 10px 0 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  z-index: 9000000;
+
+  .closeIcon {
+    position: absolute;
+    right: 5.335vw;
+    top: 23px;
+  }
+
+  header {
+    width: 89.33vw;
+    height: 71px;
+    margin: auto;
+    margin-top: 64px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .fromToLocations {
+      height: 16px;
+      display: flex;
+      font-size: 13px;
+      font-weight: 500;
+      & > div {
+        span:nth-child(2) {
+          margin-left: 5px;
+        }
+      }
+      & > div:nth-child(2) {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+
+    .flightDuration {
+      font-size: 12px;
+      color: #787b82;
+    }
+    .baggageTypes {
+      display: flex;
+      width: 230px;
+      justify-content: space-between;
+      & > div {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        span {
+          margin-left: 7px;
+        }
+      }
+      & > div:nth-child(2) {
+        color: #787b82;
+      }
+    }
+  }
+  .alreadyBookedInfo {
+    margin: auto;
+    margin-top: 20px;
+    width: 89.33vw;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+
+    & > div:nth-child(1) {
+      font-size: 11px;
+
+      display: flex;
+      align-items: center;
+      & > div:nth-child(2) {
+        margin-left: 2px;
+      }
+    }
+    .getInsuranceLink {
+      cursor: pointer;
+      color: #0080ff;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+  & > div:nth-child(2) > .oneWayTicketDetailsContainerSecond {
+    margin-bottom: 176px;
+    position: relative;
+    top: 96px;
+  }
+
+  .oneWayTicketDetailsContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 89.33vw;
+    height: 160px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+
+    .airports {
+      color: #787b82;
+      font-size: 11px;
+      font-weight: 500;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 143px;
+      justify-content: space-between;
+    }
+    .flightTimeAndCompanyInfo {
+      position: relative;
+      right: 5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 158px;
+      .fromTime,
+      .toTime {
+        font-size: 25.7px;
+        font-weight: 200;
+        height: 28px;
+      }
+
+      .companyInfo {
+        height: 32px;
+        display: flex;
+
+        & > div:nth-child(1) {
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+        }
+        & > div:nth-child(2) {
+          height: 32px;
+          position: relative;
+          left: 5px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          & > div:nth-child(1) {
+            font-size: 13px;
+          }
+          & > div:nth-child(2) {
+            font-size: 11px;
+            color: #787b82;
+          }
+        }
+      }
+    }
+    .depArrTimesAndFlightDuration {
+      height: 144px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      & > div {
+        font-size: 12px;
+        color: #787b82;
+      }
+      & > div:nth-child(2) {
+        color: #000;
+      }
+    }
+  }
+  .transferDetailsWrapper {
+    width: 100%;
+    position: relative;
+    min-height: 71px;
+
+    position: relative;
+    top: 50px;
+    .transferDetailsContainer {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 94.66vw;
+      background-color: #e9edf5;
+      border-radius: 6px 0 0 6px;
+      min-height: 71px;
+      max-height: 115px;
+      overflow: scroll;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      & > div:nth-child(1) {
+        width: 60vw;
+        min-height: 42.3px;
+        font-size: 11px;
+        line-height: 18px;
+        position: relative;
+        left: 20px;
+        padding-top: 6.3px;
+        padding-bottom: 6.3px;
+        .dot {
+          padding-left: 9px;
+          padding-right: 9px;
+        }
+      }
+      .transferDuration {
+        font-size: 11px;
+        height: 15.3px;
+        position: relative;
+        right: 5.335vw;
+      }
+    }
+  }
+}
+.bookTicketContainer {
+  position: fixed;
+  z-index: 9999999990;
+
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 76px;
+  background-color: #0080ff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+
+  .wrapper {
+    width: 89.33vw;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > div:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      & > div:nth-child(1) {
+        font-size: 13px;
+        font-weight: 500;
+        color: #fff;
+      }
+      & > div:nth-child(2) {
+        font-size: 11px;
+        color: #e6f2ff;
+      }
+    }
+    & > div:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      color: #000;
+      border-radius: 6px;
+      width: 45.33vw;
+      height: 34px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.slideDownAnimation {
+  animation: slide-bottom 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .ticketDetailsContainer {
+    header {
+      width: 83vw;
+    }
+    .alreadyBookedInfo {
+      width: 83vw;
+
+      & > div:nth-child(1) {
+        font-size: 12px;
+      }
+    }
+
+    .oneWayTicketDetailsContainer {
+      width: 83vw;
+
+      .flightTimeAndCompanyInfo {
+        position: relative;
+        right: 5vw;
+      }
+    }
+    .transferDetailsWrapper {
+      .transferDetailsContainer {
+        width: 90.66vw;
+        & > div:nth-child(1) {
+          width: 60vw;
+        }
+        .transferDuration {
+          right: 8.6vw;
+        }
+      }
+    }
+  }
+  .bookTicketContainer {
+    .wrapper {
+      width: 83vw;
+      & > div:nth-child(2) {
+        width: 169.98px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .ticketDetailsContainer {
+    & > div:nth-child(2) > .oneWayTicketDetailsContainerSecond {
+      margin-bottom: 76px;
+      position: relative;
+      top: 82px;
+    }
+    header {
+      width: 86vw;
+    }
+    .alreadyBookedInfo {
+      width: 86vw;
+      width: 415px;
+      margin-left: 7vw;
+    }
+
+    .oneWayTicketDetailsContainer {
+      width: 415px;
+      margin-left: 0;
+      margin-left: 7vw;
+
+      .flightTimeAndCompanyInfo {
+        position: relative;
+        right: 5vw;
+      }
+    }
+    .transferDetailsWrapper {
+      .transferDetailsContainer {
+        width: 93.66vw;
+        & > div:nth-child(1) {
+          width: 60vw;
+        }
+        .transferDuration {
+          right: 8.6vw;
+        }
+        overflow: hidden !important;
+      }
+    }
+  }
+  .bookTicketContainer {
+    .wrapper {
+      width: 86vw;
+
+      & > div:nth-child(2) {
+        width: 169.98px;
+      }
+    }
+  }
+}

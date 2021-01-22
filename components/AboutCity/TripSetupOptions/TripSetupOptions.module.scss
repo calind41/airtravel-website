@@ -1,0 +1,77 @@
+.tripSetupOptions {
+  margin-top: 77px;
+  width: 705px;
+  & > div:nth-child(1) {
+    font-size: 21px;
+    font-weight: 500;
+
+    color: #212121;
+  }
+
+  .rentalCardWrapper {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+
+    .rentalCardContainer {
+      width: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 400px;
+
+      .icon {
+        width: 100%;
+
+        svg {
+          width: 90%;
+        }
+      }
+      .title {
+        color: #212121;
+        font-size: 16px;
+        line-height: 23px;
+      }
+      .subtitle {
+        color: #3c3c3c;
+        font-size: 12px;
+        line-height: 23px;
+      }
+
+      .ctaBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000000;
+        font-size: 12px;
+        border: 1px solid #c1c3c7;
+        background-color: #fff;
+        border-radius: 4px;
+        width: 241px;
+        height: 37px;
+        cursor: pointer;
+        user-select: none;
+        transition: 0.2s ease-in;
+        &:hover {
+          background-color: rgba(204, 204, 204, 0.1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .tripSetupOptions {
+    width: 662px;
+
+    .rentalCardWrapper {
+      .rentalCardContainer {
+        width: 300px;
+
+        .ctaBtn {
+          width: 231px;
+        }
+      }
+    }
+  }
+}

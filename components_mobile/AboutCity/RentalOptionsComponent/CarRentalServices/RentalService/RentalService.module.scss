@@ -1,0 +1,37 @@
+.carRentalCard {
+  width: 185px;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+
+  .logo {
+    width: 52px;
+    height: 52px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      width: 45px;
+      height: 52px;
+    }
+  }
+  .description {
+    position: relative;
+    right: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .companyName {
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .ratingValue {
+      font-size: 12px;
+      position: relative;
+      top: 3px;
+    }
+  }
+}

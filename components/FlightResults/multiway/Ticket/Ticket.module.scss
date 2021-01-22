@@ -1,0 +1,309 @@
+.containerInModal {
+  width: 402px !important;
+  .middleWrapper {
+    width: 300px !important;
+
+    .middleInModal {
+      margin-left: 32px !important;
+      width: 210px !important;
+      .durationReprLine {
+        width: 210px !important;
+      }
+    }
+  }
+}
+.container {
+  width: 100%;
+  height: 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left {
+    display: flex;
+    align-items: center;
+    .logosWrapper {
+      position: relative;
+
+      .logosPopupItem {
+        min-width: 70px;
+      }
+      .logos {
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        height: 37px;
+
+        div {
+          svg {
+            width: 28px;
+            height: 28px;
+          }
+        }
+        div:not(:first-child) {
+          position: relative;
+        }
+      }
+    }
+  }
+  .left {
+    cursor: pointer;
+
+    .timeAndAirportCodeWrapper {
+      position: relative;
+      .departurePopupItem,
+      .arrivalPopupItem {
+        min-width: 149px;
+      }
+
+      .timeAndAirportCode {
+        margin-left: 11px;
+        height: 41px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .time {
+          font-weight: 400;
+          letter-spacing: 0;
+          position: relative;
+          align-items: stretch;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000;
+        }
+        .code {
+          color: #9299a2;
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 400;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+  .right {
+    cursor: pointer;
+
+    .timeAndAirportCodeWwrapper2 {
+      position: relative;
+      z-index: 99;
+
+      .departurePopupItem,
+      .arrivalPopupItem {
+        min-width: 149px;
+      }
+      .timeAndAirportCode {
+        margin-left: 11px;
+        height: 41px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 99;
+        .time {
+          font-weight: 400;
+          letter-spacing: 0;
+          position: relative;
+          align-items: stretch;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000;
+        }
+        .code {
+          color: #9299a2;
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 400;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+  .middleWrapper {
+    position: relative;
+    width: 300px;
+    display: flex;
+
+    .transferPopupItem {
+      min-width: 140px;
+    }
+
+    .middle {
+      cursor: pointer;
+      width: 282px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .totalDuration {
+        margin-bottom: 4px;
+        color: #333;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+      .durationReprLine {
+        display: flex;
+        width: 282px;
+        height: 2.5px;
+        border-radius: 8px;
+        background-color: #000;
+        position: relative;
+        overflow: hidden;
+        .transferLine {
+          position: absolute;
+          top: 0;
+          left: 10px;
+          width: 50%;
+          height: 2.5px;
+          border-radius: 8px;
+          background-color: #ffdd2d;
+          border: solid #fff;
+          border-width: 0 2px;
+        }
+      }
+      .transferDetails {
+        color: #959ba4;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+        margin-top: 4px;
+      }
+    }
+  }
+  .middleWrapperMainTickets {
+    .middleMainTickets {
+      width: 516px;
+    }
+  }
+  .middleWrapperModalTickets {
+    .middleModalTickets {
+      width: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 1372px) {
+  .mainTContainer {
+    width: 287px;
+  }
+  .container {
+    .middleWrapper {
+      position: relative;
+      width: 219px;
+      .middle {
+        width: 219px;
+        margin: auto;
+        .durationReprLine {
+          width: 219px;
+        }
+      }
+    }
+    .middleWrapperMainTickets {
+      width: 153px;
+      .middleMainTickets {
+        width: 132px;
+        .durationReprLine {
+          width: 132px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1036px) {
+  .mainTContainer {
+    width: 36.3vw;
+  }
+  .container {
+    .middleWrapper {
+      position: relative;
+      width: 25vw;
+      .middle {
+        width: 25vw;
+        .durationReprLine {
+          width: 25vw;
+        }
+      }
+    }
+    .middleWrapperMainTickets {
+      width: 27vw;
+      position: relative;
+      left: 3px;
+      .middleMainTickets {
+        width: 22vw;
+        .durationReprLine {
+          width: 22vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 978px) {
+  .mainTContainer {
+    width: 37vw;
+  }
+  .container {
+    .middleWrapperMainTickets {
+      width: 26vw;
+      position: relative;
+      left: 5px;
+
+      .middleMainTickets {
+        width: 21vw;
+        .durationReprLine {
+          width: 21vw;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 893px) {
+  .mainTContainer {
+    width: 37.5vw;
+  }
+  .container {
+    .middleWrapperMainTickets {
+      width: 26vw;
+      position: relative;
+      left: 5px;
+
+      .middleMainTickets {
+        width: 19vw;
+        .durationReprLine {
+          width: 19vw;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 857px) {
+  .mainTContainer {
+    width: 310px;
+  }
+  .container {
+    .middleWrapper {
+      position: relative;
+      left: 5px;
+      width: 214.25px;
+      .middle {
+        width: 214.25px;
+        .durationReprLine {
+          width: 214.25px;
+        }
+      }
+    }
+    .middleWrapperMainTickets {
+      width: 199px;
+
+      .middleMainTickets {
+        width: 154px;
+        .durationReprLine {
+          width: 154px;
+        }
+      }
+    }
+  }
+}

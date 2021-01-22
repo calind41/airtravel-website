@@ -1,0 +1,249 @@
+$darkGray: #e9edf5;
+$blackColor: #202021;
+
+// 90% of originalSize
+
+.container {
+  width: 89.33vw;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 32px;
+  position: relative;
+  right: 0;
+  z-index: 10;
+
+  .menuContent {
+    position: fixed;
+    width: 100%;
+    height: 370px;
+    top: 0px;
+    left: 0;
+    background-color: #f2f5fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 10;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease all;
+
+    .navbarItemsWrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: 75px;
+      height: 170px;
+      width: 100%;
+      color: #0080ff;
+      font-size: 14px;
+      & > div {
+        margin-bottom: 20px;
+        cursor: pointer;
+        transition: border-bottom 0.2s ease;
+        user-select: none;
+      }
+      & > div:hover {
+        border-bottom: 1px solid #0080ff;
+      }
+    }
+    .rightSide {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      top: 23px;
+      .langSwitch {
+        background-color: #fff;
+        width: 50px;
+        font-size: 12px;
+        font-weight: 600;
+        height: 30px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 6px;
+        color: #000;
+        &:hover {
+          background-color: rgb(255, 246, 246);
+        }
+      }
+    }
+  }
+  .menuContentShow {
+    height: 370px;
+  }
+}
+.logo {
+  cursor: pointer;
+  z-index: 100;
+  position: relative;
+  top: 2.5px;
+  left: 0;
+}
+.logo svg {
+  width: 94px;
+  height: 36px;
+}
+.iflyLogoLightMode {
+  cursor: pointer;
+  svg {
+    fill: #fff;
+    g path:nth-child(2) {
+      fill: #000;
+    }
+  }
+}
+.iflyLogoMenuOpen {
+  cursor: pointer;
+  svg {
+    fill: #000;
+    g path:nth-child(2) {
+      fill: #fff;
+    }
+  }
+}
+
+.buttonLightMode {
+  & > button {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+  }
+}
+
+// Hamburger menu styles
+$bar-width: 18px;
+$bar-height: 1.9px;
+$bar-spacing: 7px;
+
+.menuWrapper {
+  top: 0;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  right: 18px;
+  padding-bottom: 11.5px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+.menuWrapperDark {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.hamburgerMenu,
+.hamburgerMenu:after,
+.hamburgerMenu:before {
+  width: $bar-width;
+  height: $bar-height;
+  border-radius: 2px;
+}
+
+.hamburgerMenu {
+  position: relative;
+  transform: translateY($bar-spacing);
+  background: rgba(0, 0, 0, 1);
+  transition: all 0ms 100ms;
+  &.animate {
+    background: rgba(255, 255, 255, 0);
+  }
+}
+
+.hamburgerMenu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: $bar-spacing;
+  background: rgba(0, 0, 0, 1);
+  transition: bottom 100ms 100ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 100ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburgerMenu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: $bar-spacing;
+  background: rgba(0, 0, 0, 1);
+  transition: top 100ms 100ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 100ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburgerMenu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 100ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 100ms 100ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburgerMenu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 100ms cubic-bezier(0.23, 1, 0.32, 1),
+    transform 100ms 100ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+.hamburgerMenuDark:before,
+.hamburgerMenuDark:after,
+.hamburgerMenuDark {
+  background-color: #000;
+}
+.hamburgerMenuLight:before,
+.hamburgerMenuLight:after,
+.hamburgerMenuLight {
+  background-color: #fff;
+}
+
+.hamburgerMenuOpen:before,
+.hamburgerMenuOpen:after {
+  background-color: #000 !important;
+}
+.menuWrapperOpen {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 344.17px;
+
+    // border: 1px solid red;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 32px;
+    .logo {
+      left: 0;
+    }
+    .menuContent {
+      left: 0;
+      position: fixed;
+      top: 0;
+    }
+  }
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 83.13vw;
+    .logo {
+      position: relative;
+      left: 0;
+    }
+    .menuWrapper {
+      position: relative;
+      right: 0;
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .container {
+    width: 86vw;
+  }
+}

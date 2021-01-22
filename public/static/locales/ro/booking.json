@@ -1,0 +1,33 @@
+{
+    "header-search": "Căutare",
+    "header-passengerInfo": "Date despre pasageri",
+    "header-payment": "Plată",
+    "btn-text": "Accesați plata",
+
+    "PassengerInformationForm-passengerText": "Pasager",
+    "PassengerInformationForm-heading": "Pasagerii pentru rezervare", 
+    "PassengerInformationForm-warningText": "Pentru a evita dificultățile la îmbarcare, scrieți numele și prenumele exact așa cum apar pe pașaport (ID).",
+    "PassengerInformationForm-addPassenger": "Adăugați pasager",
+    "Form-input1-placeholder": "Prenume",
+    "Form-input2-placeholder": "Nume",
+    "Form-input3-placeholder": "Data de nastere",
+    "Form-customSelect-placeholder": "Cetățenie",
+    "Form-customSelect-placeholder2": "Sex",
+    "Form-input4-placeholder": "Seria Nr. Pașaport internațional",
+    "Form-input5-placeholder": "Data emiterii",
+    "Form-input6-placeholder": "Valabil până la",
+    "dateFormat": "ZZ.LL.AAAA",
+    "gender-male": "Masculin",
+    "gender-female": "Feminin",
+
+    "ContactInformation-heading-title": "Informații de contact",
+    "ContactInformation-heading-subtitle": "Pentru a vă confirma rezervarea, vă rugăm să introduceți adresa de e-mail și numărul de telefon mobil",
+    "ContactInformation-phoneNrPlaceholder": "Număr de telefon",
+    "ContactInformation-requiredField": "Câmp necesar",
+    "ContactInformation-numberNotValid": "Număr greșit",
+    "ContactInformation-emailPlaceholder": "E-mail",
+    "ContactInformation-requiredFieldEmail": "Câmp necesar",
+    "ContactInformation-emailNotValid": "Adresă invalidă",
+    "ContactInformation-message": "Vom trimite un bilet la oficiul poștal, vom trimite notificări despre modificările zborului sau în cazul altor situații de urgență"
+
+}

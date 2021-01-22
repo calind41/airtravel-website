@@ -1,0 +1,53 @@
+{
+    "search": "Поиск",
+    "passengerInfo": "Данные пассажира",
+    "payment": "Оплата",
+
+    "UserTicket-moreAboutFlight": "Подробнее о рейсе",
+    "UserTicket-name": "ИМЯ",
+    "UserTicket-nationality": "ГРАЖДАНСТВО",
+    "UserTicket-passportNr": "№ ПАСПОРТА",
+    "UserTicket-validity": "СРОК ДЕЙСТВИЯ",
+    "UserTicket-baggage": "БАГАЖ",
+    "UserTicket-personalThing": "Личная вещь",
+    "UserTicket-carryOnBaggage": "Ручная кладь",
+    "UserTicket-registeredBaggage": "Регистрируемый багаж",
+
+    "IflyWarrant-title": "Гарантия",
+    "IflyWarrant-text1": "Действует в случае отмены, задержки рейса, а также изменений в его расписании. Мы приобретем для вас авиабилет на альтернативный рейс до места назначения или возместим расходы, понесенные на соответствующем участке вашего маршрута.",
+    "IflyWarrant-text2": "Подробнее",
+    "IflyWarrant-text3": "Гарантия",
+    "IflyWarrannt-text4": "распространяется только на бронирования совершенные через сайт",
+
+    "InsuranceOptions-heading-title": "Страхование пассажиров",
+    "InsuranceOptions-heading-subtitle1": "Страховщик — AXA Assistance",
+    "InsuranceOptions-heading-subtitle2": "Сравнения и условия",
+    "Insurance-option1": "Без страховки",
+
+    "InsuranceOption-chosen": "Выбрано",
+    "InsuranceOption-text1": "Неотложная помощь",
+    "InsuranceOption-text2": "Медицинские расходы",
+    "InsuranceOption-text3": "Материальная ответственность",
+    "InsuranceOption-text4": "в случае ущерба для здоровья;",
+    "InsuranceOption-text5": "в случае порчи имущества",
+    "InsuranceOption-text6": "Страхование багажа",
+    "InsuranceOption-text7": "Бесплатно",
+
+    "PaymentMethods-title": "Метод оплаты",
+    "PaymentMethods-m1": "В офисе",
+    "PaymentMethods-m2": "В банке",
+    "PaymentMethods-m3": "В терминале",
+    "PaymentMethods-footer": "Выберите один из методов оплаты",
+
+    "op-modal-heading": "Оплата в офисе",
+    "op-modal-bookingNr": "Номер брони",
+    "op-modal-details": "Наш офис",
+    "op-modal-availability": "Понедельник — пятница",
+
+    "mobile-summaryCard-passengerSingle": "Пассажир",
+    "mobile-summaryCard-passengerMultiple": "Пассажира",
+    "mobile-summaryCard-insurance": "Страхование",
+    "mobile-summaryCard-total": "Итого"
+    
+
+}

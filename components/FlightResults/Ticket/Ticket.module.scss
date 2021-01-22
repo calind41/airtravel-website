@@ -1,0 +1,247 @@
+.container {
+  width: 100%;
+  height: 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .left {
+    display: flex;
+    align-items: center;
+    .logosWrapper {
+      position: relative;
+
+      .logosPopupItem {
+        min-width: 70px;
+      }
+      .logos {
+        cursor: pointer;
+
+        display: flex;
+        flex-direction: column;
+        height: 37px;
+
+        div {
+          svg {
+            width: 28px;
+            height: 28px;
+          }
+        }
+        div:not(:first-child) {
+          position: relative;
+        }
+      }
+    }
+  }
+  .left {
+    cursor: pointer;
+
+    .timeAndAirportCodeWrapper {
+      position: relative;
+      .departurePopupItem,
+      .arrivalPopupItem {
+        min-width: 149px;
+      }
+
+      .timeAndAirportCode {
+        margin-left: 11px;
+        height: 41px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .time {
+          font-weight: 400;
+          letter-spacing: 0;
+          position: relative;
+          align-items: stretch;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000;
+        }
+        .code {
+          color: #9299a2;
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 400;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+  .right {
+    cursor: pointer;
+
+    .timeAndAirportCodeWwrapper2 {
+      position: relative;
+      // z-index: 1000;
+
+      .departurePopupItem,
+      .arrivalPopupItem {
+        min-width: 149px;
+      }
+      .timeAndAirportCode {
+        margin-left: 11px;
+        height: 41px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // z-index: 900;
+        .time {
+          font-weight: 400;
+          letter-spacing: 0;
+          position: relative;
+          align-items: stretch;
+          font-size: 16px;
+          line-height: 24px;
+          color: #000;
+        }
+        .code {
+          color: #9299a2;
+          font-size: 12px;
+          line-height: 16px;
+          font-weight: 400;
+          letter-spacing: 0;
+        }
+      }
+    }
+  }
+  .middleWrapper {
+    position: relative;
+    .transferPopupItem {
+      min-width: 140px;
+    }
+
+    .middle {
+      cursor: pointer;
+      width: 355px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .totalDuration {
+        margin-bottom: 4px;
+        color: #333;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+      .durationReprLine {
+        display: flex;
+        width: 100%;
+        height: 2.5px;
+        border-radius: 8px;
+        background-color: #000;
+        position: relative;
+        overflow: hidden;
+        .transferLine {
+          position: absolute;
+          top: 0;
+          left: 10px;
+          width: 50%;
+          height: 2.5px;
+          border-radius: 8px;
+          background-color: #ffdd2d;
+          border: solid #fff;
+          border-width: 0 2px;
+        }
+      }
+      .transferDetails {
+        color: #959ba4;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        letter-spacing: 0;
+        margin-top: 4px;
+      }
+    }
+  }
+  .middleWrapperMainTickets {
+    .middleMainTickets {
+      width: 516px;
+    }
+  }
+  .middleWrapperModalTickets {
+    .middleModalTickets {
+      width: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 1372px) {
+  .container {
+    .middleWrapper {
+      position: relative;
+      .middle {
+        width: 219px;
+        margin: auto;
+      }
+    }
+    .middleWrapperMainTickets {
+      width: 400px;
+      .middleMainTickets {
+        width: 343px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1036px) {
+  .container {
+    .middleWrapper {
+      position: relative;
+      .middle {
+        width: 25vw;
+      }
+    }
+    .middleWrapperMainTickets {
+      width: 49vw;
+      .middleMainTickets {
+        width: 41vw;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1016px) {
+  .container {
+    .middleWrapperMainTickets {
+      width: 48.5vw;
+    }
+  }
+}
+@media screen and (max-width: 978px) {
+  .container {
+    .middleWrapperMainTickets {
+      width: 47.8vw;
+    }
+  }
+}
+@media screen and (max-width: 929px) {
+  .container {
+    .middleWrapperMainTickets {
+      width: 47vw;
+    }
+  }
+}
+@media screen and (max-width: 893px) {
+  .container {
+    .middleWrapperMainTickets {
+      width: 46.4vw;
+    }
+  }
+}
+@media screen and (max-width: 857px) {
+  .container {
+    .middleWrapper {
+      position: relative;
+      .middle {
+        width: 214.25px;
+      }
+    }
+    .middleWrapperMainTickets {
+      width: 380px;
+      .middleMainTickets {
+        width: 310px;
+      }
+    }
+  }
+}

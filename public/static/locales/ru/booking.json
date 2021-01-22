@@ -1,0 +1,37 @@
+{
+    "header-search": "Поиск",
+    "header-passengerInfo": "Данные пассажира",
+    "header-payment": "Оплата",
+    "btn-text": "Перейти к оплате",
+
+    "PassengerInformationForm-passengerText": "Пассажир",
+    "PassengerInformationForm-heading": "Пассажиры для брони", 
+    "PassengerInformationForm-warningText": "Чтобы избежать трудностей при посадке на борт, запишите имя и фамилию в точности так, как они записаны в вашем паспорте (удостоверении личности).",
+    "PassengerInformationForm-addPassenger": "Добавить пассажира",
+    "Form-input1-placeholder": "Имя",
+    "Form-input2-placeholder": "Фамилия",
+    "Form-input3-placeholder": "Дата рождения",
+    "Form-customSelect-placeholder": "Гражданство",
+    "Form-customSelect-placeholder2": "Пол",
+    "Form-input4-placeholder": "Серия № Загранпаспорта",
+    "Form-input5-placeholder": "Дата выдачи",
+    "Form-input6-placeholder": "Действителен до",
+    "dateFormat": "ДД.ММ.ГГГГ",
+    "gender-male": "Мужской",
+    "gender-female": "Женский",
+
+    "ContactInformation-heading-title": "Контактная информация",
+    "ContactInformation-heading-subtitle": "Для подтверждения брони пожалуйста укажите свой email адрес и номер мобильного телефона",
+    "ContactInformation-phoneNrPlaceholder": "Номер телефона",
+    "ContactInformation-requiredField": "Поле обязательное",
+    "ContactInformation-numberNotValid": "Неверный номер",
+    "ContactInformation-emailPlaceholder": "Электронная почта",
+    "ContactInformation-requiredFieldEmail": "Поле обязательное",
+    "ContactInformation-emailNotValid": "Hевалидный адрес",
+    "ContactInformation-message": "На почту мы отправим билет, вышлем уведомления об изменениях в рейсе или в случае других экстренных ситуаций"
+    
+
+
+    
+
+}

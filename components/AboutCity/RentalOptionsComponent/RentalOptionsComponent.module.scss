@@ -1,0 +1,26 @@
+.rentalOptionsContainer {
+  width: 964px;
+  margin: auto;
+  margin-top: -170px;
+
+  .popularDestinationsWrapper {
+    margin-top: 90px;
+    min-height: 200px;
+    h1 {
+      font-size: 21px;
+      font-weight: 400;
+      font-weight: 500;
+      color: #212121;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .rentalOptionsContainer {
+    width: 662px;
+
+    .popularDestinationsWrapper {
+      min-height: 300px;
+    }
+  }
+}

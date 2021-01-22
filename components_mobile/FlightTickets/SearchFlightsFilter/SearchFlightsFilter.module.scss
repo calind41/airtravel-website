@@ -1,0 +1,499 @@
+// 90% of originalSize
+.wrapper {
+  margin-top: 130px;
+  .container {
+    width: 89.33vw;
+    min-height: 495px;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    .filtersWrapper {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      z-index: 10;
+      width: 100%;
+
+      height: 96.84%;
+      border-radius: 10px 10px 0 0;
+      display: flex;
+      flex-direction: column;
+      overflow: scroll;
+      display: none;
+
+      .closeIcon {
+        position: absolute;
+        right: 5.335vw;
+        top: 23px;
+      }
+      header {
+        width: 89.33vw;
+        margin: auto;
+        margin-top: 68px;
+        font-size: 13px;
+      }
+      .filterContainer {
+        width: 89.33vw;
+        margin: auto;
+
+        height: 495px;
+        background-color: #fff;
+        border-radius: 6px;
+
+        .baggageRelated {
+          width: 306px;
+          width: 89.33vw;
+          height: 126px;
+          border-bottom: 0.5px solid #c2c6cc;
+          margin: auto;
+          margin-top: 30.6px;
+
+          h3 {
+            margin-bottom: 0;
+            margin-top: 0;
+            font-size: 13.5px;
+            font-weight: 500;
+            color: #151a1c;
+          }
+          & > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 18.9px;
+            margin-bottom: 9px;
+            margin-top: 9px;
+            margin-top: 19.8px;
+            .txt {
+              font-size: 11.7px;
+              font-weight: 400;
+              user-select: none;
+            }
+            .switchW {
+              position: relative;
+              right: 0px;
+              display: inline-block;
+              width: 33.3px;
+              width: 30px;
+              height: 15.3px;
+              height: 16px;
+
+              input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+              }
+              .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: transparent;
+                border: 1px solid #9da1a6;
+                transition: 0.4s;
+              }
+              .slider:before {
+                position: absolute;
+                content: "";
+                height: 13.05px;
+                width: 13.05px;
+                transform: translateX(1.08px) translateY(0.3px);
+                background-color: white;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+              }
+              .slider2:before {
+                transform: translateX(1.08px) translateY(0.27px);
+              }
+
+              input:checked + .slider {
+                background-color: #0080ff;
+                border: 1px solid transparent;
+              }
+              input:not(:checked) + .slider:before {
+                background-color: #9da1a6;
+              }
+
+              input:checked + .slider:before {
+                -webkit-transform: translateX(14.88px) translateY(0.2px);
+                -ms-transform: translateX(14.88px) translateY(0.2px);
+                transform: translateX(14.88px) translateY(0.2px);
+              }
+              input:checked + .slider2:before {
+                transform: translateX(14.88px) translateY(0.27px);
+              }
+              .slider.round {
+                border-radius: 34px;
+              }
+              .slider.round:before {
+                border-radius: 50%;
+              }
+            }
+          }
+          & > div:nth-child(3) {
+            margin-top: 18px;
+          }
+        }
+
+        .transferRelated {
+          width: 89.33vw;
+
+          height: 160.2px;
+          border-bottom: 0.5px solid #c2c6cc;
+          margin: auto;
+          margin-top: 35.1px;
+
+          h3 {
+            margin-bottom: 0;
+            margin-top: 0;
+            font-size: 13.5px;
+            font-weight: 500;
+            color: #151a1c;
+          }
+          .withoutTransfer {
+            font-size: 11.7px;
+            font-weight: 400;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20.7px;
+            cursor: pointer;
+          }
+          & > .transferOption {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 18.9px;
+            margin-bottom: 9px;
+            margin-top: 19.8px;
+            .txt {
+              font-size: 11.7px;
+              font-weight: 400;
+              user-select: none;
+            }
+            .switchW {
+              position: relative;
+              right: 0px;
+              display: inline-block;
+              // width: 33.3px;
+              width: 30px;
+              // height: 15.3px;
+              height: 16px;
+
+              input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+              }
+              .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: transparent;
+                border: 1px solid #9da1a6;
+                transition: 0.4s;
+              }
+              .slider:before {
+                position: absolute;
+                content: "";
+                height: 13.05px;
+                width: 13.05px;
+                transform: translateX(1.08px) translateY(0.06px);
+                background-color: white;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+              }
+              .slider2:before {
+                transform: translateX(1.08px) translateY(0.36px);
+              }
+
+              input:checked + .slider {
+                background-color: #0080ff;
+                border: 1px solid transparent;
+              }
+              input:not(:checked) + .slider:before {
+                background-color: #9da1a6;
+              }
+
+              input:checked + .slider:before {
+                -webkit-transform: translateX(18.18px) translateY(0.27px);
+                -ms-transform: translateX(18.18px) translateY(0.27px);
+                transform: translateX(14.88px) translateY(0.07px);
+              }
+              input:checked + .slider2:before {
+                transform: translateX(14.88px) translateY(0.333px);
+              }
+              .slider.round {
+                border-radius: 34px;
+              }
+              .slider.round:before {
+                border-radius: 50%;
+              }
+            }
+          }
+          & > .transferOption:nth-child(4) {
+            margin-top: 16.2px;
+          }
+        }
+
+        .transferDuration {
+          width: 89.33vw;
+
+          height: 90px;
+          margin: auto;
+          margin-top: 35.1px;
+
+          h3 {
+            margin-bottom: 0;
+            margin-top: 0;
+            font-size: 13.5px;
+            font-weight: 500;
+            color: #151a1c;
+          }
+        }
+      }
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        margin-top: 23px;
+
+        .flightFeatureOptions {
+          width: 89.33vw;
+          height: 164px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          & > div {
+            width: 100%;
+            height: 44px;
+            background-color: #fff;
+            border: 1px solid #dadce0;
+            border-radius: 6px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 12px;
+            padding-left: 10px;
+            cursor: pointer;
+          }
+          .selected {
+            background-color: #0080ff;
+            color: #fff;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  .editSearchFC {
+    width: 91.78vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .flightInfo {
+      position: relative;
+      left: 1px;
+      height: 42px;
+      & > div:nth-child(1) {
+        font-size: 13px;
+        font-weight: 500;
+        color: #000;
+      }
+      & > div:nth-child(2) {
+        font-size: 12px;
+        font-weight: 500;
+        color: #787b82;
+        line-height: 19px;
+      }
+    }
+
+    .editIcon {
+      position: relative;
+      right: 10px;
+    }
+  }
+  .filtersC {
+    width: 91.78vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 44px;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 33px;
+    .selectedOption {
+      position: relative;
+      left: 18px;
+    }
+    .settingsIcon {
+      position: relative;
+      right: 10px;
+    }
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.slideDownAnimation {
+  animation: slide-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.slideUpAnimation {
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slide-bottom {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .wrapper {
+    .container {
+      width: 344.17px;
+
+      .filtersWrapper {
+        header {
+          width: 344.17px;
+        }
+        .filterContainer {
+          width: 344.17px;
+
+          .baggageRelated {
+            width: 344.17px;
+          }
+
+          .transferRelated {
+            width: 344.17px;
+          }
+
+          .transferDuration {
+            width: 344.17px;
+          }
+        }
+
+        .wrapper {
+          .flightFeatureOptions {
+            width: 344.17px;
+          }
+        }
+      }
+    }
+
+    .editSearchFC {
+      width: 344.17px;
+    }
+    .filtersC {
+      width: 344.17px;
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .wrapper {
+    .container {
+      width: 83.13vw;
+
+      .filtersWrapper {
+        header {
+          width: 83.13vw;
+        }
+        .filterContainer {
+          width: 83.13vw;
+
+          .baggageRelated {
+            width: 83.13vw;
+          }
+
+          .transferRelated {
+            width: 83.13vw;
+          }
+
+          .transferDuration {
+            width: 83.13vw;
+          }
+        }
+
+        .wrapper {
+          .flightFeatureOptions {
+            width: 83.13vw;
+          }
+        }
+      }
+    }
+
+    .editSearchFC {
+      width: 83.13vw;
+    }
+    .filtersC {
+      width: 83.13vw;
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .wrapper {
+    .container {
+      width: 86vw;
+
+      .filtersWrapper {
+        header {
+          width: 86vw;
+        }
+        .filterContainer {
+          width: 86vw;
+
+          .baggageRelated {
+            width: 86vw;
+          }
+
+          .transferRelated {
+            width: 86vw;
+          }
+
+          .transferDuration {
+            width: 86vw;
+          }
+        }
+
+        .wrapper {
+          .flightFeatureOptions {
+            width: 86vw;
+          }
+        }
+      }
+    }
+
+    .editSearchFC {
+      width: 86vw;
+    }
+    .filtersC {
+      width: 86vw;
+    }
+  }
+}

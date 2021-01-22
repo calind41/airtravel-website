@@ -1,0 +1,40 @@
+// 90% of originalSize
+.container {
+  width: 735px;
+  height: 496.8px;
+  background-color: #fff;
+  border-radius: 6px;
+  margin: auto;
+  margin-top: 113px;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  .heading {
+    position: absolute;
+    width: 735px;
+
+    height: 51.3px;
+    top: -72px;
+    & > div:nth-child(1) {
+      font-size: 16.2px;
+      font-weight: 500;
+    }
+    & > div:nth-child(2) {
+      display: flex;
+      justify-content: space-between;
+      font-size: 11.7px;
+      color: #616366;
+      margin-top: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 662px;
+
+    .heading {
+      width: 662px;
+    }
+  }
+}

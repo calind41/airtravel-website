@@ -1,0 +1,58 @@
+.toInput {
+  position: relative;
+  width: 84%;
+  height: 54px;
+  background-color: #f7f9fa;
+  border-radius: 6px;
+  border: 1px solid #e1e5eb;
+  overflow: hidden;
+
+  label {
+    height: 54x;
+    border-radius: 6px;
+    display: inline-block;
+    background-color: #f7f9fa;
+    position: relative;
+    width: 100%;
+
+    input {
+      font-size: 13px;
+      letter-spacing: 0.2px;
+      height: 54px;
+      outline: none;
+      color: #000;
+      padding-left: 15.5px;
+      padding-top: 4px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background-color: #f7f9fa;
+      transition: 0.2s ease-in-out;
+      width: 82.06%;
+      overflow: hidden;
+
+      &::placeholder {
+        color: #45494d;
+        font-weight: 500;
+      }
+    }
+
+    & > span:nth-child(2) {
+      position: absolute;
+      top: 0px;
+      right: 0;
+      background-color: #f7f9fa;
+      display: inline-flex;
+      align-items: center;
+      width: 40px;
+      height: 54px;
+      color: #000;
+      font-size: 11px;
+      letter-spacing: 0.2px;
+      padding-left: 4px;
+      padding-top: 5px;
+      transition: 0.2s ease-in-out !important;
+      cursor: pointer;
+    }
+  }
+}

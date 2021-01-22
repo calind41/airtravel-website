@@ -1,0 +1,94 @@
+.dropdownC {
+  //   width: 230px !important;
+  width: 90%;
+  margin: auto;
+  background-color: #fff;
+  margin-top: 2px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #cdd4de;
+
+  .passengerCounters {
+    // border: 1px solid red;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .adultsWrapper,
+    .childsWrapper,
+    .babiesWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin: auto;
+      height: 50px;
+      margin-top: 5px;
+      .details {
+        & > div:nth-child(1) {
+          font-size: 14px;
+          font-weight: 600;
+        }
+        .ageInterval {
+          color: #90a4ae;
+          font-size: 12px;
+        }
+      }
+      .nrAdultsC,
+      .nrChildsC,
+      .nrBabiesC {
+        display: flex;
+        width: 80px;
+        justify-content: space-between;
+        height: 35px;
+
+        border-radius: 4px;
+        align-items: center;
+
+        & > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+        & > div > span {
+          margin-right: 2px;
+          font-size: 14px;
+          font-weight: 600;
+        }
+
+        & > button {
+          width: 24px;
+          height: 24px;
+          border-radius: 12px;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          background-color: #0c73fe;
+          transition: 0.2s ease-in-out;
+          color: #fff;
+          font-size: 20px;
+          position: relative;
+          &:hover {
+            // background-color: rgba(33, 33, 33, 0.07);
+          }
+          & > svg {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+          }
+        }
+        .grayBg {
+          background-color: #cdd4de !important;
+          color: #fff;
+          border: none !important;
+        }
+      }
+    }
+  }
+}

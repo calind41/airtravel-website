@@ -1,0 +1,41 @@
+.similarAirCompaniesC {
+  margin-top: 31px;
+  width: 705px;
+  height: 45px;
+  display: flex;
+  div {
+    margin-right: 41px;
+  }
+}
+
+.similarAirCheader {
+  margin-top: 50px;
+  width: 705px;
+  height: 21.4px;
+  font-size: 21px;
+  font-weight: 500;
+
+  color: #212121;
+}
+
+.footerMessage {
+  margin-top: 23px;
+  width: 705px;
+  font-size: 12px;
+  color: #3c3c3c;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 1140px) {
+  .similarAirCompaniesC {
+    width: 662px;
+  }
+
+  .similarAirCheader {
+    width: 662px;
+  }
+
+  .footerMessage {
+    width: 662px;
+  }
+}

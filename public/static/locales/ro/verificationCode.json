@@ -1,0 +1,14 @@
+{
+    "title": "Codul de confirmare",
+    "subtitle": "Un cod de confirmare a fost trimis pe telefonul dvs. mobil",
+    "vCodePlaceholder": "Codul de confirmare",
+    "actionsGroup1": "Retrimiteți",
+    "actionsGroup2": "Nu ați primit un cod de confirmare?",
+    "actionsGroup3": "Anulare",
+    "bottomMessage": "Nu furnizați datele de conectare, parola și codul de confirmare, astfel încât escrocii să nu profite de acesta.",
+
+    "InfoCard-title": "Motive posibile:",
+    "InfoCard-p1": "1. Ați introdus un număr de telefon incorect (+373 81 293 123) și mesajul nu poate fi livrat",
+    "InfoCard-p2": "2. Problemele pot fi de la operatorul dvs. de telefonie mobilă. Contactați echipa de asistență"
+
+}

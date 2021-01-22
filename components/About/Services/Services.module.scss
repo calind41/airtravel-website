@@ -1,0 +1,153 @@
+// 90% of originalSize
+
+.container {
+  width: 964px;
+  height: 199.8px;
+  margin: auto;
+  margin-top: 140px;
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+
+  & > div {
+    width: 261px;
+    height: 199.8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .heading {
+      font-size: 11.7px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .svgWrapper {
+        width: 77px;
+        height: 77px;
+        border-radius: 100%;
+        background-color: #fff;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.1);
+
+        svg {
+          width: 21.6px;
+          height: 21.6px;
+        }
+      }
+      span:nth-child(2) {
+        display: inline-block;
+        line-height: 20.7px;
+      }
+    }
+    .text {
+      width: 270px;
+      line-height: 23.4px;
+      font-size: 10.8px;
+      color: #77787a;
+      margin-bottom: 23.4px;
+    }
+  }
+  .supportWrapper {
+    .heading {
+      span:nth-child(2) {
+        width: 106.2px;
+        margin-right: 36.9px;
+      }
+    }
+    .text {
+    }
+  }
+
+  .smartRoutesWrapper {
+    .heading {
+      span:nth-child(2) {
+        width: 69.3px;
+        margin-right: 72px;
+      }
+    }
+    .text {
+    }
+  }
+
+  .freeRegistrationWrapper {
+    .heading {
+      span:nth-child(2) {
+        width: 82.8px;
+        margin-right: 58.5px;
+      }
+    }
+    .text {
+    }
+  }
+}
+@media screen and (max-width: 1140px) {
+  .container {
+    display: flex;
+    width: 662px;
+    height: 200px;
+    justify-content: space-around;
+
+    & > div {
+      width: 220px;
+      .text {
+        text-align: center;
+      }
+    }
+    .supportWrapper {
+      .heading {
+        span:nth-child(2) {
+          width: 106.2px;
+          margin-right: 20px;
+        }
+      }
+      .text {
+        width: 90%;
+        margin-top: 28px;
+      }
+    }
+
+    .smartRoutesWrapper {
+      .heading {
+        display: flex;
+        justify-content: center;
+        span:nth-child(2) {
+          width: 69.3px;
+          margin-right: 0;
+          position: relative;
+          left: 10px;
+        }
+      }
+      .text {
+        width: 90%;
+        margin: auto;
+        margin-top: 28px;
+      }
+    }
+
+    .freeRegistrationWrapper {
+      align-items: flex-end;
+      .heading {
+        display: flex;
+        justify-content: flex-end;
+        span:nth-child(2) {
+          width: 82.8px;
+          margin-right: 0;
+          position: relative;
+          left: 10px;
+        }
+      }
+      .text {
+        width: 90%;
+        margin-top: 28px;
+        position: relative;
+        left: 4px;
+        // text-align: center;
+      }
+    }
+  }
+}

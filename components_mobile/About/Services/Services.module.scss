@@ -1,0 +1,91 @@
+// 90% of originalSize
+
+.container {
+  width: 256.98px;
+
+  min-height: 199.8px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  & > div {
+    width: 100%;
+    height: 199.8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    .heading {
+      font-size: 11.7px;
+      display: flex;
+      align-items: center;
+
+      .svgWrapper {
+        width: 77px;
+        height: 77px;
+        border-radius: 100%;
+        background-color: #fff;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.1);
+
+        svg {
+          width: 21.6px;
+          height: 21.6px;
+        }
+      }
+      span:nth-child(2) {
+        display: inline-block;
+        line-height: 20.7px;
+        position: relative;
+        left: 23px;
+      }
+    }
+    .text {
+      width: 100%;
+      line-height: 21.2px;
+      font-size: 10.8px;
+      color: #77787a;
+      position: relative;
+      top: -20px;
+    }
+  }
+  .supportWrapper {
+    .heading {
+      span:nth-child(2) {
+        width: 106.2px;
+      }
+    }
+    .text {
+    }
+  }
+
+  .smartRoutesWrapper {
+    .heading {
+      span:nth-child(2) {
+        width: 69.3px;
+      }
+    }
+    .text {
+      top: -39px;
+    }
+  }
+
+  .freeRegistrationWrapper {
+    .heading {
+      span:nth-child(2) {
+        width: 82.8px;
+      }
+    }
+    .text {
+      top: -39px;
+    }
+  }
+}

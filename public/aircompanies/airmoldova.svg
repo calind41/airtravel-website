@@ -1,0 +1,33 @@
+<svg
+    xmlns='http://www.w3.org/2000/svg'
+    width='34'
+    height='34'
+    viewBox='0 0 34 34'
+  >
+    <defs>
+      <pattern
+        id='pattern2'
+        preserveAspectRatio='xMidYMid slice'
+        width='100%'
+        height='100%'
+        viewBox='0 0 64 64'
+      >
+        <image
+          width='64'
+          height='64'
+          xlinkHref='data:image/png;base64,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'
+        />
+      </pattern>
+    </defs>
+    <g
+      id='_9U'
+      data-name='9U'
+      transform='translate(2 2)'
+      stroke='#fff'
+      strokeWidth='2'
+      fill='url(#pattern2)'
+    >
+      <circle cx='15' cy='15' r='15' stroke='none' />
+      <circle cx='15' cy='15' r='16' fill='none' />
+    </g>
+  </svg>

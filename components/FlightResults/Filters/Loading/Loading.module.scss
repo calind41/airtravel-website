@@ -1,0 +1,81 @@
+.container {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #dddfe0;
+  height: 68px;
+
+  .wrapper {
+    width: 1105px;
+    height: 68px;
+    padding-top: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    .spinner {
+      svg {
+        width: 24px;
+        height: 24px;
+
+        circle {
+          stroke: rgb(255, 221, 45);
+          stroke-dashoffset: 100%;
+          stroke-dasharray: 306;
+          stroke-miterlimit: 10;
+        }
+        animation: rotateAnimation 3s linear infinite;
+      }
+    }
+    .text {
+      position: relative;
+      top: -1px;
+      transition: opacity 0.3s ease;
+      color: #333;
+      font-size: 14px;
+      line-height: 24px;
+      margin-left: 12px;
+      overflow: hidden;
+      font-weight: 400;
+      letter-spacing: 0;
+      opacity: 1;
+    }
+    .opacityClass {
+      opacity: 0 !important;
+    }
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(1turn);
+  }
+  100% {
+    transform: rotate(3turn);
+  }
+}
+
+@media screen and (max-width: 1372px) {
+  .container {
+    .wrapper {
+      width: 826px;
+    }
+  }
+}
+@media screen and (max-width: 1036px) {
+  .container {
+    .wrapper {
+      width: 95.11vw;
+    }
+  }
+}
+@media screen and (max-width: 857px) {
+  .container {
+    .wrapper {
+      width: 795px;
+    }
+  }
+}

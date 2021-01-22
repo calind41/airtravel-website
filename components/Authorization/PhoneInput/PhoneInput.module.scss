@@ -1,0 +1,108 @@
+$borderInputColor: #d2d5d9;
+$inputBgColorBlur: #e4e6eb;
+$placeholderTopColor: #797c80;
+$warningRed: #dd5656;
+
+.phoneNrC {
+  width: 360px;
+  height: 54px;
+  // margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  label {
+    position: relative;
+    display: block;
+    width: 360px;
+    height: 54px;
+    margin: auto;
+    .phonePrefix {
+      position: absolute;
+
+      left: 18.09px;
+      top: 26.61px;
+      z-index: 1;
+      font-size: 11.7px;
+      cursor: text;
+      display: none;
+    }
+
+    input {
+      position: relative;
+      font-size: 11.7px;
+      width: 360px;
+      height: 54px;
+      padding-left: 18.9px;
+      padding-left: 49.5px;
+      padding-top: 13.5px;
+      border-radius: 6px;
+      border: 1px solid $borderInputColor;
+      background-color: $inputBgColorBlur;
+      outline: none;
+
+      &:focus {
+        background-color: #fff;
+      }
+      &:not([value=""]):not(:focus) {
+        background-color: #fff;
+      }
+
+      &:focus ~ .phoneNrPlaceholder,
+      &:not(:focus):valid ~ .phoneNrPlaceholder {
+        position: absolute;
+        top: 11.7px;
+        left: 18px;
+        font-size: 9px;
+        opacity: 1;
+        color: $placeholderTopColor;
+      }
+
+      &:focus ~ .iconArrowNext,
+      &:not(:focus):valid ~ .iconArrowNext {
+        background-color: #0080ff;
+      }
+    }
+
+    .phoneNrPlaceholder {
+      position: absolute;
+      pointer-events: none;
+      left: 18px;
+      top: 21.6px;
+      transition: all 0.2s ease;
+      font-size: 11.7px;
+      user-select: none;
+    }
+    .iconArrowNext {
+      position: absolute;
+      right: 0;
+      width: 99px;
+      height: 54px;
+      background-color: #d2d4d9;
+      border-radius: 0 6px 6px 0;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+  }
+
+  .requiredField {
+    display: none;
+  }
+  .numberNotValid {
+    display: none;
+  }
+}
+
+.warningBorder {
+  border: 1px solid $warningRed !important;
+}
+.requiredFieldShow,
+.numberNotValidShow,
+.emailNotValidShow {
+  display: inline-block !important;
+  font-size: 10.8px;
+  color: $warningRed;
+  margin-top: 3.6px;
+  margin-left: 18.9px;
+}

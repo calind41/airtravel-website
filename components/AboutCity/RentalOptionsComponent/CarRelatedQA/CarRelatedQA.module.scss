@@ -1,0 +1,46 @@
+.carRelatedQA {
+  margin-top: 50px;
+  width: 964px;
+
+  & > header {
+    & > div:nth-child(1) {
+      color: #212121;
+      font-size: 21px;
+      font-weight: 500;
+    }
+    & > div:nth-child(2) {
+      margin-top: 10px;
+      color: #3c3c3c;
+      font-size: 12px;
+    }
+  }
+  & > main {
+    width: 705px;
+    margin-top: 30px;
+
+    .qaContainer {
+      margin-top: 41px;
+      & > div:nth-child(1) {
+        line-height: 25px;
+        color: #212121;
+        font-size: 17px;
+      }
+      & > div:nth-child(2) {
+        margin-top: 14px;
+        color: #3c3c3c;
+        font-size: 12px;
+        line-height: 19px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .carRelatedQA {
+    width: 662px;
+
+    & > main {
+      width: 662px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.touristAttractions {
+  width: 91.78vw;
+  margin-top: 55px;
+
+  & > div {
+    color: #212121;
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  & > p {
+    color: #3c3c3c;
+    font-size: 11px;
+    line-height: 20px;
+    margin-top: 23px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .touristAttractions {
+    width: 344.17px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .touristAttractions {
+    width: 83.13vw;
+  }
+}
+@media screen and (min-width: 500px) {
+  .touristAttractions {
+    width: 86vw;
+  }
+}

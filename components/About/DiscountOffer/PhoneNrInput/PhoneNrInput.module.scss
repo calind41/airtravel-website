@@ -1,0 +1,53 @@
+$borderInputColor: #d2d5d9;
+$inputBgColorBlur: #e4e6eb;
+$warningRed: #dd5656;
+.phoneNrC {
+  width: 387.9px;
+  height: 73.8px;
+  display: flex;
+  label {
+    position: relative;
+    display: block;
+
+    .phonePrefix {
+      position: absolute;
+
+      left: 18.09px;
+      top: 17.65px;
+      z-index: 1;
+      font-size: 11.7px;
+      cursor: text;
+      // display: none;
+    }
+    .phonePrefixAboutUs {
+      top: 16.65px;
+    }
+    input {
+      position: relative;
+      font-size: 11.7px;
+      width: 222.3px;
+      height: 46.8px;
+      padding-left: 54px;
+      padding-top: 1.8px;
+      border-radius: 6px 0 0 6px;
+      border: 1px solid #dadce0;
+      background-color: #fff;
+      outline: none;
+    }
+  }
+  .numberNotValid {
+    display: none;
+  }
+}
+
+.warningBorder {
+  border: 1px solid $warningRed !important;
+}
+.numberNotValidShow {
+  position: absolute;
+  bottom: -10.8px;
+  display: inline-block !important;
+  font-size: 10.8px;
+  color: $warningRed;
+  margin-left: 18.45px;
+}

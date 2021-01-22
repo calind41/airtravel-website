@@ -1,0 +1,75 @@
+.sbtnC button {
+  font-size: 15.7px;
+  color: #fff;
+  background-color: #01abfb;
+  border: 1px solid #01abfb;
+  height: 48px;
+  width: 92px;
+  text-align: center;
+  position: absolute;
+  border-radius: 4px;
+  cursor: pointer;
+  right: -100px;
+  transition: all 0.2s;
+  outline: none;
+}
+.sbtnC .btnMultiCity {
+  width: 353px !important;
+}
+.sbtnC .positionLeft {
+  right: 255px;
+}
+.sbtnC button:hover {
+  background-color: #009de6;
+  border: 1px solid #009de6;
+}
+
+@media screen and (max-width: 1140px) {
+  .sbtnC button {
+    font-size: 15.7px;
+    color: #fff;
+    height: 49px;
+    width: 238px;
+    position: absolute;
+    right: 1px;
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .sbtnC button {
+    font-size: 15.7px;
+    height: 49px;
+    width: 91vw;
+    right: 0;
+    margin-top: 0px;
+    bottom: -1px;
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  .sbtnC .btnMultiCity {
+    width: 240px !important;
+    right: -50px !important;
+    top: -11.5px;
+  }
+  .sbtnC .positionLeft {
+    right: 69px !important;
+    width: 353px !important;
+  }
+}
+@media screen and (max-width: 795px) {
+  .sbtnC .btnMultiCity {
+    width: 89.4vw !important;
+    left: 5.25vw !important;
+    top: 46px !important;
+  }
+  .sbtnC .leftPosClass {
+    left: 3.5vw !important;
+  }
+  .sbtnC .positionLeft {
+    right: 69px !important;
+    right: -5.1vw !important;
+    top: -8px !important;
+    width: 89.4vw !important;
+  }
+}

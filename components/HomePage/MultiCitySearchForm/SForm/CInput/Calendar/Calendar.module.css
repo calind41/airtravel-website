@@ -1,0 +1,37 @@
+.wrapper {
+  position: absolute;
+  top: 52px;
+  left: 507px;
+  width: 508px !important;
+  height: 477px;
+  background-color: #fff;
+  border-radius: 4px;
+  z-index: 100;
+}
+.wrapper .hLine {
+  border-top: 0.8px solid rgba(158, 158, 158, 0.4);
+  display: block;
+  width: 370.5px;
+  left: 138px;
+  top: 41px;
+  height: 1px;
+  position: absolute;
+}
+.calendarC {
+  position: absolute !important;
+  right: 18px;
+  top: 56px;
+  height: 419px;
+  overflow: scroll;
+}
+.calendarC::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 1155px) {
+  .wrapper {
+    position: absolute;
+    top: 52px;
+    left: 196px;
+  }
+}

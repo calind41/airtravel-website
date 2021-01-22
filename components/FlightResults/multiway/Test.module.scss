@@ -1,0 +1,252 @@
+.container {
+  min-height: 100vh;
+  position: relative;
+  margin-top: 0px;
+
+  .sidesWrapper {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    min-height: 140vh;
+    overflow: hidden;
+    .mainWrapper {
+      position: relative;
+      min-height: 140vh;
+      width: 852px;
+      width: 54.896vw;
+      top: 0;
+      left: 0;
+      cursor: pointer;
+    }
+
+    .mainWrapper2 {
+      min-height: 140vh;
+      width: 668px;
+      width: 45.104vw;
+      position: relative;
+      top: 0;
+      right: 0;
+      max-height: 100000vh;
+      cursor: pointer;
+      box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.08);
+      box-sizing: border-box;
+    }
+
+    .positionFixed {
+      position: fixed !important;
+      top: 69px !important;
+      max-height: calc(1000vh - 69px);
+    }
+
+    .mainWrapperPositionRelative {
+      position: relative !important;
+      top: 0px !important;
+      left: 0px !important;
+      cursor: pointer;
+      box-shadow: -3px 0px 16px 0 rgba(0, 0, 0, 0.06);
+      width: 852px;
+      width: 54.896vw;
+      max-height: 100000vh;
+      transform: translateY(0px) !important;
+    }
+
+    .mainWrapper2PositionRelative {
+      position: relative !important;
+      top: 0 !important;
+      cursor: pointer;
+      box-shadow: -10px 0px 16px -7px rgba(0, 0, 0, 0.06);
+      width: 668px;
+      width: 45.104vw;
+      max-height: 100000vh;
+      z-index: 1000000000;
+    }
+    .positionFixed2 {
+      position: fixed !important;
+      top: 69px !important;
+      max-height: calc(1000vh - 69px);
+      z-index: 100000;
+      right: 0px !important;
+      box-sizing: border-box;
+    }
+    .mainWrapperInactive {
+      &:after {
+        z-index: 10001;
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.82;
+      }
+    }
+    .mainWrapperInactive2 {
+      &:after {
+        z-index: 10001;
+        pointer-events: none;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity: 0.82;
+      }
+      &:before {
+        z-index: 10000;
+        pointer-events: none !important;
+        content: "";
+        pointer-events: none;
+        position: absolute;
+        top: 0px;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        will-change: opacity;
+        transition: opacity 0.3s cubic-bezier(0.55, 0.25, 0, 0.99);
+        background: linear-gradient(
+          90deg,
+          hsla(0, 0%, 100%, 0) 0,
+          #fff 640px,
+          #fff
+        );
+      }
+    }
+    .mainWrapperAnimationClass {
+      &:after {
+        background-color: #fff;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        animation: blurAnimation 3s linear infinite;
+        z-index: 10000;
+      }
+    }
+  }
+}
+
+@keyframes blurAnimation {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.slideLeft {
+  animation: slideLeftAnimation 0.3s ease forwards;
+  z-index: 100000;
+  background-color: #fff;
+}
+.slideRight {
+  animation: slideRightAnimation 0.3s ease forwards;
+}
+@keyframes slideLeftAnimation {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 182px;
+  }
+}
+
+@keyframes slideRightAnimation {
+  0% {
+    right: 182px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 1372px) {
+  .container {
+    .sidesWrapper {
+      .mainWrapper {
+        width: 740px;
+        width: 55.97vw;
+      }
+
+      .mainWrapper2 {
+        width: 604px;
+        width: 44.03vw;
+      }
+
+      .mainWrapperPositionRelative {
+        width: 740px;
+        width: 55.97vw;
+      }
+
+      .mainWrapper2PositionRelative {
+        width: 604px;
+        width: 44.03vw;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1036px) {
+  .container {
+    .sidesWrapper {
+      .mainWrapper {
+        width: 56.37vw;
+        width: 57.8185vw;
+      }
+
+      .mainWrapper2 {
+        width: 40.733vw;
+        width: 42.1815vw;
+      }
+
+      .mainWrapperPositionRelative {
+        width: 56.37vw;
+        width: 57.8185vw;
+      }
+
+      .mainWrapper2PositionRelative {
+        width: 40.733vw;
+        width: 42.1815vw;
+      }
+    }
+  }
+}
+@media screen and (max-width: 857px) {
+  .container {
+    .sidesWrapper {
+      .mainWrapper {
+        width: 483.09px;
+        width: 57.8185vw;
+      }
+
+      .mainWrapper2 {
+        width: 349.081px;
+        width: 42.1815vw;
+      }
+
+      .mainWrapperPositionRelative {
+        width: 483.09px;
+        width: 57.8185vw;
+      }
+
+      .mainWrapper2PositionRelative {
+        width: 349.081px;
+        width: 42.1815vw;
+      }
+    }
+  }
+}

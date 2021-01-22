@@ -1,0 +1,57 @@
+.transfers {
+  .title {
+    color: #959ba4;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    height: 24px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 142px;
+  }
+
+  .settings {
+    display: flex;
+  }
+
+  .valueOne,
+  .valueTwo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    height: 30px;
+    .checkBoxContainer {
+      transition: all 0.2s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-size: 12px;
+      user-select: none;
+      position: relative;
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      background-color: #333;
+    }
+    .checkBoxContainerChecked {
+      background-color: #ffdd2d !important;
+      background-image: url("/images/checkbox_check_image.svg") !important;
+    }
+    .text {
+      width: 92px;
+      text-align: left;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #fff;
+      cursor: pointer;
+      user-select: none;
+    }
+  }
+}

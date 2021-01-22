@@ -1,0 +1,57 @@
+{
+    "title": "Личный кабинет",
+    "myTickets": "Мои билеты",
+    "personalInfo": "Личные данные",
+    "settings": "Настройки",
+
+    "UserDataFormPopup-title": "Заполните свои данные для быстрого бронирования",
+    "UserDataFormPopup-placeholder1": "Имя",
+    "UserDataFormPopup-placeholder2": "Фамилия",
+    "UserDataFormPopup-placeholder3": "Дата рождения",
+    "UserDataFormPopup-placeholder4": "Гражданство",
+    "UserDataFormPopup-placeholder5": "Пол",
+    "UserDataFormPopup-placeholder6": "Серия № Загранпаспорта",
+    "UserDataFormPopup-placeholder7": "Дата выдачи",
+    "UserDataFormPopup-placeholder8": "Действителен до",
+    "UserDataFormPopup-placeholder9": "Сохранить изменения",
+    "UserDataFormPopup-placeholder10": "Сохранить",
+    "UserDataFormPopup-title-mobile": "Заполнить личные данные",
+
+    "UserTickets-title": "Мои билеты",
+    "BookingNr-title": "Номер брони",
+    "AboutTicket-t1": "Пассажира",
+    "AboutTicket-t2": "Пассажир",
+    "AboutTicket-t3": "Страхование",
+    "AboutTicket-t4": "Страховка отсутствует",
+    "AboutTicket-t5": "Приобрести страховку",
+
+    "NoTickets-title": "У вас нет предстоящих поездок",
+    "NoTickets-subtitle": "Ваши поездки отобразятся здесь после бронирования.",
+    "NoTickets-button": "Найти билеты",
+
+    "UserPersonalData-t1": "Пассажир",
+    "UserPersonalData-title": "Сохраненная информация о пассажирах",
+    "UserPersonalData-subtitle": "Сохраняйте информацию о пассажирах, чтобы не вводить ее повторно. Быстрое бронирование без лишних хлопот.",
+    "UserPersonalData-button": "Добавить пассажира",
+
+    "UserSettings-t1": "Подтвердить",
+    "UserSettings-t2": "Изменить",
+    "UserSettings-title": "Настройки учетной записи",
+    "UserSettings-subtitle": "Установите индивидуальные настройки учетной записи, чтобы мы могли обслужить вас в соответствии с вашими пожеланиями.",
+    "UserSettings-phoneNrPlaceholder": "Номер телефона",
+    "UserSettings-requiredField": "Поле обязательное",
+    "UserSettings-numberNotValid": "Неверный номер",
+    "UserSettings-emailPlaceholder": "Электронная почта",
+    "UserSettings-requiredFieldEmail": "Поле обязательное",
+    "UserSettings-emailNotValid": "Hевалидный адрес",
+    "UserSettings-passwordPlaceholder": "Пароль",
+    "UserSettings-forgotPassword": "Забыли?",
+    "UserSettings-passwordIndicator1": "Слабый",
+    "UserSettings-passwordIndicator2": "Сильный",
+    "UserSettings-deleteUserData": "Удаление учетной записи"
+    
+    
+
+
+
+}

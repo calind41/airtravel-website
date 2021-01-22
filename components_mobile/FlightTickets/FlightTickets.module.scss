@@ -1,0 +1,31 @@
+// 90% of originalSize
+.container {
+  position: relative;
+  width: 89.33vw;
+
+  height: auto;
+  max-height: 10000px;
+  top: 8px;
+  padding-bottom: 18px;
+  & > div {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 344.17px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .container {
+    width: 83.13vw;
+  }
+}
+@media screen and (min-width: 500px) {
+  .container {
+    // width: 430px;
+    width: 86vw;
+    margin: auto;
+  }
+}

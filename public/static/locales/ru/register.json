@@ -1,0 +1,19 @@
+{
+    "title": "Регистрация",
+    "subtitle": "Чтобы пользоваться сервисом на полную, быстро бронировать билеты, просматривать свою бронь и получать скидки — зарегистрируй аккаунт",
+    "emailPlaceholder": "Электронная почта", 
+    "requiredFieldEmail": "Поле обязательное",
+    "emailNotValid": "Hевалидный адрес",
+    "passwordPlaceholder": "Пароль",
+    "passwordIndicator-1": "Больше 6 символов",
+    "passwordIndicator-2": "Слабый",
+    "passwordIndicator-3": "Сильный",
+    "continue": "Продолжить",
+    "linkToAuth": "Уже есть аккаунт?",
+    "phoneNr": "Номер телефона",
+    "requiredFieldPhoneNr": "Поле обязательное",
+    "numberNotValid": "Неверный номер",
+    "next": "Далее"
+
+
+}

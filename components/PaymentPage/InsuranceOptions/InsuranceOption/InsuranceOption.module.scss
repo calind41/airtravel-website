@@ -1,0 +1,331 @@
+// 90% of originalSize
+.container {
+  width: 220.6px;
+  height: 468px;
+  margin-top: 18px;
+  display: inline-block;
+
+  header {
+    width: 213.8px;
+    height: 39.6px;
+    background-color: #e9edf5;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > span:nth-child(1) {
+      font-size: 12.15px;
+      font-weight: 500;
+      margin-left: 18px;
+      margin-bottom: 2.7px;
+    }
+    & > span:nth-child(2) {
+      margin-right: 17.1px;
+      margin-top: 0.9px;
+    }
+  }
+  .insuranceDetails {
+    display: flex;
+    flex-direction: column;
+    width: 225.6px;
+    height: 319.5px;
+    margin-top: 25.2px;
+    border-right: 1px solid #e9edf5;
+
+    & > div:nth-child(1) {
+      width: 253.8px;
+      height: 32.4px;
+      span:nth-child(2) {
+        display: inline-block;
+        width: 177.2px;
+        font-size: 11.7px;
+        border-bottom: 1px solid #e9edf5;
+        margin-left: 7.65px;
+        padding-bottom: 16.2px;
+      }
+    }
+
+    .medicalExpenses {
+      width: 220.6px;
+      height: 52.2px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 19.8px;
+      .title {
+        font-size: 11.7px;
+        color: #6f7175;
+        margin-left: 18.9px;
+      }
+      & > div:nth-child(2) {
+        width: 253.8px;
+        height: 29.7px;
+        display: flex;
+        margin-top: 6.3px;
+        span:nth-child(1) {
+          position: relative;
+          bottom: 10.17px;
+        }
+        span:nth-child(2) {
+          width: 177.2px;
+          font-size: 11.7px;
+          color: #000;
+          padding-bottom: 20.7px;
+          border-bottom: 1px solid #e9edf5;
+          margin-left: 7.65px;
+        }
+      }
+    }
+
+    .materialLiability {
+      width: 220.6px;
+      height: 52.2px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 19.8px;
+      .title {
+        font-size: 11.7px;
+        color: #6f7175;
+        margin-left: 18.9px;
+      }
+      & > div:nth-child(2) {
+        width: 213.8px;
+        height: 55.8px;
+        margin-top: -6.3px;
+        .icon {
+          position: relative;
+          top: 25.2px;
+        }
+        span {
+          width: 177.2px;
+          margin-left: 18.9px;
+          display: block;
+          font-size: 11.7px;
+        }
+        span:nth-child(1) {
+          line-height: 20.7px;
+        }
+        span:nth-child(2) {
+          margin-top: 2.7px;
+          padding-bottom: 17.1px;
+          border-bottom: 1px solid #e9edf5;
+        }
+      }
+    }
+
+    .baggageInsurance {
+      margin-top: 65.7px;
+      width: 253.8px;
+      width: 220.6px;
+      height: 34.2px;
+      .title {
+        font-size: 11.7px;
+        color: #6f7175;
+        margin-left: 18.9px;
+      }
+      & > div:nth-child(2) {
+        display: flex;
+        width: 207px;
+        .icon {
+          margin-top: -4.5px;
+        }
+        div:nth-child(2) {
+          font-size: 11.7px;
+          margin-left: 7.65px;
+          margin-top: 6.3px;
+          width: 187.2px;
+        }
+      }
+    }
+  }
+
+  .insurancePrice {
+    width: 213.8px;
+    height: 39.6px;
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #d0d4db;
+    font-size: 11.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.1s ease all;
+    margin-top: 28.8px;
+  }
+}
+
+.selectedInsuranceOption {
+  background-color: #e6f3ff !important;
+  border: 1px solid #59acff !important;
+}
+
+@media screen and (max-width: 1140px) {
+  .containerInsurancePlus {
+    width: 186.6px !important;
+  }
+  .container {
+    width: 195.6px;
+    height: 468px;
+    margin-top: 18px;
+    display: inline-block;
+
+    header {
+      width: 185.8px;
+      height: 39.6px;
+      background-color: #e9edf5;
+      border-radius: 6px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & > span:nth-child(1) {
+        font-size: 12.15px;
+        font-weight: 500;
+        margin-left: 18px;
+        margin-bottom: 2.7px;
+      }
+      & > span:nth-child(2) {
+        margin-right: 17.1px;
+        margin-top: 0.9px;
+      }
+    }
+    .insuranceDetails {
+      display: flex;
+      flex-direction: column;
+      width: 202.6px;
+      height: 319.5px;
+      margin-top: 25.2px;
+      border-right: 1px solid #e9edf5;
+
+      & > div:nth-child(1) {
+        width: 203.8px;
+        height: 32.4px;
+        span:nth-child(2) {
+          display: inline-block;
+          width: 160.2px;
+          font-size: 11.7px;
+          border-bottom: 1px solid #e9edf5;
+          margin-left: 7.65px;
+          padding-bottom: 16.2px;
+        }
+      }
+
+      .medicalExpenses {
+        width: 180.6px;
+        height: 52.2px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 19.8px;
+        .title {
+          font-size: 11.7px;
+          color: #6f7175;
+          margin-left: 18.9px;
+        }
+        & > div:nth-child(2) {
+          width: 193.8px;
+          height: 29.7px;
+          display: flex;
+          margin-top: 6.3px;
+          span:nth-child(1) {
+            position: relative;
+            bottom: 10.17px;
+          }
+          span:nth-child(2) {
+            width: 160.2px;
+            font-size: 11.7px;
+            color: #000;
+            padding-bottom: 20.7px;
+            border-bottom: 1px solid #e9edf5;
+            margin-left: 7.65px;
+          }
+        }
+      }
+
+      .materialLiability {
+        width: 180.6px;
+        height: 52.2px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 19.8px;
+        .title {
+          font-size: 11.7px;
+          color: #6f7175;
+          margin-left: 18.9px;
+        }
+        & > div:nth-child(2) {
+          width: 193.8px;
+          height: 55.8px;
+          margin-top: -12.3px;
+
+          .icon {
+            position: relative;
+            top: 25.2px;
+          }
+          span {
+            width: 160.2px;
+            margin-left: 18.9px;
+            display: block;
+            font-size: 11.7px;
+          }
+          span:nth-child(1) {
+            line-height: 20.7px;
+          }
+          span:nth-child(2) {
+            margin-top: 10.7px;
+            padding-bottom: 10.1px;
+            border-bottom: 1px solid #e9edf5;
+          }
+        }
+      }
+
+      .baggageInsurance {
+        margin-top: 82.7px;
+        width: 180.6px;
+        height: 34.2px;
+        .title {
+          font-size: 11.7px;
+          color: #6f7175;
+          margin-left: 18.9px;
+        }
+        & > div:nth-child(2) {
+          display: flex;
+          width: 187px;
+          .icon {
+            margin-top: -4.5px;
+          }
+          div:nth-child(2) {
+            font-size: 11.7px;
+            margin-left: 7.65px;
+            margin-top: 6.3px;
+            width: 187.2px;
+          }
+        }
+      }
+    }
+
+    .insurancePrice {
+      width: 185.8px;
+      height: 39.6px;
+      background-color: #fff;
+      border-radius: 6px;
+      border: 1px solid #d0d4db;
+      font-size: 11.7px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      user-select: none;
+      cursor: pointer;
+      transition: 0.1s ease all;
+      margin-top: 28.8px;
+    }
+  }
+
+  .selectedInsuranceOption {
+    background-color: #e6f3ff !important;
+    border: 1px solid #59acff !important;
+  }
+}

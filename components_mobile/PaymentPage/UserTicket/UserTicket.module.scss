@@ -1,0 +1,240 @@
+//  90% of originalSize
+.container {
+  width: 89.33vw;
+  min-height: 344.6px;
+  background-color: #fff;
+  border-radius: 6px 6px 0 0;
+  margin: auto;
+
+  header {
+    width: 100%;
+    height: 51.3px;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 27.9px;
+
+    .destination {
+      width: 73.33vw;
+      height: 51.3px;
+      display: flex;
+      justify-content: space-between;
+
+      .from {
+        width: 50.4px;
+        height: 51.3px;
+        div:nth-child(1) {
+          font-size: 27px;
+          font-weight: 700;
+          line-height: 33.3px;
+        }
+        div:nth-child(2) {
+          font-size: 11.7px;
+          color: #57595c;
+        }
+      }
+      .lines {
+        width: 126px;
+        margin-top: 3.6px;
+        margin-left: 4px;
+        span:not(:nth-child(2)) {
+          svg {
+            width: 34px;
+          }
+        }
+        span:nth-child(2) {
+          display: inline-block;
+          margin-left: 10px;
+          margin-right: 10px;
+          position: relative;
+          top: 3.33px;
+        }
+      }
+      .to {
+        width: 45px;
+        height: 51.3px;
+
+        div:nth-child(1) {
+          font-size: 27px;
+          font-weight: 700;
+          line-height: 33.3px;
+        }
+        div:nth-child(2) {
+          font-size: 11.7px;
+          color: #57595c;
+          position: relative;
+          right: 5px;
+        }
+      }
+    }
+  }
+  .flightDetailsBtn {
+    width: 73.33vw;
+    height: 39.6px;
+    border-radius: 6px;
+    background-color: #f2f5fa;
+    border: none;
+    outline: none;
+    margin: auto;
+    margin-top: 25px;
+    font-size: 11px;
+    color: #5e758c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .userInfo {
+    width: 73.33vw;
+    min-height: 39.6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 1.6px solid #ebeef2;
+
+    & > .wrapper {
+      height: 144px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    & > .wrapper > div {
+      height: 37px;
+      margin-left: 18px;
+
+      & > div:nth-child(1) {
+        font-size: 10px;
+        font-weight: 500;
+        color: #787b82;
+      }
+      & > div:nth-child(2) {
+        font-size: 13px;
+        position: relative;
+        top: 2px;
+      }
+    }
+
+    .name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 18px;
+
+      & > div:nth-child(1) {
+        color: #000;
+        font-size: 13px;
+      }
+      & > div:nth-child(2) {
+        transition: 0.1s ease all;
+        svg {
+          position: relative;
+          top: 2px;
+        }
+      }
+    }
+  }
+  .baggageInfo {
+    width: 73.33vw;
+    min-height: 31.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20.1px;
+    padding-bottom: 30px;
+
+    .baggageTypes {
+      width: 73.33vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 4.5px;
+      & > div {
+        display: flex;
+        align-items: center;
+      }
+      & > div > span:nth-child(1) {
+        margin-right: 9.9px;
+      }
+      & > div > span:nth-child(2) {
+        font-size: 11.7px;
+      }
+    }
+  }
+}
+
+.rotateArrow {
+  transform: rotate(180deg);
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 344.17px;
+
+    header {
+      .destination {
+        width: 274.987px;
+      }
+    }
+    .flightDetailsBtn {
+      width: 274.987px;
+    }
+    .userInfo {
+      width: 274.987px;
+    }
+    .baggageInfo {
+      width: 274.987px;
+      .baggageTypes {
+        width: 274.987px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .container {
+    width: 83.13vw;
+    header {
+      .destination {
+        width: 66.4vw;
+      }
+    }
+    .flightDetailsBtn {
+      width: 66.4vw;
+    }
+    .userInfo {
+      width: 66.4vw;
+    }
+    .baggageInfo {
+      width: 66.4vw;
+      .baggageTypes {
+        width: 66.4vw;
+      }
+    }
+  }
+}
+@media screen and (min-width: 500px) {
+  .container {
+    width: 86vw;
+    header {
+      .destination {
+        width: 69.27vw;
+      }
+    }
+    .flightDetailsBtn {
+      width: 69.27vw;
+    }
+    .userInfo {
+      width: 69.27vw;
+    }
+    .baggageInfo {
+      width: 69.27vw;
+      .baggageTypes {
+        width: 69.27vw;
+      }
+    }
+  }
+}

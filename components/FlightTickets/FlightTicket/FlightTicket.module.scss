@@ -1,0 +1,161 @@
+// 90% of originalSize
+.ticketContainer {
+  width: 620px;
+
+  margin: auto;
+  border-radius: 6px;
+  background-color: #e9edf5;
+  background-color: #fff;
+
+  .timeBetweenFlights {
+    width: 605px;
+
+    height: 43.2px;
+    display: flex;
+    cursor: pointer;
+
+    & > div:nth-child(1) {
+      width: 285px;
+      margin-left: 121.5px;
+      position: relative;
+      left: 10px;
+      span:nth-child(1),
+      span:nth-child(3) {
+        display: inline-block;
+        width: 80.5px;
+        height: 1px;
+        background-color: #dadce0;
+      }
+
+      span:nth-child(2) {
+        font-size: 9px;
+        font-weight: 500;
+        color: #787b82;
+        padding-left: 9px;
+        padding-right: 9px;
+      }
+    }
+    & > div:nth-child(2) {
+      margin-left: 102.1px;
+      margin-top: 2.7px;
+      position: relative;
+      right: 14px;
+      // border: 1px solid red;
+      span:nth-child(1) {
+        font-size: 11.7px;
+        font-weight: 500;
+        color: #0080ff;
+        position: relative;
+        span {
+          position: absolute;
+          top: 0;
+          font-size: 9px;
+        }
+      }
+
+      .arrowDown {
+        margin-left: 50px;
+        position: relative;
+        left: 8px;
+        width: 12.6px !important;
+        height: 12.6px !important;
+        display: inline-flex;
+        align-items: center;
+
+        svg {
+          width: 12.6px;
+          height: 12.6px;
+          fill: #787b82;
+          transform: rotate(-90deg);
+        }
+        transition: 0.2s ease all;
+        svg:hover {
+          fill: #000;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .ticketContainer {
+    width: 662px;
+
+    .timeBetweenFlights {
+      width: 662px;
+      height: 43.2px;
+      display: flex;
+      cursor: pointer;
+
+      & > div:nth-child(1) {
+        width: 680px;
+        margin-left: 0;
+        position: relative;
+        left: 88px;
+        span:nth-child(1),
+        span:nth-child(3) {
+          width: 150px;
+        }
+
+        span:nth-child(2) {
+          font-size: 9px;
+          font-weight: 500;
+          color: #787b82;
+          padding-left: 9px;
+          padding-right: 9px;
+        }
+      }
+      & > div:nth-child(2) {
+        width: 100px !important;
+        margin-left: 0px;
+        margin-top: 2.7px;
+        position: relative;
+        right: 52px;
+        span:nth-child(1) {
+          font-size: 11.7px;
+          font-weight: 500;
+          color: #0080ff;
+          position: relative;
+          span {
+            position: absolute;
+            top: 0;
+            font-size: 9px;
+          }
+        }
+
+        .arrowDown {
+          margin-left: 50px;
+          position: relative;
+          left: 17px;
+        }
+      }
+    }
+  }
+  .ticketContainerAlreadyBooked {
+    width: 445px !important;
+    // overflow: hidden;
+    .timeBetweenFlights {
+      width: 445px;
+
+      & > div:nth-child(1) {
+        width: 445px;
+        margin-left: 0;
+        left: 48px;
+
+        span:nth-child(1),
+        span:nth-child(3) {
+          width: 100px;
+        }
+      }
+      & > div:nth-child(2) {
+        right: 2px;
+
+        .arrowDown {
+          bottom: 20px;
+          left: -8px;
+        }
+      }
+    }
+  }
+}

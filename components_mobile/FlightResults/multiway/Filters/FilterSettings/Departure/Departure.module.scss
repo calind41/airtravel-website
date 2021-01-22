@@ -1,0 +1,299 @@
+.departure {
+  .title {
+    color: #959ba4;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0;
+    height: 24px;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 142px;
+
+    .cancelFilterIcon2 {
+      position: relative;
+      top: 2px;
+      transition: opacity 0.3s ease;
+      opacity: 0.4;
+      cursor: pointer;
+      display: none;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      .floatingNotification2 {
+        position: absolute;
+        width: 130px;
+        height: 45px;
+        background-color: #fff;
+        border-radius: 5px;
+        top: -45px;
+        left: -57px;
+        font-size: 12px;
+        color: #333;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(0px);
+        opacity: 0;
+        border: 1px solid transparent;
+        display: none;
+        .arrowDown {
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          bottom: -5px;
+          left: 60px;
+          transition: none !important;
+          width: 0;
+          height: 0;
+          border-left: 5px solid transparent;
+          border-right: 5px solid transparent;
+          border-top: 5px solid #fff;
+          opacity: 0;
+          transition: 0.3s ease;
+        }
+      }
+      .floatingNotificationUp {
+        animation: slideUp 0.3s ease forwards;
+        .arrowDown {
+          opacity: 1;
+        }
+      }
+      .floatingNotificationDown {
+        animation: slideDown 0.3s ease forwards;
+        .arrowDown {
+          opacity: 0;
+        }
+      }
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+.departure {
+  width: 170px;
+
+  .timeSelect {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    margin-top: 8px;
+    .timeDisplay {
+      color: #fff;
+      font-weight: 300;
+      width: 82px;
+      text-align: center;
+      margin-bottom: 7px;
+      font-size: 12px;
+      cursor: pointer;
+      pointer-events: none;
+    }
+    .arrowIcon {
+      pointer-events: none;
+
+      margin-left: 3px;
+      cursor: pointer;
+      svg {
+        width: 16px;
+        height: 16px;
+        path {
+          fill: rgb(121, 129, 140);
+        }
+      }
+    }
+    .departureTimesDropdown {
+      z-index: 3;
+      position: absolute;
+      top: 25px;
+      left: 0;
+      max-height: 162px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      overflow: hidden auto;
+      border: 1px solid #dddfe0;
+      border-radius: 6px;
+      background-color: #fff;
+      display: none;
+
+      & > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 11px;
+        max-width: 100%;
+        width: 188px;
+        height: 30px;
+        background: #fff;
+        cursor: pointer;
+        opacity: 1;
+        transition: opacity 0.25s ease-in-out 0s;
+        font-size: 12px;
+        line-height: 18px;
+        &:hover {
+          background-color: #f6f7f8;
+        }
+        span:nth-child(1) {
+          color: #333;
+        }
+        span:nth-child(2) {
+          color: #9299a2;
+        }
+      }
+    }
+  }
+  .sliderContainer {
+    position: relative;
+    top: -5px;
+  }
+  .departureAirport {
+    margin-top: 2px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+    .title {
+      color: #fff;
+      font-weight: 300;
+      margin-bottom: 7px;
+      font-size: 12px;
+      cursor: pointer;
+      width: 113px;
+      pointer-events: none;
+    }
+    .arrowIcon {
+      pointer-events: none;
+      position: relative;
+      top: -2px !important;
+      display: flex;
+      .selectedAirportsCount {
+        // position: absolute;
+        // right: -6px;
+        width: 19px;
+        height: 19px;
+        border-radius: 50%;
+        background-color: #ffdd2d;
+        color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        line-height: 20px;
+        transition: opacity 0.3s ease;
+        margin-right: 5px;
+
+        &:hover {
+          opacity: 0;
+        }
+      }
+      svg {
+        width: 16px;
+        height: 16px;
+        path {
+          fill: rgb(121, 129, 140);
+        }
+      }
+    }
+    .airportDropdown {
+      position: absolute;
+      top: 29px;
+      display: none;
+      max-height: 42px;
+      height: 42px !important;
+      left: 0;
+      z-index: 2;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 1px solid #dddfe0;
+      border-radius: 6px;
+      background-color: #fff;
+      font-size: 12px;
+      color: #333;
+      // display: flex;
+      align-items: center;
+      padding-left: 11px;
+      padding-right: 11px;
+      width: 188px;
+      overflow: hidden;
+      transition: opacity 0.25s ease-in-out;
+      user-select: none;
+      pointer-events: none !important;
+
+      .checkBoxContainer {
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        user-select: none;
+        position: relative;
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
+        background-color: #333;
+        opacity: 0.3;
+        pointer-events: none !important;
+      }
+      .checkBoxContainerChecked {
+        background-color: #ffdd2d !important;
+        background-image: url("/images/checkbox_check_image.svg") !important;
+      }
+      .text {
+        text-align: left;
+        margin-left: 8px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: #333;
+        opacity: 0.3;
+        pointer-events: none !important;
+      }
+    }
+  }
+  .departureAirport {
+    .arrowIcon {
+      position: relative;
+      right: 5px !important;
+    }
+  }
+}
+
+.displayBlock {
+  display: block !important;
+}
+.rotate180deg {
+  transform: rotate(180deg);
+}
+.displayFlex {
+  display: flex !important;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+}

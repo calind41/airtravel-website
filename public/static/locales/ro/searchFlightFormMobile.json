@@ -1,0 +1,28 @@
+{
+    "departingValue": "Când zbori?",
+    "when": "CÂND",
+    "flightTypeDefault": "Econom",
+    "header": "Căutare zboruri ieftine",
+    "selectableButton": "Zboruri",
+    "selectableButton2": "Hoteluri",
+    "forward": "Tur",
+    "back": "Retur",
+    "defaultPassenger": "pasager",
+    "defaultPassengerMultiple": "pasageri",
+    "defaultFlightType": "econom",
+    "findTickets": "Caută bilete",
+
+    "Departure-inputPlaceholder": "Din",
+    "Departure-locationType": "Din",
+    "Arrival-inputPlaceholder": "Spre",
+    "Arrival-locationType": "Spre",
+
+    "LocationsSmallScreen-inputPlaceholder-departure": "De unde este plecarea?",
+    "LocationsSmallScreen-inputPlaceholder-arrival": "Unde zburăm?",
+
+    "CalendarInputSmallScreen-departureDate": "Data plecării",
+    "CalendarInputSmallScreen-arrivalDate": "Data returnării",
+    "CalendarInputSmallScreen-forward": "Tur",
+    "CalendarInputSmallScreen-back": "Retur",
+    "CalendarInputSmallScreen-buttonText": "Nu este necesar bilet de întoarcere"
+}

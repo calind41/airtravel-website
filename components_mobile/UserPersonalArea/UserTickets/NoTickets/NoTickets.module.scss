@@ -1,0 +1,45 @@
+// 90% of originalSize
+.container {
+  width: 100%;
+  height: 342px;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    width: 100%;
+    height: 27px;
+    color: #333333;
+    font-size: 15.6px;
+  }
+  .subtitle {
+    font-size: 11.7px;
+    color: #797c80;
+    margin-top: 12.5px;
+    width: 90%;
+    line-height: 20px;
+  }
+  .main {
+    width: 100%;
+
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21.6px;
+    margin-top: 0;
+
+    .searchTicketButton {
+      width: 230px;
+      height: 50px;
+      background-color: #2b95ff;
+      border-radius: 6px;
+      cursor: pointer;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 11.7px;
+      font-weight: 500;
+      margin-top: 36.9px;
+    }
+  }
+}

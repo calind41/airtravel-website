@@ -1,0 +1,42 @@
+.multiSearchFormC {
+  display: none;
+}
+.multiSearchFormC > .baseGroup {
+  position: relative;
+  right: 50px;
+  width: 964px;
+  height: 48px;
+  margin: auto;
+  position: relative;
+  top: 103.5px;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+}
+
+.multiSearchFormC > div:nth-child(1) {
+  position: absolute;
+  top: -37.6px;
+  left: 16.5px;
+  color: #ffd600;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  padding-bottom: 14px;
+  border-bottom: 8px solid #ffd600;
+  cursor: pointer;
+}
+.deletableGroups .group {
+  position: relative;
+  right: 50px;
+  width: 964px;
+  height: 48px;
+  margin: auto;
+  position: relative;
+  top: 103.5px;
+  background-color: #fff;
+  border-radius: 4px;
+  display: flex;
+}

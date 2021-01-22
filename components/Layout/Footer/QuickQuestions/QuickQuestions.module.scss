@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  background-color: #0c131d;
+  padding: 20px 20px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  .wrapper {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 7px;
+
+    & > div {
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        color: #f57c00;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 100%;
+    background-color: #0c131d;
+    padding: 20px 20px 5px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    .wrapper {
+      width: 900px;
+      width: 601px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: relative;
+      bottom: 7px;
+
+      & > div {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+        margin-left: 20px;
+        margin-bottom: 5px;
+
+        &:hover {
+          color: #f57c00;
+        }
+      }
+    }
+  }
+}

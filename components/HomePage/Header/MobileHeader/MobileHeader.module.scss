@@ -1,0 +1,103 @@
+.container {
+  width: 88vw;
+  height: 50px;
+  margin: auto;
+  margin-top: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer !important;
+  color: #fff !important;
+  .hamburgerMenuContainer {
+    cursor: pointer !important;
+    z-index: 10000 !important;
+
+    svg {
+      fill: #fff;
+      cursor: pointer !important;
+    }
+  }
+}
+.containerLightMode {
+  color: #000 !important;
+
+  .hamburgerMenuContainer {
+    svg {
+      fill: #000 !important;
+    }
+  }
+}
+
+.menuContent {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 20000 !important;
+  color: #252a31;
+  font-weight: 500;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+
+  .heading {
+    position: relative;
+    color: #006cff;
+    font-weight: 500;
+    width: 100%;
+    height: 49px !important;
+    border-bottom: 1px solid #d2d2d2;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    & > div {
+      display: flex;
+      align-items: center;
+      .icon {
+        border-radius: 100%;
+        position: relative;
+        top: 1px;
+        right: 2px;
+        display: flex;
+        align-items: center;
+        svg {
+          fill: #006cff;
+        }
+      }
+    }
+  }
+  .company,
+  .termsAndConditions {
+    position: relative;
+
+    margin-top: 20px;
+    color: #252a31;
+    font-weight: 500;
+    padding-left: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .header {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .item {
+      font-size: 12px;
+      font-weight: 500;
+
+      .icon {
+        margin-right: 10px;
+        svg {
+          width: 16px;
+          height: 16px;
+          fill: rgb(0, 108, 255);
+        }
+      }
+    }
+  }
+  .termsAndConditions {
+    height: 100px;
+    margin-top: 20px;
+  }
+}

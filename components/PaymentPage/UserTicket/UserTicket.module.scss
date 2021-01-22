@@ -1,0 +1,143 @@
+//  90% of originalSize
+.container {
+  width: 735px;
+  height: 246.6px;
+  background-color: #fff;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  header {
+    width: 801px;
+    width: 675px;
+
+    height: 51.3px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 27.9px;
+
+    .destination {
+      width: 240.3px;
+      height: 51.3px;
+      display: flex;
+      justify-content: space-between;
+      margin-left: 27.9px;
+      .from {
+        width: 50.4px;
+        height: 51.3px;
+        div:nth-child(1) {
+          font-size: 27px;
+          font-weight: 700;
+          line-height: 33.3px;
+        }
+        div:nth-child(2) {
+          font-size: 11.7px;
+          color: #57595c;
+        }
+      }
+      .lines {
+        width: 126px;
+        margin-top: 3.6px;
+        margin-left: -0.9px;
+        span:nth-child(2) {
+          display: inline-block;
+          margin-left: 17.1px;
+          margin-right: 17.1px;
+          position: relative;
+          top: 3.33px;
+        }
+      }
+      .to {
+        width: 45px;
+        height: 51.3px;
+
+        div:nth-child(1) {
+          font-size: 27px;
+          font-weight: 700;
+          line-height: 33.3px;
+        }
+        div:nth-child(2) {
+          font-size: 11.7px;
+          color: #57595c;
+        }
+      }
+    }
+
+    button {
+      width: 174.6px;
+      height: 39.6px;
+      background-color: #f2f5fa;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10.8px;
+      color: #5e758c;
+      outline: none;
+      border: none;
+      user-select: none;
+      cursor: pointer;
+      margin-top: -1.8px;
+      position: relative;
+      left: 27.9px;
+    }
+  }
+  .userInfo {
+    width: 508.5px;
+    height: 27px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 27.9px;
+    margin-top: 27px;
+
+    & > div > div:nth-child(1) {
+      font-size: 9px;
+      font-weight: 400;
+      line-height: 19.8px;
+      color: #787b82;
+    }
+    & > div > div:nth-child(2) {
+      font-size: 11.7px;
+    }
+  }
+  .baggageInfo {
+    width: 514.8px;
+    height: 31.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 27.9px;
+    margin-top: 44.1px;
+    .title {
+      font-size: 9px;
+      color: #787b82;
+    }
+    .baggageTypes {
+      width: 514.8px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4.5px;
+      & > div {
+        display: flex;
+        align-items: center;
+      }
+      & > div > span:nth-child(1) {
+        margin-right: 9.9px;
+      }
+      & > div > span:nth-child(2) {
+        font-size: 11.7px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    width: 662px;
+
+    header {
+      width: 605px;
+    }
+  }
+}

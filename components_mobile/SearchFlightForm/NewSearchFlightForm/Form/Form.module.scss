@@ -1,0 +1,181 @@
+.form {
+  width: 88vw;
+  margin: auto;
+  margin-top: 12px;
+  .departure {
+    position: relative;
+
+    .switchLocIcon {
+      position: absolute;
+      bottom: -13px;
+      z-index: 5;
+      right: 12px;
+      width: 26px;
+      height: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      box-shadow: 0px 5px 5px -3px #00000049;
+      background-color: #fff;
+      cursor: pointer;
+      .top,
+      .down {
+        position: absolute;
+        width: 13px;
+        height: 6px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & > svg {
+          width: 13px;
+          height: 6px;
+          fill: #0c73fe;
+          &:not(:root) {
+            overflow: hidden;
+          }
+          transform: rotate(90deg);
+        }
+      }
+      .top {
+        right: 10px;
+      }
+      .down {
+        transform: rotate(180deg);
+        // margin-left: 10px;
+        left: 10px;
+      }
+    }
+  }
+  .arrival {
+    margin-top: 1px;
+  }
+  .dateContainer {
+    margin-top: 2px;
+    width: 88vw;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+
+    .departureDate,
+    .returnBackDate {
+      width: 49.5%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      color: #90a4ae;
+      font-weight: 400;
+      font-size: 13.5px;
+      background-color: #fff;
+      cursor: pointer;
+      z-index: 3;
+    }
+    .departureDate {
+      display: flex;
+      justify-content: space-between;
+      & > span:nth-child(1) {
+        margin-left: 16px;
+      }
+      & > span:nth-child(2) {
+        color: #0c73fe;
+        margin-right: 8px;
+      }
+    }
+    .returnBackDate {
+      width: 50%;
+      height: 60px;
+      & > span {
+        margin-left: 16px;
+      }
+    }
+  }
+  .passengerDropdown {
+    margin-top: 1.5px;
+    width: 88vw;
+    height: 60px;
+    background-color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 13.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    .details {
+      margin-left: 16px;
+      .nrPassengers {
+        font-size: 14px;
+        color: #0c131d;
+        font-weight: 400;
+      }
+      .ticketType {
+        color: #90a4ae;
+        position: relative;
+        top: 3px;
+      }
+    }
+    .arrow {
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 19px;
+      right: 7px;
+
+      padding-top: 10px;
+      cursor: pointer;
+      transition: 0.2s ease;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-color: #90a4ae transparent transparent;
+        border-left: 5px solid transparent;
+        border-bottom: 0 solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #90a4ae;
+        margin: auto;
+      }
+    }
+  }
+}
+.footer {
+  margin: auto;
+  margin-top: 10px;
+  width: 88vw;
+  z-index: 5 !important;
+  .submitSearchBtn {
+    position: relative;
+    z-index: 5 !important;
+    width: 88vw;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #f57c00;
+    color: #fff;
+    border-radius: 5px;
+
+    .icon {
+      width: 32px;
+      height: 32px;
+      margin-top: 0.9px;
+      margin-left: 5px;
+      svg {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

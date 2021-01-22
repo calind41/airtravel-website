@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:400,500,700&subset=latin-ext,cyrillic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+#__next-prerender-indicator {
+  display: none;
+}
+
+/* .PhoneInput {
+  height: 46px;
+  border-radius: 5px !important;
+}
+.PhoneInputInput {
+  height: 100%;
+  background-color: #262829;
+  color: #fff;
+  font-size: 13px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  border-radius: 0 5px 5px 0 !important;
+}
+.PhoneInputCountry {
+  width: 32%;
+  background-color: #1d1e1f;
+  position: relative;
+  left: 4.6px;
+  height: 46px;
+  border: none;
+  border: none !important;
+  outline: none !important;
+  border-radius: 5px 0 0 5px !important;
+}
+.PhoneInputCountry:focus {
+  border: none !important;
+  outline: none !important;
+}
+.PhoneInputCountryIcon {
+  margin-left: 10px;
+}
+.PhoneInputCountrySelect:focus + .PhoneInputCountryIcon--border {
+  box-shadow: none !important;
+}
+
+.PhoneInputCountrySelect:focus
+  + .PhoneInputCountryIcon
+  + .PhoneInputCountrySelectArrow {
+  opacity: 1;
+  color: #fff !important;
+  margin-left: 50px;
+  font-size: 16px;
+}
+.PhoneInputCountrySelect
+  + .PhoneInputCountryIcon
+  + .PhoneInputCountrySelectArrow {
+  opacity: 1;
+  color: #fff !important;
+  margin-left: 50px;
+  font-size: 20px !important;
+} */
+
+/* react-phone-input-2 style changes - ModalOne and ModalTwo */
+/* .react-tel-input .selected-flag .arrow {
+  position: relative;
+  left: 23px !important;
+  border-top: 4px solid #fff !important;
+}
+.react-tel-input .selected-flag .arrow.up {
+  border-top: none !important;
+  border-bottom: 4px solid #fff !important;
+} */
+
+/* react-phone-input-2 style changes - ModalThree */
+.react-tel-input .selected-flag .arrow {
+  position: relative;
+  left: 23px !important;
+  border-top: 4px solid #fff !important;
+}
+.react-tel-input .selected-flag .arrow.up {
+  border-top: none !important;
+  border-bottom: 4px solid #fff !important;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  /* height: 120vh; */
+  font-family: "Inter", sans-serif;
+  background-color: #f2f5fa;
+  min-height: 100vh !important;
+}
+.MuiSlider-root {
+  width: 153px !important;
+}
+.MuiSlider-colorPrimary {
+  color: #ffdd2d !important;
+}
+.MuiSlider-rail {
+  color: #000 !important;
+  border-radius: 0px !important;
+  height: 2.5px !important;
+}
+.MuiSlider-thumb {
+  color: #ffdd2d !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin-top: -4px !important;
+  box-shadow: none !important;
+}
+.MuiSlider-thumb:hover {
+  width: 16px !important;
+  height: 16px !important;
+  margin-top: -8px !important;
+}
+
+.hamburger-box {
+  width: 20px;
+  height: 14px;
+}
+.hamburger-box > .hamburger-inner {
+  color: #fff !important;
+  background-color: #fff !important;
+  /* height: 2px; */
+  /* width: 20px; */
+  width: 19px;
+  height: 2.3px;
+}
+.hamburger-inner:before {
+  background-color: #fff !important;
+  color: #fff !important;
+  width: 19px;
+  height: 2.3px;
+  /* top: 2px; */
+  margin-top: 3.5px;
+}
+.hamburger-inner:after {
+  background-color: #fff !important;
+  color: #fff !important;
+  /* width: 20px; */
+  width: 19px;
+  height: 2.3px;
+  margin-bottom: 3.5px;
+}
+
+#menuIconId.is-active .hamburger-box > .hamburger-inner {
+  color: #fff !important;
+  background-color: #fff !important;
+  /* height: 2px; */
+  width: 20px;
+}
+
+#menuIconId.is-active .hamburger-box .hamburger-inner:after {
+  background-color: #fff !important;
+  color: #fff !important;
+  width: 20px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 780px) {
+  .hamburger-box {
+    width: 20px;
+    height: 14px;
+  }
+  .hamburger-box > .hamburger-inner {
+    color: #fff !important;
+    background-color: #fff !important;
+    width: 19px;
+    height: 1.8px;
+  }
+  .hamburger-inner:before {
+    background-color: #fff !important;
+    color: #fff !important;
+    width: 19px;
+    height: 1.9px;
+    margin-top: 3.9px;
+  }
+  .hamburger-inner:after {
+    background-color: #fff !important;
+    color: #fff !important;
+    width: 19px;
+    height: 1.9px;
+    margin-bottom: 3.9px;
+  }
+
+  #menuIconId.is-active .hamburger-box > .hamburger-inner {
+    height: 2px;
+    width: 18.5px;
+  }
+
+  #menuIconId.is-active .hamburger-box .hamburger-inner:after {
+    width: 18.5px;
+    height: 2px;
+  }
+}

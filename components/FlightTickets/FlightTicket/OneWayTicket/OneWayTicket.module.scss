@@ -1,0 +1,144 @@
+// 90% of originalSize
+.oneWayTicketContainer {
+  width: 756px;
+  width: 620px;
+
+  height: 145.8px;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+  .airCLogosContainer {
+    display: flex;
+    flex-direction: column;
+
+    & > div:nth-child(1) {
+      position: relative;
+      z-index: 3;
+    }
+    & > div:nth-child(2) {
+      position: relative;
+      bottom: 15.3px;
+      z-index: 2;
+    }
+    & > div:nth-child(3) {
+      position: relative;
+      bottom: 30.6px;
+      z-index: 1;
+    }
+  }
+  .flightLocDataC {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 98.1px;
+    height: 57.6px;
+    position: relative;
+    right: 14px;
+    .airport {
+      font-size: 16.2px;
+      font-weight: 700;
+    }
+    .dateTime {
+      font-size: 10.8px;
+      font-weight: 500;
+    }
+    .city {
+      font-size: 9px;
+      color: #787b82;
+    }
+  }
+  .durationTransferWrapper {
+    width: 120.6px;
+    height: 79.2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    right: 27px;
+    .btn {
+      width: 120.6px;
+      height: 30.6px;
+      background-color: #f2f5fa;
+      border-radius: 6px;
+      color: #5c6780;
+      font-size: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .price {
+    width: 27.9px;
+    height: 18.9px;
+    font-size: 11.7px;
+    font-weight: 500;
+    color: #0080ff;
+    position: relative;
+    right: 28px;
+    span {
+      position: absolute;
+      top: 0;
+      font-size: 9px;
+    }
+  }
+  .arrowDown {
+    // width: 30.6px;
+    width: 12.6px;
+    height: 11.6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    bottom: 4px;
+    right: 13px;
+    // height: 30.6px;
+    svg {
+      width: 12.6px;
+      height: 12.6px;
+      fill: #787b82;
+      transform: rotate(-90deg);
+    }
+    transition: 0.2s ease all;
+    svg:hover {
+      fill: #000;
+      color: #000;
+    }
+  }
+}
+
+.visibilityHidden {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1140px) {
+  .oneWayTicketContainer {
+    width: 662px;
+  }
+  .oneWayTicketContainerAlreadyBooked {
+    width: 432px;
+
+    .flightLocDataC {
+      width: 88.1px;
+      right: 5px;
+    }
+    .durationTransferWrapper {
+      width: 75.6px;
+      right: 10px;
+      .btn {
+        width: 75.6px;
+      }
+    }
+    .price {
+      width: 27.9px;
+      right: 10px;
+    }
+    .arrowDown {
+      bottom: 5px;
+      right: 14px;
+    }
+  }
+}

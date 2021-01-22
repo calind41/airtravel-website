@@ -1,0 +1,136 @@
+.dropdownC {
+  position: absolute;
+  width: 230px !important;
+  top: 48px;
+  left: -14px;
+  background-color: #fff;
+  border-radius: 4px;
+  display: none;
+  z-index: 100;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  .passengerCounters {
+    // border: 1px solid red;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .adultsWrapper,
+    .childsWrapper,
+    .babiesWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 87%;
+      margin: auto;
+      height: 50px;
+      margin-top: 5px;
+      .details {
+        & > div:nth-child(1) {
+          font-size: 13px;
+        }
+        .ageInterval {
+          color: #787b82;
+          font-size: 10px;
+        }
+      }
+      .nrAdultsC,
+      .nrChildsC,
+      .nrBabiesC {
+        display: flex;
+        width: 47%;
+        justify-content: space-between;
+        height: 35px;
+
+        border-radius: 4px;
+        border: 0.8px solid rgba(158, 158, 158, 0.4);
+        align-items: center;
+
+        & > div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
+        & > div > span {
+          margin-right: 2px;
+        }
+
+        & > button {
+          width: 30px;
+          height: 100%;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          background-color: rgba(33, 33, 33, 0);
+          transition: 0.2s ease-in-out;
+          color: #000;
+          font-size: 20px;
+
+          &:hover {
+            background-color: rgba(33, 33, 33, 0.07);
+          }
+        }
+        .grayBg {
+          background-color: rgba(158, 158, 158, 0.4) !important;
+          color: rgba(158, 158, 158, 0.6) !important;
+        }
+        & > button:nth-child(1) {
+          border-right: 0.8px solid rgba(158, 158, 158, 0.4);
+        }
+        & > button:nth-child(3) {
+          border-left: 0.8px solid rgba(158, 158, 158, 0.4);
+        }
+      }
+    }
+  }
+
+  & > .flightTypes {
+    width: 87%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    overflow: hidden;
+
+    & > div button {
+      width: 50%;
+      height: 35px;
+      border: 0.8px solid rgba(158, 158, 158, 0.4);
+      outline: none;
+      cursor: pointer;
+    }
+    & > div:nth-child(1) button:nth-child(1) {
+      border-right: none;
+    }
+
+    & > div:nth-child(2) button:nth-child(1) {
+      border-right: none;
+    }
+
+    & > div .selectedBtn {
+      background-color: #2b95ff !important;
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .dropdownC {
+    position: absolute;
+    width: 230px;
+    left: -6px;
+    top: 47px;
+    border-radius: 0 0 4px 4px;
+    // height: 180px;
+  }
+  .widthClass {
+    width: 305px !important;
+  }
+}

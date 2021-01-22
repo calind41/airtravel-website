@@ -1,0 +1,165 @@
+// 90% of originalSize
+.oneWayTicketContainer {
+  width: 89.33vw;
+
+  height: 124px;
+  background-color: #fff;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  cursor: pointer;
+
+  .departureWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 61px;
+    height: 82px;
+    .airCLogosContainer {
+      display: flex;
+      height: 37px !important;
+
+      & > div:nth-child(1) {
+        position: relative;
+        z-index: 3;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      & > div:nth-child(2) {
+        position: relative;
+        right: 15.3px;
+        // bottom: 15.3px;
+        z-index: 2;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      & > div:nth-child(3) {
+        position: relative;
+        // bottom: 30.6px;
+        right: 30.6px;
+        z-index: 1;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+    .flightLocDataC {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 98.1px;
+      height: 37px;
+      position: relative;
+      top: 2px;
+      left: 3px;
+      .airport {
+        font-weight: 700;
+        font-size: 12px;
+      }
+      .dateTime {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+  .durationTransferWrapper {
+    width: 86px;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    .departureDate {
+      font-size: 12px;
+      height: 12px;
+      min-width: 68px;
+      text-align: center;
+    }
+    .btn {
+      min-width: 68px;
+      height: 12px;
+      color: #000;
+      font-size: 11px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    & > div:nth-child(1) {
+      position: relative;
+      top: 8px;
+    }
+    & > div:nth-child(2) {
+      position: relative;
+      top: 14px;
+    }
+  }
+  .arrivalWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 82px;
+    .price {
+      width: 33px;
+      height: 22px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #0080ff;
+      position: relative;
+      top: 7px;
+      span {
+        position: absolute;
+        top: 0;
+        font-size: 9px;
+      }
+    }
+    .flightLocDataC {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 98.1px;
+      width: 38px;
+      height: 37px;
+      position: relative;
+      top: 2px;
+      .airport {
+        font-weight: 700;
+        font-size: 12px;
+      }
+      .dateTime {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.visibilityHidden {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 375px) {
+  .oneWayTicketContainer {
+    width: 344.17px;
+  }
+}
+@media screen and (min-width: 414px) {
+  .oneWayTicketContainer {
+    width: 83.13vw;
+  }
+}
+@media screen and (min-width: 500px) {
+  .oneWayTicketContainer {
+    // width: 430px;
+    width: 86vw;
+  }
+}

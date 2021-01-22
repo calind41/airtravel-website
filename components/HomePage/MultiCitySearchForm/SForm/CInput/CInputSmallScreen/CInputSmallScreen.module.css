@@ -1,0 +1,110 @@
+.container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 10000;
+  display: flex;
+  top: -72px;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.container > div:nth-child(1) {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+.container > div:nth-child(1) svg {
+  position: absolute;
+  right: 21.78%;
+  right: 16vw;
+  bottom: 17px;
+  cursor: pointer;
+  transition: all 0.2s;
+  fill: #888;
+}
+.container > div:nth-child(1) svg:hover {
+  fill: #000;
+}
+.container .wrapper {
+  width: 403px !important;
+  height: 80vh;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 50px;
+  margin: auto;
+}
+.container .wrapper .hLine {
+  border-top: 0.8px solid rgba(158, 158, 158, 0.4);
+  display: block;
+  width: 370.5px;
+  width: 399px;
+  left: 0px;
+  top: 35px;
+  height: 1px;
+  position: absolute;
+}
+.container .wrapper .hLineBottom {
+  border-top: 0.8px solid rgba(158, 158, 158, 0.4);
+  width: 370.5px;
+  width: 399px;
+  left: -2px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 60px;
+  height: 12px;
+  background-color: #fff;
+  position: fixed;
+  display: none;
+}
+
+.calendarC {
+  position: absolute !important;
+  top: 58px;
+  height: 100%;
+  overflow: scroll;
+  left: 0;
+  right: 23px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calendarC::-webkit-scrollbar {
+  display: none;
+}
+.selectBtnContainer button {
+  font-size: 15.7px;
+  color: #fff;
+  background-color: #01abfb;
+  border: 1px solid #01abfb;
+  height: 48px;
+  width: 369px;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  outline: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 11px;
+  display: none;
+}
+.selectBtnContainer button:hover {
+  background-color: #009de6;
+  border: 1px solid #009de6;
+}
